@@ -5,7 +5,7 @@
         <p>We are adding content daily. This page is coming soon!</p>
     </div>
     <div class="four columns">
-        <?= $this->load->view($sidebar); ?>
+        <?php $this->load->view($sidebar); ?>
     </div>
 
 </div>

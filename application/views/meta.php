@@ -12,14 +12,14 @@
 
 
 <!-- Included CSS Files -->
-<link rel="stylesheet" href="/assets/stylesheets/foundation.css">
-<link rel="stylesheet" href="/assets/stylesheets/app.css">
+<link rel="stylesheet" href="<?php echo base_url();?>/assets/stylesheets/foundation.css">
+<link rel="stylesheet" href="<?php echo base_url();?>/assets/stylesheets/app.css">
 <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/themes/base/jquery-ui.css">
 
 
 
 <!--[if lt IE 9]>
-        <link rel="stylesheet" href="stylesheets/ie.css">
+        <link rel="stylesheet" href="<?php echo base_url();?>/assets/stylesheets/ie.css">
     <![endif]-->
 
 
@@ -30,8 +30,8 @@
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
-<script src="/assets/javascripts/modernizr.foundation.js"></script>
-<script src="/assets/javascripts/foundation.js"></script>
-<script src="/assets/javascripts/app.js"></script>
+<script src="<?php echo base_url();?>/assets/javascripts/modernizr.foundation.js"></script>
+<script src="<?php echo base_url();?>/assets/javascripts/foundation.js"></script>
+<script src="<?php echo base_url();?>/assets/javascripts/app.js"></script>
 
 

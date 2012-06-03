@@ -18,7 +18,7 @@ body { font-size: 14px; font-size: 1.4rem; } /* =14px */
 body {
     margin: 0;
     padding: 0;
-    background: url('/assets/images/site-images/body-bg.png') repeat-x center top;
+    background: url('../images/site-images/body-bg.png') repeat-x center top;
 }
 
 #wrapper {
@@ -33,7 +33,7 @@ h1, h2, h3, h4, p {
 }*/
 
 #header {
-    background: url('/assets/images/site-images/bkg_header.jpg') repeat-y center top;
+    background: url('../images/site-images/bkg_header.jpg') repeat-y center top;
 }
 
 #header .logo {
@@ -50,33 +50,33 @@ h1, h2, h3, h4, p {
 }
 
 .clientlogin a {
-    background: transparent url(/assets/images/icons/Briefcase-icon-32.png) no-repeat scroll left center;
+    background: transparent url(../images/icons/Briefcase-icon-32.png) no-repeat scroll left center;
     line-height:43px;
     padding: 1rem 0 1rem 4rem;
 
 }
 
 .pdf a {
-    background: transparent url(/assets/images/icons/pdf_file.png) no-repeat scroll left center;
+    background: transparent url(../images/icons/pdf_file.png) no-repeat scroll left center;
     line-height:43px;
     padding: 1rem 0 1rem 4rem;
 
 }
 
 .login a{
-    background: transparent url(/assets/images/icons/key.png) no-repeat scroll left center;
+    background: transparent url(../images/icons/key.png) no-repeat scroll left center;
     padding: 1rem 0 1rem 4rem;
 
 }
 
 .userlink a{
-    background: transparent url(/assets/images/icons/Profile-icon-32.png) no-repeat scroll left center;
+    background: transparent url(../images/icons/Profile-icon-32.png) no-repeat scroll left center;
     padding: 1rem 0 1rem 4rem;
 
 }
 
 .caccount a{
-    background: transparent url(/assets/images/icons/book.png) no-repeat scroll left center;
+    background: transparent url(../images/icons/book.png) no-repeat scroll left center;
     padding: 1rem 0 1rem 4rem;
 
 }
@@ -156,7 +156,7 @@ h1, h2, h3, h4, p {
 ----------------------------------------- */
 
 #submenu {
-    background: #ffffff url('/assets/images/site-images/menu.png') no-repeat center top;
+    background: #ffffff url('../images/site-images/menu.png') no-repeat center top;
     height: 30px;
 }
 

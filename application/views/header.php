@@ -1,10 +1,10 @@
 <div id="wrapper" class="container">
     <div id="header" class="row">
         <div class="eight columns">
-            <a href="/"><img id="logo" src="/assets/images/site-images/logo.png"></a>
+            <a href="/"><img id="logo" src="<?php echo base_url();?>/assets/images/site-images/logo.png"></a>
         </div>
         <div class="four columns">
-            <img id="slogan" src="/assets/images/site-images/tagline.png">
+            <img id="slogan" src="<?php echo base_url();?>/assets/images/site-images/tagline.png">
         </div>
     </div>
     <div id="tagline" class="row">
