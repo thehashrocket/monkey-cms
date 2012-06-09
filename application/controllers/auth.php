@@ -10,11 +10,13 @@ class Auth extends CI_Controller {
 		$this->load->library('form_validation');
 		$this->load->database();
 		$this->load->helper('url');
+		$this->siteid = $this->domain_model->getUID();
 	}
 
 	//redirect if needed, otherwise display the user list
 	function index()
 	{
+		$this->data['page_title'] = "Welcome";
 		
 		if (!$this->ion_auth->logged_in())
 		{
@@ -37,16 +39,20 @@ class Auth extends CI_Controller {
 			{
 				$this->data['users'][$k]->groups = $this->ion_auth->get_users_groups($user->id)->result();
 			}
-	
-			
-			$this->load->view('auth/index', $this->data);
+
+			$this->data['page_title'] = $this->domain_model->getSiteTitle($this->siteid);
+			$this->data['page_desc'] = $this->domain_model->getPageMetaDesc($this->siteid);
+			$this->data['page_keywords'] = $this->domain_model->getPageMetaKeywords($this->siteid);
+			$this->data['page']       = 'auth/index';
+			$this->data['sidebar']    = '';
+			$this->load->view('container', $this->data);
 		}
 	}
 
 	//log the user in
 	function login()
 	{
-		$this->data['title'] = "Login";
+		$this->data['page_title'] = "Login";
 
 		//validate form input
 		$this->form_validation->set_rules('identity', 'Identity', 'required');
@@ -85,14 +91,19 @@ class Auth extends CI_Controller {
 				'type' => 'password',
 			);
 
-			$this->load->view('auth/login', $this->data);
+			$this->data['page_title'] = $this->domain_model->getSiteTitle($this->siteid);
+			$this->data['page_desc'] = $this->domain_model->getPageMetaDesc($this->siteid);
+			$this->data['page_keywords'] = $this->domain_model->getPageMetaKeywords($this->siteid);
+			$this->data['page']       = 'auth/login';
+			$this->data['sidebar']    = '';
+			$this->load->view('container', $this->data);
 		}
 	}
 
 	//log the user out
 	function logout()
 	{
-		$this->data['title'] = "Logout";
+		$this->data['page_title'] = "Logout";
 
 		//log the user out
 		$logout = $this->ion_auth->logout();
@@ -170,6 +181,8 @@ class Auth extends CI_Controller {
 	//forgot password
 	function forgot_password()
 	{
+		$this->data['page_title'] = "Forgot Password";
+
 		$this->form_validation->set_rules('email', 'Email Address', 'required');
 		if ($this->form_validation->run() == false)
 		{
@@ -179,7 +192,13 @@ class Auth extends CI_Controller {
 			);
 			//set any errors and display the form
 			$this->data['message'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('message');
-			$this->load->view('auth/forgot_password', $this->data);
+
+			$this->data['page_title'] = $this->domain_model->getSiteTitle($this->siteid);
+			$this->data['page_desc'] = $this->domain_model->getPageMetaDesc($this->siteid);
+			$this->data['page_keywords'] = $this->domain_model->getPageMetaKeywords($this->siteid);
+			$this->data['page']       = 'auth/forgot_password';
+			$this->data['sidebar']    = '';
+			$this->load->view('container', $this->data);
 		}
 		else
 		{
@@ -206,6 +225,8 @@ class Auth extends CI_Controller {
 
 		if ($user)
 		{  //if the code is valid then display the password reset form
+
+			$this->data['page_title'] = "Reset Password";
 			
 			$this->form_validation->set_rules('new', 'New Password', 'required|min_length[' . $this->config->item('min_password_length', 'ion_auth') . ']|max_length[' . $this->config->item('max_password_length', 'ion_auth') . ']|matches[new_confirm]');
 			$this->form_validation->set_rules('new_confirm', 'Confirm New Password', 'required');
@@ -238,7 +259,13 @@ class Auth extends CI_Controller {
 				$this->data['code'] = $code;
 				
 				//render
-				$this->load->view('auth/reset_password', $this->data);
+				$this->data['page_title'] = $this->domain_model->getSiteTitle($this->siteid);
+				$this->data['page_desc'] = $this->domain_model->getPageMetaDesc($this->siteid);
+				$this->data['page_keywords'] = $this->domain_model->getPageMetaKeywords($this->siteid);
+				$this->data['page']       = 'auth/reset_password';
+				$this->data['sidebar']    = '';
+				$this->load->view('container', $this->data);
+
 			}
 			else
 			{
@@ -343,7 +370,7 @@ class Auth extends CI_Controller {
 	//create a new user
 	function create_user()
 	{
-		$this->data['title'] = "Create User";
+		$this->data['page_title'] = "Create User";
 
 		if (!$this->ion_auth->logged_in() || !$this->ion_auth->is_admin())
 		{
@@ -429,7 +456,10 @@ class Auth extends CI_Controller {
 				'type' => 'password',
 				'value' => $this->form_validation->set_value('password_confirm'),
 			);
-			$this->load->view('auth/create_user', $this->data);
+
+			$this->data['page']       = 'auth/create_user';
+			$this->data['sidebar']    = '';
+			$this->load->view('container', $this->data);
 		}
 	}
 

@@ -44,7 +44,73 @@ class Domain_Model extends CI_Model {
 
     }
 
-    function getUrl()
+	function getSiteTitle($uid)
+	{
+		$data = array(
+			'uid'       => $uid
+		);
+
+		$query = $this->db->get_where('sites', $data);
+		$row = $query->row();
+		$num = $query->num_rows();
+
+		if ($num < 1)
+		{
+			$content = 'No Title Entered';
+			return $content;
+		} else {
+			$content = $row->site_title;
+
+			return $content;
+		}
+
+	}
+
+	function getPageMetaDesc($uid)
+	{
+		$data = array(
+			'uid'       => $uid
+		);
+
+		$query = $this->db->get_where('sites', $data);
+		$row = $query->row();
+		$num = $query->num_rows();
+
+		if ($num < 1)
+		{
+			$content = 'No Title Entered';
+			return $content;
+		} else {
+			$content = $row->meta_desc;
+
+			return $content;
+		}
+
+	}
+
+	function getPageMetaKeywords($uid)
+	{
+		$data = array(
+			'uid'       => $uid
+		);
+
+		$query = $this->db->get_where('sites', $data);
+		$row = $query->row();
+		$num = $query->num_rows();
+
+		if ($num < 1)
+		{
+			$content = 'No Title Entered';
+			return $content;
+		} else {
+			$content = $row->meta_keywords;
+
+			return $content;
+		}
+
+	}
+
+    function getUID()
     {
         // Get the domain
      $url = $_SERVER['HTTP_HOST']; // this will get sub.mysite.com  or mysite.com
@@ -52,7 +118,7 @@ class Domain_Model extends CI_Model {
      // i would also suggest some cleanup here to to help prevent from some type of injection :)
      $query = $this->db->get_where('sites', array('url' => $url));
            $row = $query->row();
-            $num =  $query->num_rows(); // isnt used in this example but i wanted to include it.
+            $num =  $query->num_rows(); // isn't used in this example but i wanted to include it.
                                         //  if($num != 1 ){do something here}
             $uid = $row->uid;
             return  $uid;
@@ -111,11 +177,5 @@ class Domain_Model extends CI_Model {
         $goback = $redirect;
 
         redirect($goback);
-    }
-
-    function getUIDs()
-    {
-        $query = $this->db->get('sites');
-        return $query;
     }
 }

@@ -3,11 +3,11 @@
 <!-- Set the viewport width to device width for mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title><?= $page_title; ?></title>
+<title><?php echo $page_title; ?></title>
 <meta name="description"
-      content="Capital Team - Promoting and Capitalizing Entrepreneurship!"/>
+      content="<?php echo $page_desc; ?>"/>
 <meta name="keywords"
-      content=""/>
+      content="<?php echo $page_keywords; ?>"/>
 <link rel="shortcut icon" href="/favicon.ico"/>
 
 
