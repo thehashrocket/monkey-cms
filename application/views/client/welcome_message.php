@@ -327,7 +327,7 @@
 </div>
 
 <!-- Pages -->
-<div id="tabs-4">
+<div id="tabs-4" class="pageeditor">
 	<h4>Pages</h4>
 	<?php echo validation_errors('<p class="error">'); ?>
 
@@ -335,16 +335,18 @@
 		<div class="twelve columns">
 			<div class="two columns">
 				<h5>Pages</h5>
-				<table>
+				<nav>
+				<ul class="pagelist">
 					<?php
 					if (isset($pagelist) && count($pagelist) > 0) :
 						foreach ($pagelist->result() as $row):
 							?>
-							<tr><a href="#"><?php echo $row->page_name ?></a></tr>
+							<li class="twelve columns"><a href="/client/index/<?= $user_id ?>/<?= $row->pageid ?>"><?php echo $row->page_name ?></a></li>
 							<?php endforeach; else: ?>
 						<tr>No Pages Added</tr>
 						<?php endif; ?>
-				</table>
+				</ul>
+					</nav>
 			</div>
 			<div class="ten columns">
 				<h5>Page Editor</h5>
@@ -358,6 +360,7 @@
 					; ?>
 					<input type="hidden" name="pageid" value="<?= $row->pageid ?>"/>
 						<input type="hidden" name="userid" value="<?= $user_id;?>"/>
+
 					<?= form_fieldset()
 					; ?>
 					<div class="row">
@@ -367,7 +370,7 @@
 					</div>
 					<div class="row">
 						<div class="twelve columns">
-							<input type="text" placeholder="Page Headline" name="pageheadline" value="<?= $row->headline;?>"
+							<input type="text" placeholder="Page Headline" name="pageheadline" value="<?= $row->page_headline;?>"
 								   class="input-text">
 						</div>
 					</div>

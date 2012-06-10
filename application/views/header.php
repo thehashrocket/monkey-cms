@@ -9,13 +9,18 @@
     </div>
     <div id="tagline" class="row">
         <div id="topmenu" class="six columns offset-by-three menu">
-            <ul>
-                <li><a href="/projects">Projects</a> </li>
-                <li><a href="/providers">Providers</a> </li>
-                <li><a href="/blog">Capital Blog</a> </li>
-                <li><a href="/forums">Board Room</a> </li>
-                <li><a href="#">Account</a> </li>
-            </ul>
+			<nav>
+				<ul class="pagelist">
+					<?php
+					if (isset($pagelist) && count($pagelist) > 0) :
+						foreach ($pagelist->result() as $row):
+							?>
+							<li class="twelve columns"><a href="/index/<?= $row->page_name ?>"><?php echo strtoupper($row->page_name) ?></a></li>
+							<?php endforeach; else: ?>
+						<tr>No Pages Added</tr>
+						<?php endif; ?>
+				</ul>
+			</nav>
         </div>
         <div class="three columns"><p class="subheader">A Taragon International, Ltd. Venture.</p></div>
     </div>

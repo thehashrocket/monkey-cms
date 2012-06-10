@@ -39,7 +39,7 @@ class Client extends CI_Controller
         }
     }
 
-    function index()
+    function index($userid = null, $pageid = null)
     {
         if (!$this->ion_auth->logged_in()) {
             redirect('/auth/login/');
@@ -84,6 +84,7 @@ class Client extends CI_Controller
 			$data['photos']		= $this->Gallery_model->profile_get_images_from_db($this->user_id);
             $data['clientdata'] = $this->Client_model->getClientProfile($this->user_id);
 			$data['pagelist']	= $this->Pages_model->getClientPageList($this->user_id);
+			$data['pagedata']	= $this->Pages_model->getPagedata($this->user_id, $pageid);
 			$data['page_title'] = $this->domain_model->getSiteTitle($this->siteid);
 			$data['page_desc'] = $this->domain_model->getPageMetaDesc($this->siteid);
 			$data['page_keywords'] = $this->domain_model->getPageMetaKeywords($this->siteid);
@@ -308,9 +309,10 @@ class Client extends CI_Controller
 			$pageheadline	= (string)$this->input->post('pageheadline', TRUE);
 			$pagecontent	= (string)$this->input->post('pagecontent', TRUE);
 			$uid        = $this->user_id;
+			$siteid		= $this->siteid;
 			$redirect   = "/client/index";
 
-			$this->Pages_model->updatePage($pageid, $pagename, $pageheadline, $pagecontent, $uid, $redirect);
+			$this->Pages_model->updatePage($pageid, $pagename, $pageheadline, $pagecontent, $uid, $siteid, $redirect);
 		}
 	}
 

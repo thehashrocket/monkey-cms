@@ -28,7 +28,47 @@ class Pages_model extends CI_Model
 		}
 	}
 
-	function updatePage($pageid, $pagename, $pageheadline, $pagecontent, $uid, $redirect) {
+	function getPagedata($id, $pageid) {
+		$this->db->select('*')
+			->from('pages')
+			->where('userid', $id)
+			->where('pageid', $pageid);
+
+		$query = $this->db->get();
+
+		$row = $query->row_array();
+		$num = $query->num_rows();
+
+		if ($num < 1)
+		{
+			return NULL;
+
+		} else {
+			return $query;
+		}
+	}
+
+	function getPageList($siteid)
+	{
+		$this->db->select('*')
+			->from('pages')
+			->where('siteid', $siteid);
+
+		$query = $this->db->get();
+
+		$row = $query->row_array();
+		$num = $query->num_rows();
+
+		if ($num < 1)
+		{
+			return NULL;
+
+		} else {
+			return $query;
+		}
+	}
+
+	function updatePage($pageid, $pagename, $pageheadline, $pagecontent, $uid, $siteid, $redirect) {
 		$user = $this->user_id;
 
 		$this->db->select('p.pageid');
@@ -42,6 +82,7 @@ class Pages_model extends CI_Model
 				'page_headline'	=> $pageheadline,
 				'page_content'	=> $pagecontent,
 				'userid'		=> $uid,
+				'siteid'		=> $siteid,
 				'pageid'		=> $pageid
 			);
 			$this->db->select('p.pageid');
@@ -55,7 +96,8 @@ class Pages_model extends CI_Model
 				'page_name'		=> $pagename,
 				'page_headline'	=> $pageheadline,
 				'page_content'	=> $pagecontent,
-				'userid'		=> $uid
+				'userid'		=> $uid,
+				'siteid'		=> $siteid
 			);
 			$this->db->insert('pages', $data);
 

@@ -11,6 +11,7 @@ class Pages extends CI_Controller
     public function __construct(){
         parent::__construct();
         $this->load->library('ion_auth');
+		$this->load->model('Pages_model');
 		$this->siteid = $this->domain_model->getUID();
         if (!$this->ion_auth->logged_in()) {
             $this->login      = 'false';
@@ -28,6 +29,7 @@ class Pages extends CI_Controller
         $data['login']      = $this->login;
         $data['user_id']    = $this->user_id;
         $data['username']   = $this->user_name;
+		$data['pagelist']	= $this->Pages_model->getPageList($this->siteid);
         $data['page_title'] = $this->domain_model->getSiteTitle($this->siteid);
 		$data['page_desc'] = $this->domain_model->getPageMetaDesc($this->siteid);
 		$data['page_keywords'] = $this->domain_model->getPageMetaKeywords($this->siteid);
