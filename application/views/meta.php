@@ -32,6 +32,7 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
 <script src="<?php echo base_url();?>/assets/javascripts/modernizr.foundation.js"></script>
 <script src="<?php echo base_url();?>/assets/javascripts/foundation.js"></script>
+	<script src="<?php echo base_url();?>/assets/js/jquery.cookie.js"></script>
 <script src="<?php echo base_url();?>/assets/javascripts/app.js"></script>
 
 

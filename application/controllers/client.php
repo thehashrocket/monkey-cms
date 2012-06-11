@@ -39,7 +39,7 @@ class Client extends CI_Controller
         }
     }
 
-    function index($userid = null, $pageid = null)
+	function index($userid = null, $pageid = null)
     {
         if (!$this->ion_auth->logged_in()) {
             redirect('/auth/login/');
@@ -308,11 +308,12 @@ class Client extends CI_Controller
 			$pagename		= (string)$this->input->post('pagename', TRUE);
 			$pageheadline	= (string)$this->input->post('pageheadline', TRUE);
 			$pagecontent	= (string)$this->input->post('pagecontent', TRUE);
+			$parentpage	= (string)$this->input->post('parentpage', TRUE);
 			$uid        = $this->user_id;
 			$siteid		= $this->siteid;
 			$redirect   = "/client/index";
 
-			$this->Pages_model->updatePage($pageid, $pagename, $pageheadline, $pagecontent, $uid, $siteid, $redirect);
+			$this->Pages_model->updatePage($pageid, $pagename, $pageheadline, $pagecontent, $parentpage, $uid, $siteid, $redirect);
 		}
 	}
 
@@ -368,6 +369,31 @@ class Client extends CI_Controller
 
     }
 
+	function saveOrder()
+	{
+		$items = $this->input->post('item');
+		echo '<br/>Items2:' . var_dump($items);
+		$total_items = count($this->input->post('item'));
+
+		for($item = 0; $item < $total_items; $item++ )
+		{
+
+			$data = array(
+				'pageid' => $items[$item],
+				'rank' => $item
+			);
+
+			$this->db->where('pageid', $data['pageid']);
+
+			$this->db->update('pages', $data);
+
+//			echo '<br />'.$this->db->last_query();
+
+		}
+
+
+
+	}
 
 
 }

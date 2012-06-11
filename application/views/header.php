@@ -15,7 +15,7 @@
 					if (isset($pagelist) && count($pagelist) > 0) :
 						foreach ($pagelist->result() as $row):
 							?>
-							<li class="twelve columns"><a href="/index/<?= $row->page_name ?>"><?php echo strtoupper($row->page_name) ?></a></li>
+							<li class=""><a href="/index/<?= $row->page_name ?>"><?php echo strtoupper($row->page_name) ?></a></li>
 							<?php endforeach; else: ?>
 						<tr>No Pages Added</tr>
 						<?php endif; ?>

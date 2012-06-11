@@ -12,7 +12,9 @@ class Pages_model extends CI_Model
 	{
 		$this->db->select('*')
 			->from('pages')
-			->where('userid', $id);
+			->where('userid', $id)
+			->order_by('rank')
+		;
 
 		$query = $this->db->get();
 
@@ -52,7 +54,9 @@ class Pages_model extends CI_Model
 	{
 		$this->db->select('*')
 			->from('pages')
-			->where('siteid', $siteid);
+			->where('siteid', $siteid)
+			->order_by('rank');
+		;
 
 		$query = $this->db->get();
 
@@ -68,7 +72,8 @@ class Pages_model extends CI_Model
 		}
 	}
 
-	function updatePage($pageid, $pagename, $pageheadline, $pagecontent, $uid, $siteid, $redirect) {
+	function updatePage($pageid, $pagename, $pageheadline, $pagecontent, $parentpage, $uid, $siteid, $redirect)
+	{
 		$user = $this->user_id;
 
 		$this->db->select('p.pageid');
@@ -81,6 +86,7 @@ class Pages_model extends CI_Model
 				'page_name'		=> $pagename,
 				'page_headline'	=> $pageheadline,
 				'page_content'	=> $pagecontent,
+				'parentid'		=> $parentpage,
 				'userid'		=> $uid,
 				'siteid'		=> $siteid,
 				'pageid'		=> $pageid
@@ -96,6 +102,7 @@ class Pages_model extends CI_Model
 				'page_name'		=> $pagename,
 				'page_headline'	=> $pageheadline,
 				'page_content'	=> $pagecontent,
+				'parentid'		=> $parentpage,
 				'userid'		=> $uid,
 				'siteid'		=> $siteid
 			);
@@ -106,5 +113,11 @@ class Pages_model extends CI_Model
 		$goback = $redirect . '/' . $pageid;
 
 		redirect($goback);
+	}
+
+	function updatePageOrderList($postitems, $redirect)
+	{
+		$items = $postitems;
+		$total_items = count($items);
 	}
 }

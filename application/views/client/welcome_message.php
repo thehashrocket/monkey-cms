@@ -15,7 +15,6 @@
 </div>
 <div class="row">
 <div class="twelve columns">
-<script type="text/javascript" src="/assets/js/jquery.cookie.js"></script>
 <script>
 	$(function () {
 		$("#tabs").tabs({
@@ -335,18 +334,28 @@
 		<div class="twelve columns">
 			<div class="two columns">
 				<h5>Pages</h5>
-				<nav>
-				<ul class="pagelist">
-					<?php
-					if (isset($pagelist) && count($pagelist) > 0) :
-						foreach ($pagelist->result() as $row):
-							?>
-							<li class="twelve columns"><a href="/client/index/<?= $user_id ?>/<?= $row->pageid ?>"><?php echo $row->page_name ?></a></li>
-							<?php endforeach; else: ?>
-						<tr>No Pages Added</tr>
-						<?php endif; ?>
-				</ul>
-					</nav>
+				<div class="row">
+					<div class="twelve columns">
+						<nav>
+							<ul id="reorder" class="pagelist">
+								<?php
+								if (isset($pagelist) && count($pagelist) > 0) :
+									foreach ($pagelist->result() as $row):
+										?>
+										<li id="item-<?= $row->pageid ?>" class="twelve columns"><a href="/client/index/<?= $user_id ?>/<?= $row->pageid ?>"><?php echo $row->page_name ?></a></li>
+										<?php endforeach; else: ?>
+									<tr>No Pages Added</tr>
+									<?php endif; ?>
+							</ul>
+						</nav>
+					</div>
+
+				</div>
+				<div class="row">
+					<div class="twelve columns">
+						<div id="feedback"></div>
+					</div>
+				</div>
 			</div>
 			<div class="ten columns">
 				<h5>Page Editor</h5>
@@ -361,8 +370,27 @@
 					<input type="hidden" name="pageid" value="<?= $row->pageid ?>"/>
 						<input type="hidden" name="userid" value="<?= $user_id;?>"/>
 
+
+
 					<?= form_fieldset()
 					; ?>
+						<div class="row">
+							<div class="four columns">
+								<label for="parentpage">Parent Page</label>
+								<select id="parentpage" name="parentpage">
+									<option value="">None</option>
+									<?php
+									if (isset($pagelist) && count($pagelist) > 0) :
+										foreach ($pagelist->result() as $row):
+											?>
+											<option value="<?= $row->pageid ?>"><?php echo $row->page_name ?></option>
+											<?php endforeach; else: ?>
+										<tr>No Pages Added</tr>
+										<?php endif; ?>
+								</select>
+							</div>
+						</div>
+
 					<div class="row">
 						<div class="twelve columns">
 							<input type="text" placeholder="Page Name" name="pagename" value="<?= $row->page_name;?>" class="input-text">
@@ -399,6 +427,22 @@
 					<input type="hidden" name="pageid" value=""/>
 					<?= form_fieldset()
 					; ?>
+					<div class="row">
+						<div class="four columns">
+							<label for="parentpage">Parent Page</label>
+							<select id="parentpage" name="parentpage">
+								<option value="">None</option>
+								<?php
+								if (isset($pagelist) && count($pagelist) > 0) :
+									foreach ($pagelist->result() as $row):
+										?>
+										<option value="<?= $row->pageid ?>"><?php echo $row->page_name ?></option>
+										<?php endforeach; else: ?>
+									<tr>No Pages Added</tr>
+									<?php endif; ?>
+							</select>
+						</div>
+					</div>
 					<div class="row">
 						<div class="twelve columns">
 							<input type="text" placeholder="Page Name" name="pagename" value="" class="input-text">
