@@ -371,6 +371,7 @@ class Client extends CI_Controller
 
 	function saveOrder()
 	{
+		var_dump(($_POST));
 		$items = $this->input->post('item');
 		echo '<br/>Items2:' . var_dump($items);
 		$total_items = count($this->input->post('item'));

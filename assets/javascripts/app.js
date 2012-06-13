@@ -38,15 +38,14 @@ jQuery(document).ready(function ($) {
     $('#reorder').sortable({
         opacity: '0.5',
         update: function(e, ui){
-            cct = $.cookie('csrf_cookie_name');
-            console.log(cct);
-            newOrder = $( "#reorder" ).sortable('serialize');
+            newOrder = 'csrf_test_name=' + $.cookie('csrf_cookie_name') + '&';
+            newOrder += $( "#reorder" ).sortable('serialize');
             console.log(newOrder);
             $.ajax({
                 url: "/client/saveOrder",
                 type: "POST",
-                csrf_cookie_name: cct,
                 data: newOrder,
+                csrf_test_name: $.cookie('csrf_cookie_name'),
                 // complete: function(){},
                 success: function(feedback){
                     console.log('success');
