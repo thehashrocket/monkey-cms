@@ -3,8 +3,7 @@
  * Created by IntelliJ IDEA.
  * User: OpenSkyMedia
  * Date: 1/26/12
- * Time: 3:31 PM
- * To change this template use File | Settings | File Templates.
+ * Time: 3:31 PM.
  */
 
 class Blog_model extends CI_Model {

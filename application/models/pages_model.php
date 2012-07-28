@@ -4,7 +4,6 @@
  * User: OpenSkyMedia
  * Date: 1/31/12
  * Time: 3:31 PM
- * To change this template use File | Settings | File Templates.
  */
 class Pages_model extends CI_Model
 {
@@ -35,6 +34,46 @@ class Pages_model extends CI_Model
 			->from('pages')
 			->where('userid', $id)
 			->where('pageid', $pageid);
+
+		$query = $this->db->get();
+
+		$row = $query->row_array();
+		$num = $query->num_rows();
+
+		if ($num < 1)
+		{
+			return NULL;
+
+		} else {
+			return $query;
+		}
+	}
+
+	function get_page($pageid) {
+		$this->db->select('*')
+			->from('pages')
+			->where('pageid', $pageid);
+
+		$query = $this->db->get();
+
+		$row = $query->row_array();
+		$num = $query->num_rows();
+
+		if ($num < 1)
+		{
+			return NULL;
+
+		} else {
+			return $row;
+		}
+	}
+
+	function get_all($siteid) {
+		$this->db->select('*')
+			->from('pages')
+			->where('siteid', $siteid)
+			->order_by('rank');
+		;
 
 		$query = $this->db->get();
 

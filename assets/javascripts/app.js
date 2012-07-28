@@ -1,39 +1,7 @@
 /* Foundation v2.2.1 http://foundation.zurb.com */
 jQuery(document).ready(function ($) {
 
-//    $(function() {
-//        $( "#reorder" ).sortable({opacity: 0.6,
-//            data:$(this).sortable("serialize"),
-//            cursor: 'move',
-//            tolerance: 'pointer',
-//            revert: true,
-//            placeholder: 'state',
-//            forcePlaceholderSize: true,
-//            update: function(event, ui){
-//
-////send POST data ----------------
-//                $.ajax({
-//                    url: "/client/saveOrder",
-//                    type: 'POST',
-//                    data: {
-//                        'order': $( "#reorder" ).sortable("serialize")
-//                    },
-//                    success: function (data) {
-//                        $("#feedback").html(feedback);
-//                    }
-//
-//                });
-////-------------------------------
-//            }
-//
-//        });
-//    });
 
-    $.ajaxSetup({
-//        data: {
-//            csrf_cookie_name: $.cookie('csrf_cookie_name')
-//        }
-    });
 
     $('#reorder').sortable({
         opacity: '0.5',

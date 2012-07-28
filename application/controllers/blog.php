@@ -4,7 +4,6 @@
  * User: OpenSkyMedia
  * Date: 1/25/12
  * Time: 10:30 PM
- * To change this template use File | Settings | File Templates.
  */
 class Blog extends CI_Controller {
 

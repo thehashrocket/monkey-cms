@@ -4,7 +4,6 @@
  * User: OpenSkyMedia
  * Date: 1/25/12
  * Time: 10:17 PM
- * To change this template use File | Settings | File Templates.
  */
 class Providers extends CI_Controller
 {

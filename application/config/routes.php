@@ -41,6 +41,8 @@ $route['default_controller'] = "pages";  //was 'welcome'
 
 
 
+include_once APPPATH . "cache/routes.php";
+
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

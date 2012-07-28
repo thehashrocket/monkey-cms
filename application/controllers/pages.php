@@ -4,7 +4,6 @@
  * User: OpenSkyMedia
  * Date: 1/25/12
  * Time: 5:50 PM
- * To change this template use File | Settings | File Templates.
  */
 class Pages extends CI_Controller
 {
@@ -37,6 +36,8 @@ class Pages extends CI_Controller
         $data['page']       = 'pages/home';
         $this->load->view('container', $data);
     }
+
+
 
 
 }
