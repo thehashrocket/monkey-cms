@@ -24,6 +24,8 @@ jQuery(document).ready(function ($) {
         }
     });
 
+	jQuery('ul.sf-menu').superfish();
+
 	/* Use this js doc for all application specific JS */
 
 	/* TABS --------------------------------- */

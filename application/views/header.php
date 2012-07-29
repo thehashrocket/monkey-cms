@@ -10,15 +10,10 @@
     <div id="tagline" class="row">
         <div id="topmenu" class="six columns offset-by-three menu">
 			<nav>
-				<ul class="pagelist">
+				<ul class="pagelist sf-menu">
 					<?php
-					if (isset($pagelist) && count($pagelist) > 0) :
-						foreach ($pagelist->result() as $row):
-							?>
-							<li class=""><a href="/index/<?= $row->page_name ?>"><?php echo strtoupper($row->page_name) ?></a></li>
-							<?php endforeach; else: ?>
-						<tr>No Pages Added</tr>
-						<?php endif; ?>
+					 echo $navigation;
+					 ?>
 				</ul>
 			</nav>
         </div>

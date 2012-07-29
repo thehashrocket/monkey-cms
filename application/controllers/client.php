@@ -1,4 +1,4 @@
-<?php  if (!defined('BASEPATH')) exit('No direct script access allowed');
+<?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 	/**
 	 * Created by JetBrains PhpStorm.
 	 * User: OpenSkyMedia
@@ -388,15 +388,15 @@
 			$routes = $this->Pages_model->get_all($this->siteid);
 
 			// write out the PHP array to the file with help from the file helper
-			if ( !empty( $routes ) )
-			{
+			if (!empty($routes)) {
 				// for every page in the database, get the route using the recursive function - _get_route()
-				foreach( $routes->result_array() as $route )
-				{
-					$data[] = '$route["' . $this->_get_route($route['pageid']) . '"] = "' . "pages/index/{$route['pageid']}" . '";';
+				foreach ($routes->result_array() as $route) {
+					$data[] = '$route["' . $this->_get_route($route['pageid']) . '"] = "' . "pages/index/{$route['sectionid']}/{$route['pageid']}" . '";';
 				}
 
-				$output = implode("\n", $data);
+				$output = "<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');\n";
+
+				$output .= implode("\n", $data);
 
 				$this->load->helper('file');
 				write_file(APPPATH . "cache/routes.php", $output);
@@ -412,8 +412,8 @@
 			$page = $this->Pages_model->get_page($id);
 
 			// if this page has a parent, prefix it with the URL of the parent -- RECURSIVE
-			if($page["parentid"] != 0)
-				$prefix = $this->_get_route($page["parentid"])."/".$page['page_name'];
+			if ($page["parentid"] != 0)
+				$prefix = $this->_get_route($page["parentid"]) . "/" . $page['page_name'];
 			else
 				$prefix = $page['page_name'];
 

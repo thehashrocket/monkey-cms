@@ -1,7 +1,7 @@
 <meta content="charset=utf-8"/>
 
 <!-- Set the viewport width to device width for mobile -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 <title><?php echo $page_title; ?></title>
 <meta name="description"
@@ -19,8 +19,8 @@
 
 
 <!--[if lt IE 9]>
-        <link rel="stylesheet" href="<?php echo base_url();?>/assets/stylesheets/ie.css">
-    <![endif]-->
+<link rel="stylesheet" href="<?php echo base_url();?>/assets/stylesheets/ie.css">
+<![endif]-->
 
 
 <!-- IE Fix for HTML5 Tags -->
@@ -29,10 +29,11 @@
     <![endif]-->
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
 <script src="<?php echo base_url();?>/assets/javascripts/modernizr.foundation.js"></script>
 <script src="<?php echo base_url();?>/assets/javascripts/foundation.js"></script>
-	<script src="<?php echo base_url();?>/assets/js/jquery.cookie.js"></script>
+<script src="<?php echo base_url();?>/assets/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/assets/js/superfish-min.js"></script>
 <script src="<?php echo base_url();?>/assets/javascripts/app.js"></script>
 
 
