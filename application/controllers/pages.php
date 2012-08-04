@@ -26,7 +26,7 @@
 			}
 		}
 
-		public function index($sectionid, $pageid)
+		public function index($sectionid = 1, $pageid = 1)
 		{
 			$data['login']         = $this->login;
 			$data['user_id']       = $this->user_id;

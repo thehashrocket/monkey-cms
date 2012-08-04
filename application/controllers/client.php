@@ -355,6 +355,8 @@
 
 		}
 
+		// This function gets run whenever the order of the pages is changed within the client area. It's fired from
+		// the reorder function in app.js.
 		function saveOrder()
 		{
 
