@@ -15,6 +15,7 @@
 			parent::__construct();
 
 			$this->load->library('ion_auth');
+			$this->load->library('Treeview');
 			$this->load->model('Client_model');
 			$this->load->model('Gallery_model');
 			$this->load->model('Pages_model');
@@ -79,6 +80,7 @@
 				$data['login']         = $this->login;
 				$data['user_id']       = $this->user_id;
 				$data['username']      = $this->user_name;
+				$data['navigation']     = $this->treeview->buildmenu();
 				$data['photos']        = $this->Gallery_model->profile_get_images_from_db($this->user_id);
 				$data['clientdata']    = $this->Client_model->getClientProfile($this->user_id);
 				$data['pagelist']      = $this->Pages_model->getClientPageList($this->user_id);
@@ -126,6 +128,7 @@
 				$data['login']         = $this->login;
 				$data['user_id']       = $this->user_id;
 				$data['username']      = $this->user_name;
+				$data['navigation']     = $this->treeview->buildmenu();
 				$data['photos']        = $this->Gallery_model->profile_get_images_from_db($proj_id);
 				$data['projdata']      = $this->Projects_model->getProjectProfile($this->user_id);
 				$data['pledgedata']    = $this->Projects_model->getPledgeProfile($this->user_id);
@@ -171,6 +174,7 @@
 				$data['login']         = $this->login;
 				$data['user_id']       = $this->user_id;
 				$data['username']      = $this->user_name;
+				$data['navigation']     = $this->treeview->buildmenu();
 				$data['photos']        = $this->Gallery_model->profile_get_images_from_db($this->user_id);
 				$data['categorydata']  = $this->Projects_model->getCategoriesProfile($this->user_id);
 				$data['clientdata']    = $this->Client_model->getClientProfile($this->user_id);
@@ -269,6 +273,7 @@
 				$data['login']         = $this->login;
 				$data['user_id']       = $this->user_id;
 				$data['username']      = $this->user_name;
+				$data['navigation']     = $this->treeview->buildmenu();
 				$data['photos']        = $this->Gallery_model->profile_get_images_from_db($proj_id);
 				$data['projdata']      = $this->Projects_model->getProjectProfile($this->user_id);
 				$data['pledgedata']    = $this->Projects_model->getPledgeProfile($this->user_id);
@@ -325,6 +330,7 @@
 				$data['login']         = $this->login;
 				$data['user_id']       = $this->user_id;
 				$data['username']      = $this->user_name;
+				$data['navigation']     = $this->treeview->buildmenu();
 				$data['photos']        = $this->Gallery_model->profile_get_images_from_db($proj_id);
 				$data['projdata']      = $this->Projects_model->getProjectProfile($this->user_id);
 				$data['pledgedata']    = $this->Projects_model->getPledgeProfile($this->user_id);

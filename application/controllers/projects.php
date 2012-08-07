@@ -12,6 +12,7 @@
 			parent::__construct();
 			$this->load->library('ion_auth');
 			$this->load->model('Projects_model');
+			$this->load->library('Treeview');
 			if (!$this->ion_auth->logged_in()) {
 				$this->login     = 'false';
 				$this->user_id   = '';
@@ -29,6 +30,7 @@
 			$data['login']      = $this->login;
 			$data['user_id']    = $this->user_id;
 			$data['username']   = $this->user_name;
+			$data['navigation']     = $this->treeview->buildmenu();
 			$data['categories'] = $this->Projects_model->getCategories();
 			$data['projects']   = $this->Projects_model->getProjects($id);
 			$data['catname']    = $this->Projects_model->getCategoryName($id);

@@ -40,7 +40,7 @@
 				$this->data['page_title']    = $this->domain_model->getSiteTitle($this->siteid);
 				$this->data['page_desc']     = $this->domain_model->getPageMetaDesc($this->siteid);
 				$this->data['page_keywords'] = $this->domain_model->getPageMetaKeywords($this->siteid);
-				$data['navigation']          = $this->treeview->buildmenu();
+				$this->data['navigation']          = $this->treeview->buildmenu();
 				$this->data['page']          = 'auth/index';
 				$this->data['sidebar']       = '';
 				$this->load->view('container', $this->data);
@@ -417,6 +417,8 @@
 				);
 
 				$this->data['page']    = 'auth/create_user';
+				$this->data['page_desc']     = $this->domain_model->getPageMetaDesc($this->siteid);
+				$this->data['page_keywords'] = $this->domain_model->getPageMetaKeywords($this->siteid);
 				$this->data['navigation']          = $this->treeview->buildmenu();
 				$this->data['sidebar'] = '';
 				$this->load->view('container', $this->data);
