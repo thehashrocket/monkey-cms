@@ -45,12 +45,12 @@
 | the active record class
 */
 
-$active_group = 'live';
+$active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'root';
-$db['default']['password'] = '';
+$db['default']['password'] = 'mysql';
 $db['default']['database'] = 'monkeydb';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';

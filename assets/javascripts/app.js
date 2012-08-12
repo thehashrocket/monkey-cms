@@ -1,7 +1,27 @@
 /* Foundation v2.2.1 http://foundation.zurb.com */
 jQuery(document).ready(function ($) {
 
-
+	$(function() {
+		$.ajaxSetup({
+			error: function(jqXHR, exception) {
+				if (jqXHR.status === 0) {
+					alert('Not connect.\n Verify Network.');
+				} else if (jqXHR.status == 404) {
+					alert('Requested page not found. [404]');
+				} else if (jqXHR.status == 500) {
+					alert('Internal Server Error [500].');
+				} else if (exception === 'parsererror') {
+					alert('Requested JSON parse failed.');
+				} else if (exception === 'timeout') {
+					alert('Time out error.');
+				} else if (exception === 'abort') {
+					alert('Ajax request aborted.');
+				} else {
+					alert('Uncaught Error.\n' + jqXHR.responseText);
+				}
+			}
+		});
+	});
 
     $('#reorder').sortable({
         opacity: '0.5',
@@ -13,16 +33,59 @@ jQuery(document).ready(function ($) {
                 url: "/client/saveOrder",
                 type: "POST",
                 data: newOrder,
-                csrf_test_name: $.cookie('csrf_cookie_name'),
-                // complete: function(){},
                 success: function(feedback){
                     console.log('success');
-                    $("#feedback").html(feedback);
-                    //$.jGrowl(feedback, { theme: 'success' });
                 }
             });
         }
     });
+
+	$('#pageForm').on('submit',function(e){
+		e.preventDefault();
+		CKEDITOR.instances.pagededitor.updateElement();
+		$.ajax({
+			url: "/client/pageUpdate",
+			type: "POST",
+			data: $('#pageForm').serialize(),
+			success: function(feedback){
+				console.log('success');
+			}
+		});
+
+		return false;
+	});
+
+	$('.pagelist').find('li').find('a').on('click', function(e){
+
+		e.preventDefault();
+
+		var pathname = $(this).attr("href").split("/");
+		var pageid = pathname[pathname.length-1];
+		data = 'csrf_test_name=' + $.cookie('csrf_cookie_name') + '&';
+		data += 'pageid=' + pageid;
+
+		$.ajax({
+			url:"/client/getPageDetails/",
+			type: "POST",
+			data: data,
+			dataType: 'json',
+			success: function(data) {
+				updatePage(data)
+			}
+		})
+
+		return false;
+	});
+
+	function updatePage(data) {
+		$('input[name="pageid"]').val(data.pageid);
+		$('input[name="userid"]').val(data.userid);
+		$('input[name="pagename"]').val(data.page_name);
+		$('input[name="pageheadline"]').val(data.page_headline);
+		$('textarea[name="pagecontent"]').val(data.page_content);
+	}
+
+
 
 	jQuery('ul.sf-menu').superfish();
 

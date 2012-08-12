@@ -122,7 +122,9 @@
 <div id="tabs-1">
 	<h4>Your Information</h4>
 	<?php echo validation_errors('<p class="error">'); ?>
-	<?=form_open('/client/profileUpdate', 'class=nice');?>
+	<?php $attributes = array('class' => 'nice', 'id' => 'profileForm');
+	echo form_open('/client/profileUpdate', $attributes);
+	?>
 	<?=form_fieldset('');?>
 	<div class="row">
 		<div class="twelve columns">
@@ -360,119 +362,61 @@
 			<div class="ten columns">
 				<h5>Page Editor</h5>
 
-				<?php
-				if (isset($pagedata) && count($pagedata) > 0) :
-					foreach ($pagedata->result() as $row):
-						?>
+				<?php $attributes = array('class' => 'nice', 'id' => 'pageForm');
+				echo form_open('/client/pageUpdate', $attributes)
+				; ?>
+				<input type="hidden" name="pageid" value="<?= $row->pageid ?>"/>
+				<input type="hidden" name="userid" value="<?= $user_id;?>"/>
 
-					<?= form_open('/client/pageUpdate', 'class=nice')
-					; ?>
-					<input type="hidden" name="pageid" value="<?= $row->pageid ?>"/>
+
+
+				<?= form_fieldset()
+				; ?>
+				<div class="row">
+					<div class="four columns">
+						<label for="parentpage">Parent Page</label>
+						<select id="parentpage" name="parentpage">
+							<option value="">None</option>
+							<?php
+							if (isset($pagelist) && count($pagelist) > 0) :
+								foreach ($pagelist->result() as $row):
+									?>
+									<option value="<?= $row->pageid ?>"><?php echo $row->page_name ?></option>
+									<?php endforeach; else: ?>
+								<tr>No Pages Added</tr>
+								<?php endif; ?>
+						</select>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="twelve columns">
+						<input type="text" placeholder="Page Name" name="pagename" value="<?= $row->page_name;?>" class="input-text">
+					</div>
+				</div>
+				<div class="row">
+					<div class="twelve columns">
+						<input type="text" placeholder="Page Headline" name="pageheadline" value="<?= $row->page_headline;?>"
+						       class="input-text">
+					</div>
+				</div>
+				<div class="row">
+					<div class="twelve columns">
+						<textarea name="pagecontent" id="pagededitor"><?= $row->page_content;?></textarea>
+						<?php echo display_ckeditor($ckeditor); ?>
 						<input type="hidden" name="userid" value="<?= $user_id;?>"/>
-
-
-
-					<?= form_fieldset()
-					; ?>
-						<div class="row">
-							<div class="four columns">
-								<label for="parentpage">Parent Page</label>
-								<select id="parentpage" name="parentpage">
-									<option value="">None</option>
-									<?php
-									if (isset($pagelist) && count($pagelist) > 0) :
-										foreach ($pagelist->result() as $row):
-											?>
-											<option value="<?= $row->pageid ?>"><?php echo $row->page_name ?></option>
-											<?php endforeach; else: ?>
-										<tr>No Pages Added</tr>
-										<?php endif; ?>
-								</select>
-							</div>
-						</div>
-
-					<div class="row">
-						<div class="twelve columns">
-							<input type="text" placeholder="Page Name" name="pagename" value="<?= $row->page_name;?>" class="input-text">
-						</div>
 					</div>
-					<div class="row">
-						<div class="twelve columns">
-							<input type="text" placeholder="Page Headline" name="pageheadline" value="<?= $row->page_headline;?>"
-								   class="input-text">
-						</div>
+				</div>
+				<div class="row">
+					<div class="twelve columns">
+						<INPUT TYPE="IMAGE" SRC="/assets/images/icons/save-icon-32.png" ALT="Submit button">
 					</div>
-					<div class="row">
-						<div class="twelve columns">
-							<textarea name="pagecontent" id="pagededitor"><?= $row->page_content;?></textarea>
-							<?php echo display_ckeditor($ckeditor); ?>
-							<input type="hidden" name="userid" value="<?= $user_id;?>"/>
-						</div>
-					</div>
-					<div class="row">
-						<div class="twelve columns">
-							<INPUT TYPE="IMAGE" SRC="/assets/images/icons/save-icon-32.png" ALT="Submit button">
-						</div>
-					</div>
+				</div>
 
-					<?= form_fieldset_close()
-					; ?>
-					<?= form_close()
-					; ?>
-
-						<?php endforeach; else: ?>
-
-					<?= form_open('/client/pageUpdate', 'class=nice')
-					; ?>
-					<input type="hidden" name="pageid" value=""/>
-					<?= form_fieldset()
-					; ?>
-					<div class="row">
-						<div class="four columns">
-							<label for="parentpage">Parent Page</label>
-							<select id="parentpage" name="parentpage">
-								<option value="">None</option>
-								<?php
-								if (isset($pagelist) && count($pagelist) > 0) :
-									foreach ($pagelist->result() as $row):
-										?>
-										<option value="<?= $row->pageid ?>"><?php echo $row->page_name ?></option>
-										<?php endforeach; else: ?>
-									<tr>No Pages Added</tr>
-									<?php endif; ?>
-							</select>
-						</div>
-					</div>
-					<div class="row">
-						<div class="twelve columns">
-							<input type="text" placeholder="Page Name" name="pagename" value="" class="input-text">
-						</div>
-					</div>
-					<div class="row">
-						<div class="twelve columns">
-							<input type="text" placeholder="Page Headline" name="pageheadline" value=""
-								   class="input-text">
-						</div>
-					</div>
-					<div class="row">
-						<div class="twelve columns">
-							<textarea name="pagecontent" id="pagededitor">Example Data</textarea>
-							<?php echo display_ckeditor($ckeditor); ?>
-							<input type="hidden" name="userid" value="<?= $user_id;?>"/>
-						</div>
-					</div>
-					<div class="row">
-						<div class="twelve columns">
-							<INPUT TYPE="IMAGE" SRC="/assets/images/icons/save-icon-32.png" ALT="Submit button">
-						</div>
-					</div>
-
-					<?= form_fieldset_close()
-					; ?>
-					<?= form_close()
-					; ?>
-
-					<?php endif; ?>
+				<?= form_fieldset_close()
+				; ?>
+				<?= form_close()
+				; ?>
 
 			</div>
 

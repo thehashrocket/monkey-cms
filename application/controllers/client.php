@@ -94,6 +94,48 @@
 			}
 		}
 
+		function catUpdate()
+		{
+			$this->load->library('form_validation');
+			$this->form_validation->set_error_delimiters('<div class="alert-box error">', '</div>');
+
+			$this->form_validation->set_rules('catname', 'Category Name', 'required|trim');
+			$this->form_validation->set_rules('catdesc', 'Category Description', 'required|trim');
+
+			if ($this->form_validation->run() == FALSE) {
+				$data['login']         = $this->login;
+				$data['user_id']       = $this->user_id;
+				$data['username']      = $this->user_name;
+				$data['navigation']     = $this->treeview->buildmenu();
+				$data['photos']        = $this->Gallery_model->profile_get_images_from_db($this->user_id);
+				$data['categorydata']  = $this->Projects_model->getCategoriesProfile($this->user_id);
+				$data['clientdata']    = $this->Client_model->getClientProfile($this->user_id);
+				$data['pagelist']      = $this->Pages_model->getClientPageList($this->user_id);
+				$data['page_title']    = $this->domain_model->getSiteTitle($this->siteid);
+				$data['page_desc']     = $this->domain_model->getPageMetaDesc($this->siteid);
+				$data['page_keywords'] = $this->domain_model->getPageMetaKeywords($this->siteid);
+				$data['sidebar']       = 'sidebars/small-home-sidebar';
+				$data['page']          = '/client/welcome_message'; // pass the actual view to use as a parameter
+				$this->load->view('container', $data);
+
+			} else {
+				$strlen = strlen((string)$this->input->post('idcategories'));
+
+				if ($strlen == 0) {
+					$idcategories = '';
+				} else {
+					$idcategories = (string)$this->input->post('idcategories');
+				}
+
+				$catname  = (string)$this->input->post('catname', TRUE);
+				$catdesc  = (string)$this->input->post('catdesc', TRUE);
+				$uid      = $this->user_id;
+				$redirect = "/client/index";
+
+				$this->Projects_model->updateCategories($idcategories, $catname, $catdesc, $uid, $redirect);
+			}
+		}
+
 		function deleteCategory($id)
 		{
 			$redirect = '/client/index';
@@ -162,48 +204,6 @@
 			}
 		}
 
-		function catUpdate()
-		{
-			$this->load->library('form_validation');
-			$this->form_validation->set_error_delimiters('<div class="alert-box error">', '</div>');
-
-			$this->form_validation->set_rules('catname', 'Category Name', 'required|trim');
-			$this->form_validation->set_rules('catdesc', 'Category Description', 'required|trim');
-
-			if ($this->form_validation->run() == FALSE) {
-				$data['login']         = $this->login;
-				$data['user_id']       = $this->user_id;
-				$data['username']      = $this->user_name;
-				$data['navigation']     = $this->treeview->buildmenu();
-				$data['photos']        = $this->Gallery_model->profile_get_images_from_db($this->user_id);
-				$data['categorydata']  = $this->Projects_model->getCategoriesProfile($this->user_id);
-				$data['clientdata']    = $this->Client_model->getClientProfile($this->user_id);
-				$data['pagelist']      = $this->Pages_model->getClientPageList($this->user_id);
-				$data['page_title']    = $this->domain_model->getSiteTitle($this->siteid);
-				$data['page_desc']     = $this->domain_model->getPageMetaDesc($this->siteid);
-				$data['page_keywords'] = $this->domain_model->getPageMetaKeywords($this->siteid);
-				$data['sidebar']       = 'sidebars/small-home-sidebar';
-				$data['page']          = '/client/welcome_message'; // pass the actual view to use as a parameter
-				$this->load->view('container', $data);
-
-			} else {
-				$strlen = strlen((string)$this->input->post('idcategories'));
-
-				if ($strlen == 0) {
-					$idcategories = '';
-				} else {
-					$idcategories = (string)$this->input->post('idcategories');
-				}
-
-				$catname  = (string)$this->input->post('catname', TRUE);
-				$catdesc  = (string)$this->input->post('catdesc', TRUE);
-				$uid      = $this->user_id;
-				$redirect = "/client/index";
-
-				$this->Projects_model->updateCategories($idcategories, $catname, $catdesc, $uid, $redirect);
-			}
-		}
-
 		// Updates Gallery Table
 		// Receives input from /client/index
 		function gallery_up()
@@ -259,6 +259,12 @@
 			redirect($url);
 		}
 
+		function getPageDetails()
+		{
+			$page_id = $this->input->get_post('pageid', TRUE);
+			$this->Pages_model->getAjaxPagedata($this->user_id, $page_id);
+		}
+
 		function pageUpdate()
 		{
 			$this->load->library('form_validation');
@@ -303,9 +309,8 @@
 				$parentpage   = (string)$this->input->post('parentpage', TRUE);
 				$uid          = $this->user_id;
 				$siteid       = $this->siteid;
-				$redirect     = "/client/index";
 
-				$this->Pages_model->updatePage($pageid, $pagename, $pageheadline, $pagecontent, $parentpage, $uid, $siteid, $redirect);
+				$this->Pages_model->updatePage($pageid, $pagename, $pageheadline, $pagecontent, $parentpage, $uid, $siteid);
 
 				$this->save_routes();
 			}
@@ -367,7 +372,6 @@
 		{
 
 			$items = $this->input->post('item');
-			echo '<br/>Items2:' . var_dump($items);
 			$total_items = count($this->input->post('item'));
 
 			for ($item = 0; $item < $total_items; $item++) {
@@ -381,8 +385,6 @@
 
 				$this->db->update('pages', $data);
 
-//			echo '<br />'.$this->db->last_query();
-
 			}
 
 
@@ -393,12 +395,14 @@
 		{
 
 			// this simply returns all the pages from my database
-			$routes = $this->Pages_model->get_all($this->siteid);
+			$routes = $this->Pages_model->getPageList($this->siteid);
 
 			// write out the PHP array to the file with help from the file helper
 			if (!empty($routes)) {
 				// for every page in the database, get the route using the recursive function - _get_route()
 				foreach ($routes->result_array() as $route) {
+					var_dump($route);
+
 					$data[] = '$route["' . $this->_get_route($route['pageid']) . '"] = "' . "pages/index/{$route['sectionid']}/{$route['pageid']}" . '";';
 				}
 
@@ -416,6 +420,7 @@
 // it will also check for parent pages for hierarchical urls
 		private function _get_route($id)
 		{
+
 			// get the page from the db using it's id
 			$page = $this->Pages_model->get_page($id);
 
