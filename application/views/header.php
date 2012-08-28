@@ -10,7 +10,7 @@
     <div id="tagline" class="row">
         <div id="topmenu" class="six columns offset-by-three menu">
 			<nav>
-				<ul class="pagelist sf-menu">
+				<ul class="menu sf-menu">
 					<?php
 					 echo $navigation;
 					 ?>
