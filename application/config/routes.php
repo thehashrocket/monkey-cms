@@ -38,8 +38,8 @@
 |
 */
 
-$route['default_controller'] = "welcome";
-$route['404_override'] = '';
+$route['default_controller'] = "pages";  //was 'welcome'
+include_once APPPATH . "cache/routes.php";
 
 
 /* End of file routes.php */
