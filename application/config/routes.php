@@ -37,9 +37,8 @@
 | in the URL cannot be matched to a valid route.
 |
 */
+
 $route['default_controller'] = "pages";  //was 'welcome'
-
-
 
 include_once APPPATH . "cache/routes.php";
 

@@ -14,6 +14,7 @@
 | path to your installation.
 |
 */
+
 $config['base_url'] = "http".((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "s" : "")."://".$_SERVER['HTTP_HOST'].str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER['SCRIPT_NAME']);
 
 /*
@@ -224,7 +225,9 @@ $config['cache_path'] = '';
 | MUST set an encryption key.  See the user guide for info.
 |
 */
-$config['encryption_key'] = 'W4|rc6jU4+Kn241y<1JJ4T813175~6q^6tVU6K1_7;22m8B6N7G"R|665#7H';
+
+$config['encryption_key'] = 'G57756M2yI53656Q4i5H6N7S2qc7iH';
+
 
 /*
 |--------------------------------------------------------------------------
@@ -293,6 +296,7 @@ $config['global_xss_filtering'] = FALSE;
 | 'csrf_cookie_name' = The cookie name
 | 'csrf_expire' = The number in seconds the token should expire.
 */
+
 $config['csrf_protection'] = TRUE;
 $config['csrf_token_name'] = 'csrf_test_name';
 $config['csrf_cookie_name'] = 'csrf_cookie_name';
@@ -356,6 +360,7 @@ $config['rewrite_short_tags'] = FALSE;
 |
 */
 $config['proxy_ips'] = '';
+
 
 /*
 |--------------------------------------------------------------------------

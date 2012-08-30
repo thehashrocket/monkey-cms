@@ -48,10 +48,10 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'axis41';
-$db['default']['password'] = '';
-$db['default']['database'] = 'monkeydb';
+$db['default']['hostname'] = 'mysql-shared-02.phpfog.com';
+$db['default']['username'] = 'jason-96-55499';
+$db['default']['password'] = 'Fj35J03j94iq';
+$db['default']['database'] = 'testosm_phpfogapp_com';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
@@ -63,6 +63,7 @@ $db['default']['dbcollat'] = 'utf8_general_ci';
 $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
+
 
 $db['live']['hostname'] = 'localhost';
 $db['live']['username'] = 'jshultz_jshultzd';
@@ -79,7 +80,6 @@ $db['live']['dbcollat'] = 'utf8_general_ci';
 $db['live']['swap_pre'] = '';
 $db['live']['autoinit'] = TRUE;
 $db['live']['stricton'] = FALSE;
-
 
 /* End of file database.php */
 /* Location: ./application/config/database.php */

@@ -67,6 +67,7 @@ $autoload['libraries'] = array('database','email');
 $autoload['helper'] = array('form','url','email');
 
 
+
 /*
 | -------------------------------------------------------------------
 |  Auto-load Config files
@@ -110,7 +111,6 @@ $autoload['language'] = array();
 */
 
 $autoload['model'] = array('domain_model');
-
 
 /* End of file autoload.php */
 /* Location: ./application/config/autoload.php */
