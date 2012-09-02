@@ -22,18 +22,21 @@ body { font-size: 14px; font-size: 1.4rem; } /* =14px */
 body {
     margin: 0;
     padding: 0;
-    background: url('../images/site-images/body-bg.png') repeat-x center top;
+     background: url("../images/site-images/back_top.jpg") no-repeat scroll 50% 0 #45BCE8;
 }
 
 #wrapper {
+
 }
 
 h1, h2, h3, h4, p {
     color: black;
+
 }
 
 #header {
-    background: url('../images/site-images/bkg_header.jpg') repeat-y center top;
+    height: 87px;
+    background: #ffffff;
 }
 
 #header .logo {
@@ -134,96 +137,131 @@ h1, h2, h3, h4, p {
     margin-top: .55rem;
 }
 
-#tagline {
-    height: 20px;
-    background-color: #111111;
-    border-top: white solid 2px;
-    border-bottom: white solid 2px;
+#tabs-4.pageeditor ul.pagelist {
+    background-color: #6495ed;
 }
 
-#tagline p {
-    vertical-align: middle;
-    font-size: 10px;
-    font-size: 1.0rem;
-    color: white;
-    margin-top: 2px;
-    margin-top: .25rem;
+#tabs-4.pageeditor ul.pagelist li {
+    float: left;
+    margin: 1px;
+    padding: 2px 5px;
+    background-color: #6495ed;
+    border: 1px #00008b dashed;
 }
 
+#tabs-4.pageeditor ul.pagelist li:hover {
+    float: left;
+    margin: 1px;
+    padding: 2px 5px;
+    background-color: #008b8b;
+    border: 1px #00008b dashed;
+}
+
+/* -----------------------------------------
+   Featured Content
+----------------------------------------- */
+
+#featured {
+    height: 190px;
+    background: #ffffff;
+}
+
+#featured #s1 {
+
+}
+
+#featured #s1 img {
+    width: 980px;
+}
 
 /* -----------------------------------------
    Main Navigation
 ----------------------------------------- */
 
-#submenu {
-    background: #ffffff url('../images/site-images/menu.png') no-repeat center top;
-    height: 30px;
-}
-
 #topmenu {
+    background: url("../images/site-images/back_menu.png") repeat-x scroll 0 0 transparent;
+    height: 35px;
     z-index: 9999;
     position: relative;
-    top: 10px;
-    background-color: #a0ac62;
     -khtml-border-radius: 3px;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
+    margin-left: 0;
 }
 
-#metamenu ul, #topmenu ul {
-    list-style-type: none;
-}
-#topmenu ul {
-    margin-left: 35px;
-}
-#metamenu ul {
-    margin-top: 4px;
-}
-
-#metamenu ul li, #topmenu ul li {
+#topmenu li {
+    background: url("../images/site-images/sep1.png") no-repeat scroll 100% 6px transparent;
+    display: block;
     float: left;
+    padding: 2px 2px 0 0;
     position: relative;
-    overflow: hidden;
-    margin-bottom: 0;
 }
-
-#metamenu ul li a, #topmenu ul li a {
-    font-size: 12px;
-    font-size: 1.15rem;
-    padding: 0 12px 0 12px;
-    color: #000;
-    text-transform: capitalize;
+#topmenu ul li ul li {
+    background: #003B54;
+} 
+#topmenu li.last {
+    background: none repeat scroll 0 0 transparent;
+}
+#topmenu li a, #topmenu li a:link, #topmenu li a:visited {
+    color: #FFFFFF;
+    display: inline;
+    float: left;
+    font-size: 1.2em;
+    font-weight: bold;
+    height: 24px;
+    padding: 7px 20px 0;
+    text-transform: uppercase;
+}
+#topmenu li a:hover, #placemainmenu #topmenu li:hover a, #placemainmenu #topmenu li:hover a:link, #placemainmenu #topmenu li:hover a:visited, #topmenu li.active a, #topmenu li.active a:link, #topmenu li.active a:visited {
+    background: none repeat scroll 0 0 #004863;
     text-decoration: none;
 }
-
-#metamenu ul li a:hover, #topmenu ul li a:hover {
-    text-decoration: underline;
+#placemainmenu #topmenu ul a {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    text-align: left;
+}
+#placemainmenu ul ul {
+    background: url("../images/site-images/back_popup.png") repeat-x scroll 0 0 #003B54;
+    display: none;
+    left: 0;
+    margin: 31px 0 0;
+    padding: 10px 0;
+    position: absolute;
+    width: 167px;
+    z-index: 500;
+}
+#placemainmenu ul li ul li {
+    background: url("../images/site-images/borderpopup.png") no-repeat scroll 50% 100% #003B54;
+    display: block;
+    float: none;
+    height: 24px;
+    padding: 2px 0 0;
+}
+#placemainmenu ul li ul li.last {
+    background: none repeat scroll 0 0 transparent;
+}
+#placemainmenu #topmenu li:hover ul li a, #placemainmenu #topmenu li:hover ul li a:link, #placemainmenu #topmenu li:hover ul li a:visited {
+    background: none repeat scroll 0 0 transparent;
+    color: #ADADAD;
+    display: block;
+    font-size: 1.1em;
+    height: 14px;
+    padding: 2px 20px 0;
+    text-transform: none;
+}
+#placemainmenu #topmenu li:hover ul li a:hover, #placemainmenu #topmenu li ul li a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+div#placemainmenu li:hover ul ul, div#placemainmenu li li:hover ul ul {
+    display: none;
+}
+div#placemainmenu li:hover ul, div#placemainmenu li li:hover ul {
+    display: block;
 }
 
-/* -----------------------------------------
-   Shared Styles
------------------------------------------ */
-
-#tabs-4.pageeditor ul.pagelist {
-	background-color: #6495ed;
-}
-
-#tabs-4.pageeditor ul.pagelist li {
-	float: left;
-	margin: 1px;
-	padding: 2px 5px;
-	background-color: #6495ed;
-	border: 1px #00008b dashed;
-}
-
-#tabs-4.pageeditor ul.pagelist li:hover {
-	float: left;
-	margin: 1px;
-	padding: 2px 5px;
-	background-color: #008b8b;
-	border: 1px #00008b dashed;
-}
 
 /* -----------------------------------------
    Gallery

@@ -23,6 +23,15 @@
 		  $this->load->view($page);
 		  $this->load->view('footer');
 ?>
+<script type="text/javascript">
+	$(function() {
+		$('#s1').cycle({ 
+			fx:    'fade', 
+			delay: 2000,
+			timeout: 4000
+		});
+	});
+	</script>
 </body>
 
 
