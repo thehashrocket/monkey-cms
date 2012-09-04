@@ -66,9 +66,9 @@ $db['live']['stricton'] = FALSE;
 
 
 $db['develop']['hostname'] = 'localhost';
-$db['develop']['username'] = 'root';
+$db['develop']['username'] = 'axis41';
 $db['develop']['password'] = '';
-$db['develop']['database'] = 'jshultz_jshultzdb';
+$db['develop']['database'] = 'monkeydb';
 $db['develop']['dbdriver'] = 'mysql';
 $db['develop']['dbprefix'] = '';
 $db['develop']['pconnect'] = TRUE;

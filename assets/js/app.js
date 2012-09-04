@@ -48,7 +48,8 @@ jQuery(document).ready(function ($) {
 			type: "POST",
 			data: $('#pageForm').serialize(),
 			success: function(feedback){
-				console.log('success');
+				console.log('Page Updated');
+				updatePageList();
 			}
 		});
 
@@ -83,7 +84,7 @@ jQuery(document).ready(function ($) {
 			data: data,
 			dataType: 'json',
 			success: function(data) {
-				updatePage(data)
+				updatePage(data);
 			}
 		})
 		}
@@ -92,13 +93,35 @@ jQuery(document).ready(function ($) {
 	});
 
 	function updatePage(data) {
-		console.log(data);
 		$('input[name="pageid"]').val(data.pageid);
 		$('input[name="userid"]').val(data.userid);
 		$('input[name="pagename"]').val(data.page_name);
 		$('input[name="pageheadline"]').val(data.page_headline);
 		$('textarea[name="pagecontent"]').val(data.page_content);
 		CKEDITOR.instances['pagededitor'].setData(data.page_content);
+	}
+
+	function updatePageList() {
+		console.log('Entered updatePageList');
+		$.ajax({
+			url:"/pages/getPageList/",
+			type: "POST",
+			success: function(feedback) {
+				data = $.parseJSON(feedback);
+				$('ul#reorder').empty();
+
+				$('ul#reorder').append('<li class="twelve columns"><a href="/client/index/1/0">Create A Page</li>');
+				var items = []
+				$.each(data, function(){
+					items.push('<li id="item-' + this.pageid + '" class="twelve columns"><a href="client/index/' + this.userid + '/' + this.pageid +'">' + this.page_name + '</a></li>');
+				});
+
+				$('ul#reorder').append( items.join ('') );
+
+
+				console.log('Page List Updated');
+			}
+		})
 	}
 
 	jQuery('ul.sf-menu').superfish();

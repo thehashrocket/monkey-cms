@@ -14,6 +14,7 @@
 			$this->load->library('Treeview');
 			$this->load->model('Pages_model');
 			$this->siteid = $this->domain_model->getUID();
+			$siteid = $this->domain_model->getUID();
 			if (!$this->ion_auth->logged_in()) {
 				$this->login     = 'false';
 				$this->user_id   = '';
@@ -41,6 +42,10 @@
 			$data['page']          = 'pages/home';
 			$this->load->view('container', $data);
 		}
+
+		public function getPageList() {
+			$this->Pages_model->getSidebarPageList($this->siteid);
+	}
 
 
 	}
