@@ -208,18 +208,6 @@
 		// Receives input from /client/index
 		function gallery_up()
 		{
-//        $strlen = strlen((string)$this->input->post('pledgeid'));
-//
-//        if($strlen == 0)
-//        {
-//            $project_id = $this->Gallery_model->get_project_id();
-//            $pledge_id = '';
-//        } else
-//        {
-//            $pledge_id = (string)$this->input->post('pledgeid');
-//            $project_id = '';
-//        }
-
 			$config = array(
 				'allowed_types' => 'jpg|jpeg|gif|png',
 				'upload_path'   => $this->gallery_path,

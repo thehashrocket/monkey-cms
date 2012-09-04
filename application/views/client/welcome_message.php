@@ -340,13 +340,14 @@
 					<div class="twelve columns">
 						<nav>
 							<ul id="reorder" class="pagelist">
+								<li class="twelve columns"><a href="/client/index/<?= $user_id ?>/0">Create A Page</li>
 								<?php
 								if (isset($pagelist) && count($pagelist) > 0) :
 									foreach ($pagelist->result() as $row):
 										?>
 										<li id="item-<?= $row->pageid ?>" class="twelve columns"><a href="/client/index/<?= $user_id ?>/<?= $row->pageid ?>"><?php echo $row->page_name ?></a></li>
 										<?php endforeach; else: ?>
-									<tr>No Pages Added</tr>
+									<li>No Pages Added</li>
 									<?php endif; ?>
 							</ul>
 						</nav>
