@@ -64,7 +64,20 @@ jQuery(document).ready(function ($) {
 		data = 'csrf_test_name=' + $.cookie('csrf_cookie_name') + '&';
 		data += 'pageid=' + pageid;
 
-		$.ajax({
+		if (pageid == 0) {
+
+			var data = {};
+
+			data.pageid = 0;
+			data.userid = pathname[pathname.length-2];
+			data.page_name = 'Insert Page Name Here';
+			data.page_headline = "New Page Headline Goes Here";
+			data.page_content = "Insert Page Content Here";
+
+			updatePage(data)
+
+		} else {
+			$.ajax({
 			url:"/client/getPageDetails/",
 			type: "POST",
 			data: data,
@@ -73,19 +86,20 @@ jQuery(document).ready(function ($) {
 				updatePage(data)
 			}
 		})
+		}
 
 		return false;
 	});
 
 	function updatePage(data) {
+		console.log(data);
 		$('input[name="pageid"]').val(data.pageid);
 		$('input[name="userid"]').val(data.userid);
 		$('input[name="pagename"]').val(data.page_name);
 		$('input[name="pageheadline"]').val(data.page_headline);
 		$('textarea[name="pagecontent"]').val(data.page_content);
+		CKEDITOR.instances['pagededitor'].setData(data.page_content);
 	}
-
-
 
 	jQuery('ul.sf-menu').superfish();
 
