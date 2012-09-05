@@ -409,9 +409,13 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="twelve columns">
+					<div class="two columns">
 						<INPUT TYPE="IMAGE" SRC="/assets/images/icons/save-icon-32.png" ALT="Submit button">
 					</div>
+					<div class="two columns">
+						<a class="pagedelete" href="/client/pageDelete/<?= $user_id;?>/<?= $row->pageid ?>"><INPUT TYPE="IMAGE" SRC="/assets/images/icons/delete-icon-32.png" ALT="Delete button"></a>
+					</div>
+					<div class="eight columns last"></div>
 				</div>
 
 				<?= form_fieldset_close()

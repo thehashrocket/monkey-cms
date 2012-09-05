@@ -40,6 +40,34 @@ jQuery(document).ready(function ($) {
         }
     });
 
+    $('a.pagedelete').on('click', function(e){
+    	e.preventDefault();
+    	var pathname = $(this).attr("href").split("/");
+		var pageid = pathname[pathname.length-1];
+
+    	data = 'csrf_test_name=' + $.cookie('csrf_cookie_name') + '&';
+    	data += 'pageid=' + pageid;
+    	$.ajax({
+    		url: "/client/pageDelete",
+    		type: "POST",
+    		data: data,
+    		success: function(feedback){
+    			console.log('Page Deleted');
+    			var data = {};
+
+				data.pageid = 0;
+				data.userid = pathname[pathname.length-2];
+				data.page_name = 'Insert Page Name Here';
+				data.page_headline = "New Page Headline Goes Here";
+				data.page_content = "Insert Page Content Here";
+
+				updatePage(data);
+    			updatePageList();
+    		}
+
+    	})
+    })
+
 	$('#pageForm').on('submit',function(e){
 		e.preventDefault();
 		CKEDITOR.instances.pagededitor.updateElement();
@@ -49,6 +77,17 @@ jQuery(document).ready(function ($) {
 			data: $('#pageForm').serialize(),
 			success: function(feedback){
 				console.log('Page Updated');
+				
+				var pathname = window.location.pathname.split("/");
+				var data = {};
+				data.pageid = 0;
+				data.userid = pathname[pathname.length-2];
+				data.page_name = 'Insert Page Name Here';
+				data.page_headline = "New Page Headline Goes Here";
+				data.page_content = "Insert Page Content Here";
+
+				updatePage(data);
+
 				updatePageList();
 			}
 		});
@@ -94,6 +133,7 @@ jQuery(document).ready(function ($) {
 
 	function updatePage(data) {
 		$('input[name="pageid"]').val(data.pageid);
+		$('a.pagedelete').prop('href', '/client/pageDelete/' + data.userid + '/' + data.pageid);
 		$('input[name="userid"]').val(data.userid);
 		$('input[name="pagename"]').val(data.page_name);
 		$('input[name="pageheadline"]').val(data.page_headline);

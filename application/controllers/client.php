@@ -4,7 +4,6 @@
 	 * User: OpenSkyMedia
 	 * Date: 12/14/11
 	 * Time: 2:24 PM
-
 	 */
 	class Client extends CI_Controller
 	{
@@ -251,6 +250,15 @@
 		{
 			$page_id = $this->input->get_post('pageid', TRUE);
 			$this->Pages_model->getAjaxPagedata($this->user_id, $page_id);
+		}
+
+		function pageDelete()
+		{
+			$uid          = $this->user_id;
+			$siteid       = $this->siteid;
+			$pageid  = (string)$this->input->post('pageid', TRUE);
+			$this->Pages_model->deletePage($uid, $siteid, $pageid);
+			echo 'here i am';
 		}
 
 		function pageUpdate()

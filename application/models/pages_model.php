@@ -7,6 +7,15 @@
 	 */
 	class Pages_model extends CI_Model
 	{
+		function deletePage($uid, $siteid, $pageid)
+		{
+			$userid = $uid;
+			$siteid = $siteid;
+			$pageid = $pageid;
+
+			$this->db->delete('pages', array('pageid'=>$pageid));
+		}
+
 		function getClientPageList($id)
 		{
 			$this->db->select('*')
