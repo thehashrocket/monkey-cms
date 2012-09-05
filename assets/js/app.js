@@ -40,6 +40,7 @@ jQuery(document).ready(function ($) {
         }
     });
 
+	/* Delete Page and remove item from pagelist */
     $('a.pagedelete').on('click', function(e){
     	e.preventDefault();
     	var pathname = $(this).attr("href").split("/");
@@ -53,23 +54,31 @@ jQuery(document).ready(function ($) {
     		data: data,
     		success: function(feedback){
     			console.log('Page Deleted');
-    			var data = {};
+    			var newdata = {};
 
-				data.pageid = 0;
-				data.userid = pathname[pathname.length-2];
-				data.page_name = 'Insert Page Name Here';
-				data.page_headline = "New Page Headline Goes Here";
-				data.page_content = "Insert Page Content Here";
+				newdata.pageid = 0;
+				newdata.userid = pathname[pathname.length-2];
+				newdata.page_name = 'Insert Page Name Here';
+				newdata.page_headline = "New Page Headline Goes Here";
+				newdata.page_content = "Insert Page Content Here";
 
-				updatePage(data);
-    			updatePageList();
+				updatePage(newdata);
+
+				console.log(pageid);
+
+				$('#item-' + pageid).fadeOut( function() { $(this).remove(); } );
+
+//    			updatePageList();
     		}
 
     	})
     })
 
+	/* Create a New Page or update an existing one */
 	$('#pageForm').on('submit',function(e){
 		e.preventDefault();
+
+		var pageid = $('input[name="pageid"]').val();
 		CKEDITOR.instances.pagededitor.updateElement();
 		$.ajax({
 			url: "/client/pageUpdate",
@@ -88,6 +97,12 @@ jQuery(document).ready(function ($) {
 
 				updatePage(data);
 
+				if (pageid == 0) {
+					console.log('it equaled zero');
+				} else {
+					console.log('it didnt');
+				}
+
 				updatePageList();
 			}
 		});
@@ -95,12 +110,14 @@ jQuery(document).ready(function ($) {
 		return false;
 	});
 
+	/* The PageList Sidebar */
 	$('.pagelist').find('li').find('a').on('click', function(e){
 
 		e.preventDefault();
 
 		var pathname = $(this).attr("href").split("/");
 		var pageid = pathname[pathname.length-1];
+		var linkid = $(this).closest('li').attr('id');
 		data = 'csrf_test_name=' + $.cookie('csrf_cookie_name') + '&';
 		data += 'pageid=' + pageid;
 
@@ -131,6 +148,7 @@ jQuery(document).ready(function ($) {
 		return false;
 	});
 
+	/* Resets the Page Editor form */
 	function updatePage(data) {
 		$('input[name="pageid"]').val(data.pageid);
 		$('a.pagedelete').prop('href', '/client/pageDelete/' + data.userid + '/' + data.pageid);
@@ -141,6 +159,7 @@ jQuery(document).ready(function ($) {
 		CKEDITOR.instances['pagededitor'].setData(data.page_content);
 	}
 
+	/* Rebuilds the PageList sidebar */
 	function updatePageList() {
 		console.log('Entered updatePageList');
 		$.ajax({
@@ -165,6 +184,9 @@ jQuery(document).ready(function ($) {
 	}
 
 	jQuery('ul.sf-menu').superfish();
+
+
+
 
 	/* Use this js doc for all application specific JS */
 

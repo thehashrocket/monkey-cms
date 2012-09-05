@@ -215,7 +215,17 @@
 				);
 				$this->db->insert('pages', $data);
 
+				$lastid = $this->db->insert_id();
+
+				$this->db->select();
+				$this->db->from('pages');
+				$this->db->where('pageid', $lastid);
+				$query = $this->db->get();
+				echo json_encode($query->result_array());
+
 			}
+
+
 		}
 
 		function updatePageOrderList($postitems, $redirect)
