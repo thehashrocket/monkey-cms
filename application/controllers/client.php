@@ -308,7 +308,7 @@
 
 				$this->Pages_model->updatePage($pageid, $pagename, $pageheadline, $pagecontent, $parentpage, $uid, $siteid);
 
-				$this->save_routes();
+//				$this->save_routes();
 			}
 		}
 

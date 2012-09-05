@@ -98,12 +98,29 @@ jQuery(document).ready(function ($) {
 				updatePage(data);
 
 				if (pageid == 0) {
-					console.log('it equaled zero');
+
+					data = $.parseJSON(feedback);
+					console.log(data);
+
+					$('ul#reorder').append('<li id="item-' + this.pageid + '" class="twelve columns"><a href="client/index/' + this.userid + '/' + this.pageid +'">' + this.page_name + '</a></li>');
+
 				} else {
-					console.log('it didnt');
+					updatePageList();
 				}
 
-				updatePageList();
+				$.ajax({
+					url:"/client/save_routes",
+					type: "POST",
+					success: function(){
+						console.log('routes updated');
+					},
+					failure: function(){
+						console.log('routes not updated');
+					}
+
+				})
+
+
 			}
 		});
 
