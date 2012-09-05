@@ -383,7 +383,6 @@
 
 			}
 
-
 			$this->save_routes();
 		}
 
@@ -397,7 +396,6 @@
 			if (!empty($routes)) {
 				// for every page in the database, get the route using the recursive function - _get_route()
 				foreach ($routes->result_array() as $route) {
-					var_dump($route);
 
 					$data[] = '$route["' . $this->_get_route($route['pageid']) . '"] = "' . "pages/index/{$route['sectionid']}/{$route['pageid']}" . '";';
 				}
