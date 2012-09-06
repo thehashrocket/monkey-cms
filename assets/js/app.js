@@ -83,6 +83,7 @@ jQuery(document).ready(function ($) {
 		$.ajax({
 			url: "/client/pageUpdate",
 			type: "POST",
+			dataType: 'json',
 			data: $('#pageForm').serialize(),
 			success: function(feedback){
 				console.log('Page Updated');
@@ -99,10 +100,7 @@ jQuery(document).ready(function ($) {
 
 				if (pageid == 0) {
 
-					data = $.parseJSON(feedback);
-					console.log(data);
-
-					$('ul#reorder').append('<li id="item-' + this.pageid + '" class="twelve columns"><a href="client/index/' + this.userid + '/' + this.pageid +'">' + this.page_name + '</a></li>');
+					$('ul#reorder').append('<li id="item-' + feedback[0].pageid + '" class="twelve columns"><a href="client/index/' + feedback[0].userid + '/' + feedback[0].pageid +'">' + feedback[0].page_name + '</a></li>').fadeIn("slow");
 
 				} else {
 					updatePageList();

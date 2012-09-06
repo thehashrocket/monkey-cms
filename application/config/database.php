@@ -66,7 +66,7 @@ $db['live']['stricton'] = FALSE;
 
 
 $db['develop']['hostname'] = 'localhost';
-$db['develop']['username'] = 'axis41';
+$db['develop']['username'] = 'root';
 $db['develop']['password'] = '';
 $db['develop']['database'] = 'monkeydb';
 $db['develop']['dbdriver'] = 'mysql';
