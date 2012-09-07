@@ -45,7 +45,7 @@
 | the active record class
 */
 
-$active_group = 'develop';
+$active_group = 'live';
 $active_record = TRUE;
 
 $db['live']['hostname'] = 'mysql-shared-02.phpfog.com';

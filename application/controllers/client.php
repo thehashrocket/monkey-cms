@@ -54,7 +54,11 @@
 
 					//Optionnal values
 					'config'  => array(
-						'toolbar'     => "Basic", //Using the Full toolbar
+						// 'toolbar'     => "Basic", //Using the Full toolbar
+						'toolbar'		=> array(
+							array('Bold', 'Italic', '-', 'NumberedList', 'BulletedList', '-', 'Link', 'Unlink','-','About'),
+							array('Image','Flash','Table','HorizontalRule','Smiley','SpecialChar','PageBreak','Iframe')
+							),
 						'width'       => "550px", //Setting a custom width
 						'height'      => '500px', //Setting a custom height
 
