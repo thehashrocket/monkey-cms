@@ -45,13 +45,13 @@
 | the active record class
 */
 
-$active_group = 'live';
+$active_group = 'develop';
 $active_record = TRUE;
 
-$db['live']['hostname'] = '';
-$db['live']['username'] = '';
-$db['live']['password'] = '';
-$db['live']['database'] = '';
+$db['live']['hostname'] = 'mysql-shared-02.phpfog.com';
+$db['live']['username'] = 'jason-96-55499';
+$db['live']['password'] = 'Fj35J03j94iq';
+$db['live']['database'] = 'testosm_phpfogapp_com';
 $db['live']['dbdriver'] = 'mysql';
 $db['live']['dbprefix'] = '';
 $db['live']['pconnect'] = TRUE;
@@ -65,10 +65,10 @@ $db['live']['autoinit'] = TRUE;
 $db['live']['stricton'] = FALSE;
 
 
-$db['develop']['hostname'] = '';
-$db['develop']['username'] = '';
+$db['develop']['hostname'] = 'localhost';
+$db['develop']['username'] = 'axis41';
 $db['develop']['password'] = '';
-$db['develop']['database'] = '';
+$db['develop']['database'] = 'monkeydb';
 $db['develop']['dbdriver'] = 'mysql';
 $db['develop']['dbprefix'] = '';
 $db['develop']['pconnect'] = TRUE;
