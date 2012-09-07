@@ -56,6 +56,7 @@
 					'config'  => array(
 						// 'toolbar'     => "Basic", //Using the Full toolbar
 						'toolbar'		=> array(
+							array('Source','-','Save','NewPage','DocProps','Preview','Print','-','Templates'),
 							array('Bold', 'Italic', '-', 'NumberedList', 'BulletedList', '-', 'Link', 'Unlink','-','About'),
 							array('Image','Flash','Table','HorizontalRule','Smiley','SpecialChar','PageBreak','Iframe')
 							),

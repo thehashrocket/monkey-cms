@@ -126,7 +126,10 @@
 			);
 
 			$query = $this->db->get_where('pages', $data);
+
+
 			$row   = $query->row();
+
 			$num   = $query->num_rows();
 
 			if ($num < 1) {
@@ -135,6 +138,7 @@
 			} else {
 
 				return $row;
+
 			}
 
 		}

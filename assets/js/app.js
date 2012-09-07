@@ -79,7 +79,8 @@ jQuery(document).ready(function ($) {
 		e.preventDefault();
 
 		var pageid = $('input[name="pageid"]').val();
-		CKEDITOR.instances.pagededitor.updateElement();
+		for ( instance in CKEDITOR.instances )
+            CKEDITOR.instances[instance].updateElement();
 		$.ajax({
 			url: "/client/pageUpdate",
 			type: "POST",
