@@ -23,22 +23,8 @@ jQuery(document).ready(function ($) {
 		});
 	});
 
-    $('#reorder').sortable({
-        opacity: '0.5',
-        update: function(e, ui){
-            newOrder = 'csrf_test_name=' + $.cookie('csrf_cookie_name') + '&';
-            newOrder += $( "#reorder" ).sortable('serialize');
-            console.log(newOrder);
-            $.ajax({
-                url: "/client/saveOrder",
-                type: "POST",
-                data: newOrder,
-                success: function(feedback){
-                    console.log('success');
-                }
-            });
-        }
-    });
+	sortableSideList();
+	makeListClickable();
 
 	/* Delete Page and remove item from pagelist */
     $('a.pagedelete').on('click', function(e){
@@ -68,14 +54,15 @@ jQuery(document).ready(function ($) {
 
 				$('#item-' + pageid).fadeOut( function() { $(this).remove(); } );
 
-//    			rebuildPageList();
+				sortableSideList();
+   				makeListClickable();
     		}
 
     	})
     })
 
 	/* Create a New Page or update an existing one */
-	$('#pageForm').on('submit',function(e){
+	$('#pageForm').submit(function(e){
 		e.preventDefault();
 
 		var pageid = $('input[name="pageid"]').val();
@@ -102,9 +89,14 @@ jQuery(document).ready(function ($) {
 				if (pageid == 0) {
 
 					$('ul#reorder').append('<li id="item-' + feedback[0].pageid + '" class="twelve columns"><a href="client/index/' + feedback[0].userid + '/' + feedback[0].pageid +'">' + feedback[0].page_name + '</a></li>').fadeIn("slow");
+					rebuildPageList();
+					sortableSideList();
+					makeListClickable();
 
 				} else {
 					rebuildPageList();
+					sortableSideList();
+					makeListClickable();
 				}
 
 				$.ajax({
@@ -112,6 +104,9 @@ jQuery(document).ready(function ($) {
 					type: "POST",
 					success: function(){
 						console.log('routes updated');
+						rebuildPageList();
+						sortableSideList();
+						makeListClickable();
 					},
 					failure: function(){
 						console.log('routes not updated');
@@ -124,45 +119,7 @@ jQuery(document).ready(function ($) {
 		});
 
 		return false;
-	});
-
-	/* The PageList Sidebar */
-	$('.pagelist').find('li').find('a').on('click', function(e){
-
-		e.preventDefault();
-
-		var pathname = $(this).attr("href").split("/");
-		var pageid = pathname[pathname.length-1];
-		var linkid = $(this).closest('li').attr('id');
-		data = 'csrf_test_name=' + $.cookie('csrf_cookie_name') + '&';
-		data += 'pageid=' + pageid;
-
-		if (pageid == 0) {
-
-			var data = {};
-
-			data.pageid = 0;
-			data.userid = pathname[pathname.length-2];
-			data.page_name = 'Insert Page Name Here';
-			data.page_headline = "New Page Headline Goes Here";
-			data.page_content = "Insert Page Content Here";
-
-			resetPageForm(data)
-
-		} else {
-			$.ajax({
-			url:"/client/getPageDetails/",
-			type: "POST",
-			data: data,
-			dataType: 'json',
-			success: function(data) {
-				resetPageForm(data);
-			}
-		})
-		}
-
-		return false;
-	});
+	});	
 
 	/* Resets the Page Editor form */
 	function resetPageForm(data) {
@@ -201,7 +158,66 @@ jQuery(document).ready(function ($) {
 
 	jQuery('ul.sf-menu').superfish();
 
+	/* Sortable Lists - This let's you sort the list and reorder the pages */
 
+   function sortableSideList() {
+   	 $('#reorder').sortable({
+        opacity: '0.5',
+        update: function(e, ui){
+            newOrder = 'csrf_test_name=' + $.cookie('csrf_cookie_name') + '&';
+            newOrder += $( "#reorder" ).sortable('serialize');
+            console.log(newOrder);
+            $.ajax({
+                url: "/client/saveOrder",
+                type: "POST",
+                data: newOrder,
+                success: function(feedback){
+                    console.log('success');
+                }
+            });
+        }
+    });
+   }
+
+   /* The PageList Sidebar - Makes the List Items clickable */
+	function makeListClickable() {
+		$('.pagelist').on('click','a', function(e){
+
+		e.preventDefault();
+
+		var pathname = $(this).attr("href").split("/");
+		var pageid = pathname[pathname.length-1];
+		var linkid = $(this).closest('li').attr('id');
+		data = 'csrf_test_name=' + $.cookie('csrf_cookie_name') + '&';
+		data += 'pageid=' + pageid;
+
+		if (pageid == 0) {
+
+			var data = {};
+
+			data.pageid = 0;
+			data.userid = pathname[pathname.length-2];
+			data.page_name = 'Insert Page Name Here';
+			data.page_headline = "New Page Headline Goes Here";
+			data.page_content = "Insert Page Content Here";
+
+			resetPageForm(data)
+
+		} else {
+			$.ajax({
+			url:"/client/getPageDetails/",
+			type: "POST",
+			data: data,
+			dataType: 'json',
+			success: function(data) {
+				resetPageForm(data);
+			}
+		})
+		}
+
+		return false;
+	});
+	}
 
 
 	/* Use this js doc for all application specific JS */
@@ -299,3 +315,5 @@ jQuery(document).ready(function ($) {
 	/* Gives elements with a class of 'disabled' a return: false; */
   
 });
+
+	
