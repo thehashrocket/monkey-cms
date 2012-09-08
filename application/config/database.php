@@ -65,10 +65,10 @@ $db['live']['autoinit'] = TRUE;
 $db['live']['stricton'] = FALSE;
 
 
-$db['develop']['hostname'] = '';
-$db['develop']['username'] = '';
+$db['develop']['hostname'] = 'localhost';
+$db['develop']['username'] = 'root';
 $db['develop']['password'] = '';
-$db['develop']['database'] = '';
+$db['develop']['database'] = 'monkeydb';
 $db['develop']['dbdriver'] = 'mysql';
 $db['develop']['dbprefix'] = '';
 $db['develop']['pconnect'] = TRUE;
