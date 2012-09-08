@@ -268,6 +268,7 @@
 
 		function pageUpdate()
 		{
+				$this->load->helper('htmlpurifier');
 				$strlen = strlen((string)$this->input->post('pageid'));
 
 				if ($strlen == 0) {
@@ -277,7 +278,7 @@
 				}
 				$pagename     = (string)$this->input->post('pagename', TRUE);
 				$pageheadline = (string)$this->input->post('pageheadline', TRUE);
-				$pagecontent  = (string)$this->input->post('pagecontent', FALSE);
+				$pagecontent  = html_purify($this->input->post('pagecontent', FALSE));
 				$parentpage   = (string)$this->input->post('parentpage', TRUE);
 				$sectionid		= '1'; // TODO: I need to create support for sections/categories.
 				$uid          = $this->user_id;
