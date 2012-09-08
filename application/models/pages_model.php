@@ -185,7 +185,7 @@
 			}
 		}
 
-		function updatePage($pageid, $pagename, $pageheadline, $pagecontent, $parentpage, $uid, $siteid)
+		function updatePage($pageid, $pagename, $pageheadline, $pagecontent, $parentpage, $sectionid, $uid, $siteid)
 		{
 			$user = $this->user_id;
 
@@ -200,6 +200,7 @@
 					'page_headline'    => $pageheadline,
 					'page_content'     => $pagecontent,
 					'parentid'         => $parentpage,
+					'sectionid'			=> $sectionid,
 					'userid'           => $uid,
 					'siteid'           => $siteid,
 					'pageid'           => $pageid
@@ -214,6 +215,7 @@
 					'page_headline'    => $pageheadline,
 					'page_content'     => $pagecontent,
 					'parentid'         => $parentpage,
+					'sectionid'			=> $sectionid,
 					'userid'           => $uid,
 					'siteid'           => $siteid
 				);

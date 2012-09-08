@@ -268,35 +268,6 @@
 
 		function pageUpdate()
 		{
-			$this->load->library('form_validation');
-			$this->form_validation->set_error_delimiters('<div class="alert-box error">', '</div>');
-
-			$this->form_validation->set_rules('pagename', 'Page Name', 'required|trim');
-			$this->form_validation->set_rules('pageheadline', 'Page Headline', 'required|trim');
-			$this->form_validation->set_rules('pagecontent', 'Page Content', 'required|trim');
-
-			if ($this->form_validation->run() == FALSE) {
-				$proj_id               = $this->Client_model->get_project_id();
-				$data['login']         = $this->login;
-				$data['user_id']       = $this->user_id;
-				$data['username']      = $this->user_name;
-				$data['navigation']     = $this->treeview->buildmenu();
-				$data['photos']        = $this->Gallery_model->profile_get_images_from_db($proj_id);
-				$data['projdata']      = $this->Projects_model->getProjectProfile($this->user_id);
-				$data['pledgedata']    = $this->Projects_model->getPledgeProfile($this->user_id);
-				$data['clientdata']    = $this->Client_model->getClientProfile($this->user_id);
-				$data['pagelist']      = $this->Pages_model->getClientPageList($this->user_id);
-				$data['faqs']          = $this->Projects_model->getFAQProfile($this->user_id);
-				$data['categories']    = $this->Projects_model->getCategories();
-				$data['page_title']    = $this->domain_model->getSiteTitle($this->siteid);
-				$data['page_desc']     = $this->domain_model->getPageMetaDesc($this->siteid);
-				$data['page_keywords'] = $this->domain_model->getPageMetaKeywords($this->siteid);
-				$data['page_title']    = 'Capital Team: Client Tool';
-				$data['sidebar']       = 'sidebars/small-home-sidebar';
-				$data['page']          = '/client/welcome_message'; // pass the actual view to use as a parameter
-				$this->load->view('container', $data);
-
-			} else {
 				$strlen = strlen((string)$this->input->post('pageid'));
 
 				if ($strlen == 0) {
@@ -306,15 +277,15 @@
 				}
 				$pagename     = (string)$this->input->post('pagename', TRUE);
 				$pageheadline = (string)$this->input->post('pageheadline', TRUE);
-				$pagecontent  = (string)$this->input->post('pagecontent', TRUE);
+				$pagecontent  = (string)$this->input->post('pagecontent', FALSE);
 				$parentpage   = (string)$this->input->post('parentpage', TRUE);
+				$sectionid		= '1'; // TODO: I need to create support for sections/categories.
 				$uid          = $this->user_id;
 				$siteid       = $this->siteid;
 
-				$this->Pages_model->updatePage($pageid, $pagename, $pageheadline, $pagecontent, $parentpage, $uid, $siteid);
+				$this->Pages_model->updatePage($pageid, $pagename, $pageheadline, $pagecontent, $parentpage, $sectionid, $uid, $siteid);
 
 //				$this->save_routes();
-			}
 		}
 
 		function profileUpdate()
