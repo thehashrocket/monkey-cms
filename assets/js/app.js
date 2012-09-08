@@ -62,13 +62,13 @@ jQuery(document).ready(function ($) {
 				newdata.page_headline = "New Page Headline Goes Here";
 				newdata.page_content = "Insert Page Content Here";
 
-				updatePage(newdata);
+				resetPageForm(newdata);
 
 				console.log(pageid);
 
 				$('#item-' + pageid).fadeOut( function() { $(this).remove(); } );
 
-//    			updatePageList();
+//    			rebuildPageList();
     		}
 
     	})
@@ -97,14 +97,14 @@ jQuery(document).ready(function ($) {
 				data.page_headline = "New Page Headline Goes Here";
 				data.page_content = "Insert Page Content Here";
 
-				updatePage(data);
+				resetPageForm(data);
 
 				if (pageid == 0) {
 
 					$('ul#reorder').append('<li id="item-' + feedback[0].pageid + '" class="twelve columns"><a href="client/index/' + feedback[0].userid + '/' + feedback[0].pageid +'">' + feedback[0].page_name + '</a></li>').fadeIn("slow");
 
 				} else {
-					updatePageList();
+					rebuildPageList();
 				}
 
 				$.ajax({
@@ -147,7 +147,7 @@ jQuery(document).ready(function ($) {
 			data.page_headline = "New Page Headline Goes Here";
 			data.page_content = "Insert Page Content Here";
 
-			updatePage(data)
+			resetPageForm(data)
 
 		} else {
 			$.ajax({
@@ -156,7 +156,7 @@ jQuery(document).ready(function ($) {
 			data: data,
 			dataType: 'json',
 			success: function(data) {
-				updatePage(data);
+				resetPageForm(data);
 			}
 		})
 		}
@@ -165,7 +165,7 @@ jQuery(document).ready(function ($) {
 	});
 
 	/* Resets the Page Editor form */
-	function updatePage(data) {
+	function resetPageForm(data) {
 		$('input[name="pageid"]').val(data.pageid);
 		$('a.pagedelete').prop('href', '/client/pageDelete/' + data.userid + '/' + data.pageid);
 		$('input[name="userid"]').val(data.userid);
@@ -176,8 +176,8 @@ jQuery(document).ready(function ($) {
 	}
 
 	/* Rebuilds the PageList sidebar */
-	function updatePageList() {
-		console.log('Entered updatePageList');
+	function rebuildPageList() {
+		console.log('Entered rebuildPageList');
 		$.ajax({
 			url:"/pages/getPageList/",
 			type: "POST",
