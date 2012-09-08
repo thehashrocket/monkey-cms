@@ -3,3 +3,4 @@
 */logs/!index.html
 .idea/*
 */config/databases.php
+/application/config/databases.php
