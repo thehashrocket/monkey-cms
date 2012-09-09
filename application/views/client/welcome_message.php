@@ -436,37 +436,10 @@
 
 	<div class="row">
 		<div class="twelve columns">
-			<?php if (isset($faqs) && count($faqs) > 0): foreach ($faqs->result() as $row): ?>
-			<div class="row">
-				<?= form_open('/client/faqUpdate', 'class=nice');?>
-				<input type="hidden" name="projectid" value="<?= $projdata['idprojects_table'];?>"/>
-				<input type="hidden" name="idfaq_table" value="<?= $row->idfaq_table ?>"/>
-				<input type="hidden" name="userid" value="<?= $user_id;?>"/>
-				<?= form_fieldset();?>
-				<div class="four columns">
-					<textarea rows="2" cols="20" name="question"
-							  placeholder="Question: "><?= $row->question ?></textarea>
-				</div>
-				<div class="four columns">
-					<textarea rows="2" cols="20" name="answer" placeholder="Answer: "><?= $row->answers ?></textarea>
-				</div>
-				<div class="one column">
-					<INPUT TYPE="IMAGE" SRC="/assets/images/icons/save-icon-32.png" ALT="Submit button">
-				</div>
-				<div class="one column">
-					<a href=""><img SRC="/assets/images/icons/delete-icon-32.png" ALT="Delete button"></a>
-				</div>
-				<?= form_fieldset_close();?>
-				<?= form_close();?>
-			</div>
-			<?php endforeach; else: ?>
-			<div class="row">
-				<div><h4>No FAQs have been created!</h4></div>
-			</div>
-
-			<?php endif; ?>
-			<div class="row">
-				<?= form_open('/client/faqUpdate', 'class=nice');?>
+			<ul id="faqlist">
+				<li>
+					<div class="row">
+				<?= form_open('/client/faqUpdate', 'class="nice faqUpdate"');?>
 				<input type="hidden" name="idfaq_table" value=""/>
 				<input type="hidden" name="userid" value="<?= $user_id;?>"/>
 				<?= form_fieldset();?>
@@ -482,6 +455,9 @@
 				<?= form_fieldset_close();?>
 				<?= form_close();?>
 			</div>
+				</li>
+			</ul>
+			
 		</div>
 	</div>
 </div>

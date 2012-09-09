@@ -25,6 +25,7 @@ jQuery(document).ready(function ($) {
 
 	sortableSideList();
 	makeListClickable();
+	getFAQDetails();
 
 	/* Delete Page and remove item from pagelist */
     $('a.pagedelete').on('click', function(e){
@@ -129,7 +130,31 @@ jQuery(document).ready(function ($) {
 		});
 
 		return false;
-	});	
+	});
+
+	/* Get the FAQ details for Control Panel */
+
+	function getFAQDetails() {
+		$.ajax({ 
+			url:"/client/getFAQList/", 
+			type: "POST",
+			success: function(feedback) { 
+				data = $.parseJSON(feedback); 
+				var items = []
+					$('ul#faqlist').empty(); 
+					$('ul#faqlist').append('<li><div class="row"><form><input type="hidden" name="idfaq_table" value=""><input type="hidden" name="userid" value=""><fieldset><div class="four columns"><textarea rows="2" cols="20" name="question" placeholder="FAQ Question:"></textarea></div> <div class="four columns"> <textarea rows="2" cols="20" name="answer" placeholder="FAQ Answer:"></textarea> </div> <div class="two columns"> <INPUT TYPE="IMAGE" SRC="/assets/images/icons/save-icon-32.png" ALT="Submit button"> </div> </fieldset> </form>');
+					$.each(data, function(){
+						items.push('<li> <div class="row"> <form> <input type="hidden" name="idfaq_table" value="' + this.idfaq_table + '"> <input type="hidden" name="userid" value="' + this.userid + '"> <fieldset> <div class="four columns"> <textarea rows="2" cols="20" name="question" placeholder="' + this.question + '"></textarea> </div> <div class="four columns"> <textarea rows="2" cols="20" name="answer" placeholder="' + this.answers + '"></textarea> </div> <div class="two columns"> <INPUT TYPE="IMAGE" SRC="/assets/images/icons/save-icon-32.png" ALT="Submit button"> </div> </fieldset> </form>');
+						console.log(this.question);
+						console.log(this.answers);
+						});
+					$('ul#faqlist').append( items.join ('') );
+				},
+				failure: function(data) {
+				console.log('getFAQDetails Failed');
+			}
+		})
+	}	
 
 	/* Resets the Page Editor form */
 	function resetPageForm(data) {
@@ -150,10 +175,12 @@ jQuery(document).ready(function ($) {
 			type: "POST",
 			success: function(feedback) {
 				data = $.parseJSON(feedback);
+
 				$('ul#reorder').empty();
 
 				$('ul#reorder').append('<li class="twelve columns"><a href="/client/index/1/0">Create A Page</li>');
 				var items = []
+
 				$.each(data, function(){
 					items.push('<li id="item-' + this.pageid + '" class="twelve columns"><a href="client/index/' + this.userid + '/' + this.pageid +'">' + this.page_name + '</a></li>');
 				});

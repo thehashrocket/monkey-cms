@@ -44,7 +44,7 @@
 		}
 
 		public function getPageList() {
-			$this->Pages_model->getSidebarPageList($this->siteid);
+			$this->Pages_model->getAjaxSidebarPageList($this->siteid);
 	}
 
 

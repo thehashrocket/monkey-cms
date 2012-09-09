@@ -18,7 +18,7 @@
 			$this->load->model('Client_model');
 			$this->load->model('Gallery_model');
 			$this->load->model('Pages_model');
-			$this->load->model('Projects_model');
+			$this->load->model('Faq_model');
 			$this->load->helper('ckeditor');
 			$this->siteid = $this->domain_model->getUID();
 
@@ -88,6 +88,7 @@
 				$data['photos']        = $this->Gallery_model->profile_get_images_from_db($this->user_id);
 				$data['clientdata']    = $this->Client_model->getClientProfile($this->user_id);
 				$data['pagelist']      = $this->Pages_model->getClientPageList($this->user_id);
+				$data['faqs']			= $this->Projects_model->getFAQProfile($this->user_id);
 				$data['pagedata']      = $this->Pages_model->getPagedata($this->user_id, $pageid);
 				$data['page_title']    = $this->domain_model->getSiteTitle($this->siteid);
 				$data['page_desc']     = $this->domain_model->getPageMetaDesc($this->siteid);
@@ -163,49 +164,21 @@
 
 		function faqUpdate()
 		{
-			$this->load->library('form_validation');
-			$this->form_validation->set_error_delimiters('<div class="alert-box error">', '</div>');
+			$strlen = strlen((string)$this->input->post('idfaq_table'));
 
-			$this->form_validation->set_rules('question', 'FAQ Question', 'required|trim');
-			$this->form_validation->set_rules('answer', 'FAQ Answer', 'required|trim');
-
-			if ($this->form_validation->run() == FALSE) {
-				$proj_id               = $this->Client_model->get_project_id();
-				$data['login']         = $this->login;
-				$data['user_id']       = $this->user_id;
-				$data['username']      = $this->user_name;
-				$data['navigation']     = $this->treeview->buildmenu();
-				$data['photos']        = $this->Gallery_model->profile_get_images_from_db($proj_id);
-				$data['projdata']      = $this->Projects_model->getProjectProfile($this->user_id);
-				$data['pledgedata']    = $this->Projects_model->getPledgeProfile($this->user_id);
-				$data['clientdata']    = $this->Client_model->getClientProfile($this->user_id);
-				$data['pagelist']      = $this->Pages_model->getClientPageList($this->user_id);
-				$data['faqs']          = $this->Projects_model->getFAQProfile($this->user_id);
-				$data['categories']    = $this->Projects_model->getCategories();
-				$data['page_title']    = $this->domain_model->getSiteTitle($this->siteid);
-				$data['page_desc']     = $this->domain_model->getPageMetaDesc($this->siteid);
-				$data['page_keywords'] = $this->domain_model->getPageMetaKeywords($this->siteid);
-				$data['sidebar']       = 'sidebars/small-home-sidebar';
-				$data['page']          = '/client/welcome_message'; // pass the actual view to use as a parameter
-				$this->load->view('container', $data);
-
+			if ($strlen == 0) {
+				$faq_id = '';
 			} else {
-				$strlen = strlen((string)$this->input->post('idfaq_table'));
-
-				if ($strlen == 0) {
-					$faq_id = '';
-				} else {
-					$faq_id = (string)$this->input->post('idfaq_table');
-				}
-
-				$question = (string)$this->input->post('question', TRUE);
-				$answer   = (string)$this->input->post('answer', TRUE);
-				$uid      = $this->user_id;
-				$proj_id  = (string)$this->input->post('projectid', TRUE);
-				$redirect = "/client/index";
-
-				$this->Projects_model->updateFAQ($faq_id, $proj_id, $question, $answer, $uid, $redirect);
+				$faq_id = (string)$this->input->post('idfaq_table');
 			}
+
+			$question = (string)$this->input->post('question', TRUE);
+			$answer   = (string)$this->input->post('answer', TRUE);
+			$uid      = $this->user_id;
+			$proj_id  = (string)$this->input->post('projectid', TRUE);
+			$redirect = "/client/index";
+
+			$this->Projects_model->updateFAQ($faq_id, $proj_id, $question, $answer, $uid, $redirect);
 		}
 
 		// Updates Gallery Table
@@ -216,7 +189,7 @@
 				'allowed_types' => 'jpg|jpeg|gif|png',
 				'upload_path'   => $this->gallery_path,
 				'max_size'      => $this->max_image_size
-			);
+				);
 
 			$this->load->library('upload', $config);
 			$this->upload->do_upload();
@@ -240,8 +213,6 @@
 				'photoname'     => $upload['file_name'],
 				'thumb'         => $this->gallery_path_url . 'thumbs/' . $upload['file_name'],
 				'fullsize'      => $this->gallery_path_url . $upload['file_name'],
-//            'projectid'     => $project_id,
-//            'pledgeid'      => $pledge_id,
 				'userid'        => $this->user_id,
 			);
 
@@ -249,6 +220,12 @@
 
 			$url = (string)$this->input->post('redirect', TRUE);
 			redirect($url);
+		}
+
+		function getFAQList()
+		{
+
+			$this->Faq_model->getAjaxFAQList($this->user_id);
 		}
 
 		function getPageDetails()
@@ -386,9 +363,9 @@
 			}
 		}
 
-// Credit to http://acairns.co.uk for this simple function he shared with me
-// this will return our route based on the 'url' field of the database
-// it will also check for parent pages for hierarchical urls
+		// Credit to http://acairns.co.uk for this simple function he shared with me
+		// this will return our route based on the 'url' field of the database
+		// it will also check for parent pages for hierarchical urls
 		private function _get_route($id)
 		{
 

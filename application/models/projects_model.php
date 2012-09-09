@@ -8,6 +8,8 @@
 	 */
 	class Projects_model extends CI_Model
 	{
+		
+
 		function deleteCategory($id, $redirect)
 		{
 			$this->db->where('idcategories', $id);
@@ -97,8 +99,6 @@
 			$row = $query->row_array();
 			$num = $query->num_rows();
 
-
-
 			if ($num < 1)
 			{
 				$query = NULL;
@@ -121,8 +121,6 @@
 			$row = $query->row_array();
 			$num = $query->num_rows();
 
-
-
 			if ($num < 1)
 			{
 				$query = NULL;
@@ -130,8 +128,6 @@
 			} else {
 				return $query;
 			}
-
-
 		}
 
 		function getPledges($id)
@@ -239,68 +235,6 @@
 			$this->db->insert('projects_table',$data);
 		}
 
-		function updateFAQ($faq_id, $proj_id, $question, $answer, $uid, $redirect)
-		{
-			$this->db->select('*')
-				->from('faq_table')
-				->where('idfaq_table', $faq_id);
-			$query = $this->db->get();
-
-			$row = $query->row();
-			$num = $query->num_rows();
-
-			if ($num < 1)
-			{
-				$questid    = uniqid(rand());
-				$answerid   = uniqid(rand());
-				$faq_id     = uniqid(rand());
-				$qdata = array(
-					'idfaq_questions_table'     => $questid,
-					'question'                  => $question,
-					'user_id'                   => $uid
-				);
-				$adata = array(
-					'idfaq_answers_table'       => $answerid,
-					'answers'                   => $answer,
-					'user_id'                   => $uid
-				);
-				$fdata = array(
-					'idfaq_table'               => $faq_id,
-					'projectid'                 => $proj_id,
-					'questionid'                => $questid,
-					'answerid'                  => $answerid,
-					'user_id'                   => $uid
-				);
-				$this->db->insert('faq_questions_table', $qdata);
-
-				$this->db->insert('faq_answers_table', $adata);
-
-				$this->db->insert('faq_table', $fdata);
-
-				redirect($redirect);
-
-			} else {
-
-				$qdata = array(
-					'question'                  => $question,
-				);
-				$adata = array(
-					'answers'                   => $answer,
-				);
-
-				$questid  = $row->questionid;
-				$answerid = $row->answerid;
-
-				$this->db->where('idfaq_answers_table', $answerid);
-				$this->db->update('faq_answers_table', $adata);
-
-				$this->db->where('idfaq_questions_table', $questid);
-				$this->db->update('faq_questions_table', $qdata);
-
-				redirect($redirect);
-			}
-		}
-
 		function updateCategories($idcategories, $catname, $catdesc, $uid, $redirect)
 		{
 			if ($idcategories  == '') {
@@ -339,9 +273,6 @@
 				$this->db->update('categories', $data);
 				redirect($redirect);
 			}
-
-
-
 		}
 
 		function updatePledge($pledgeid, $pledgeAmount, $pledgeDesc, $pledgeReward, $projectid, $uid, $redirect)
@@ -384,21 +315,6 @@
 				$this->db->update('pledges_table', $data);
 				redirect($redirect);
 			}
-
-			/*$data = array(
-						'idpledges_table'       => $pledgeid,
-						'pledge_amount'         => $pledgeAmount,
-						'pledge_description'    => $pledgeDesc,
-						'pledge_reward'         => $pledgeReward,
-						'project_id'            => $projectid,
-						'user_id'               => $uid,
-					);
-
-
-
-					$this->db->insert('pledges_table', $data);
-					redirect($redirect);*/
-
 		}
 
 		function updateProject($projectid, $projtitle, $projsubtitle, $projminbid, $projintro, $projdesc, $startdate, $enddate, $userid, $category,  $redirect)
@@ -448,9 +364,6 @@
 				$this->db->update('projects_table', $data2);
 				redirect($redirect);
 			}
-
-
-
 		}
 
 		public function category($category)

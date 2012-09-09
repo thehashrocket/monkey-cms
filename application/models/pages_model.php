@@ -76,6 +76,27 @@
 			}
 		}
 
+		function getAjaxSidebarPageList($siteid)
+		{
+			$this->db->select('pageid, page_name, userid, siteid, rank')
+				->from('pages')
+				->where('siteid', $siteid)
+				->order_by('rank');
+			;
+
+			$query = $this->db->get();
+
+			$row = $query->row_array();
+			$num = $query->num_rows();
+
+			if ($num < 1) {
+				return NULL;
+
+			} else {
+				echo json_encode($query->result_array());
+			}
+		}
+
 		function get_page($pageid)
 		{
 			$this->db->select('*')
@@ -164,27 +185,6 @@
 			}
 		}
 
-		function getSidebarPageList($siteid)
-		{
-			$this->db->select('pageid, page_name, userid, siteid, rank')
-				->from('pages')
-				->where('siteid', $siteid)
-				->order_by('rank');
-			;
-
-			$query = $this->db->get();
-
-			$row = $query->row_array();
-			$num = $query->num_rows();
-
-			if ($num < 1) {
-				return NULL;
-
-			} else {
-				echo json_encode($query->result_array());
-			}
-		}
-
 		function updatePage($pageid, $pagename, $pageheadline, $pagecontent, $parentpage, $sectionid, $uid, $siteid)
 		{
 			$user = $this->user_id;
@@ -230,8 +230,6 @@
 				echo json_encode($query->result_array());
 
 			}
-
-
 		}
 
 		function updatePageOrderList($postitems, $redirect)
