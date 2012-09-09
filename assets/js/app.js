@@ -54,8 +54,21 @@ jQuery(document).ready(function ($) {
 
 				$('#item-' + pageid).fadeOut( function() { $(this).remove(); } );
 
-				sortableSideList();
-   				makeListClickable();
+				$.ajax({
+					url:"/client/save_routes",
+					type: "POST",
+					success: function(){
+						console.log('routes updated');
+						rebuildPageList();
+						sortableSideList();
+					},
+					failure: function(){
+						console.log('routes not updated');
+					}
+
+				})
+
+
     		}
 
     	})
@@ -91,12 +104,10 @@ jQuery(document).ready(function ($) {
 					$('ul#reorder').append('<li id="item-' + feedback[0].pageid + '" class="twelve columns"><a href="client/index/' + feedback[0].userid + '/' + feedback[0].pageid +'">' + feedback[0].page_name + '</a></li>').fadeIn("slow");
 					rebuildPageList();
 					sortableSideList();
-					makeListClickable();
 
 				} else {
 					rebuildPageList();
 					sortableSideList();
-					makeListClickable();
 				}
 
 				$.ajax({
@@ -106,7 +117,6 @@ jQuery(document).ready(function ($) {
 						console.log('routes updated');
 						rebuildPageList();
 						sortableSideList();
-						makeListClickable();
 					},
 					failure: function(){
 						console.log('routes not updated');
