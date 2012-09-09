@@ -148,6 +148,12 @@
 			$this->Projects_model->deleteCategory($id, $redirect);
 		}
 
+		function deleteFaq()
+		{
+			$faq_id = (string)$this->input->post('idfaq_table');
+			$this->Faq_model->deleteFaq($faq_id);
+		}
+
 		function deletephoto($id)
 		{
 			$redirect = '/client/index';
@@ -164,6 +170,7 @@
 
 		function faqUpdate()
 		{
+
 			$strlen = strlen((string)$this->input->post('idfaq_table'));
 
 			if ($strlen == 0) {
@@ -175,10 +182,9 @@
 			$question = (string)$this->input->post('question', TRUE);
 			$answer   = (string)$this->input->post('answer', TRUE);
 			$uid      = $this->user_id;
-			$proj_id  = (string)$this->input->post('projectid', TRUE);
 			$redirect = "/client/index";
 
-			$this->Projects_model->updateFAQ($faq_id, $proj_id, $question, $answer, $uid, $redirect);
+			$this->Faq_model->updateFAQ($faq_id, $proj_id, $question, $answer, $uid, $redirect);
 		}
 
 		// Updates Gallery Table

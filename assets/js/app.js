@@ -138,15 +138,15 @@ jQuery(document).ready(function ($) {
 		$.ajax({ 
 			url:"/client/getFAQList/", 
 			type: "POST",
-			success: function(feedback) { 
+			success: function(feedback) {
+				var pathname = window.location.pathname.split("/");
+				var user = {};
 				data = $.parseJSON(feedback); 
 				var items = []
 					$('ul#faqlist').empty(); 
-					$('ul#faqlist').append('<li><div class="row"><form><input type="hidden" name="idfaq_table" value=""><input type="hidden" name="userid" value=""><fieldset><div class="four columns"><textarea rows="2" cols="20" name="question" placeholder="FAQ Question:"></textarea></div> <div class="four columns"> <textarea rows="2" cols="20" name="answer" placeholder="FAQ Answer:"></textarea> </div> <div class="two columns"> <INPUT TYPE="IMAGE" SRC="/assets/images/icons/save-icon-32.png" ALT="Submit button"> </div> </fieldset> </form>');
+					$('ul#faqlist').append('<li><div class="row"><form name="faqCreate" class="formupdate"><input type="hidden" name="idfaq_table" value=""><fieldset><div class="four columns"><textarea rows="2" cols="20" name="question" placeholder="FAQ Question:"></textarea></div> <div class="four columns"> <textarea rows="2" cols="20" name="answer" placeholder="FAQ Answer:"></textarea> </div> <div class="two columns"> <a href="" class="faqsubmit"><img SRC="/assets/images/icons/save-icon-32.png" ALT="Submit button"></a> </div> </fieldset> </form>');
 					$.each(data, function(){
-						items.push('<li> <div class="row"> <form> <input type="hidden" name="idfaq_table" value="' + this.idfaq_table + '"> <input type="hidden" name="userid" value="' + this.userid + '"> <fieldset> <div class="four columns"> <textarea rows="2" cols="20" name="question" placeholder="' + this.question + '"></textarea> </div> <div class="four columns"> <textarea rows="2" cols="20" name="answer" placeholder="' + this.answers + '"></textarea> </div> <div class="two columns"> <INPUT TYPE="IMAGE" SRC="/assets/images/icons/save-icon-32.png" ALT="Submit button"> </div> </fieldset> </form>');
-						console.log(this.question);
-						console.log(this.answers);
+						items.push('<li> <div class="row"> <form name="faqUpdate" class="formupdate"> <input type="hidden" name="idfaq_table" value="' + this.idfaq_table + '"><fieldset> <div class="four columns"> <textarea rows="2" cols="20" name="question" placeholder="">' + this.question + '</textarea> </div> <div class="four columns"> <textarea rows="2" cols="20" name="answer" placeholder="">' + this.answers + '</textarea> </div> <div class="two columns"> <a href="" class="faqdelete"><img SRC="/assets/images/icons/delete-icon-32.png" ALT="Delete button"></a> </div> <div class="two columns"> <a class="faqsubmit" href=""><img SRC="/assets/images/icons/save-icon-32.png" ALT="Submit button"></a> </div> </fieldset> </form>');
 						});
 					$('ul#faqlist').append( items.join ('') );
 				},
@@ -154,7 +154,51 @@ jQuery(document).ready(function ($) {
 				console.log('getFAQDetails Failed');
 			}
 		})
-	}	
+	}
+
+	/* FAQ Update Function */
+	$('#faqlist').on('click', 'a.faqsubmit', function(e) {
+		e.preventDefault();
+		data = 'csrf_test_name=' + $.cookie('csrf_cookie_name') + '&';
+		var form = $(this).parents('form:first');
+		data += $(form).serialize();
+
+		$.ajax({
+			url:"/client/faqUpdate",
+			type: "POST",
+			data: data,
+			success: function(feedback){
+				console.log('faq updated');
+				getFAQDetails();
+			},
+			failure: function(feedback){
+				console.log('faq not updated: ' + feedback);
+			}
+		})
+
+	})
+
+	/* FAQ Delete Function */
+	$('#faqlist').on('click', 'a.faqdelete', function(e) {
+		e.preventDefault();
+		data = 'csrf_test_name=' + $.cookie('csrf_cookie_name') + '&';
+		var form = $(this).parents('form:first');
+		data += $(form).serialize();
+
+		$.ajax({
+			url:"/client/deleteFaq",
+			type: "POST",
+			data: data,
+			success: function(feedback){
+				console.log('faq delete');
+				getFAQDetails();
+			},
+			failure: function(feedback){
+				console.log('faq not deleted: ' + feedback);
+			}
+		})
+
+	})	
 
 	/* Resets the Page Editor form */
 	function resetPageForm(data) {
@@ -195,28 +239,7 @@ jQuery(document).ready(function ($) {
 
 	jQuery('ul.sf-menu').superfish();
 
-	/* Sortable Lists - This let's you sort the list and reorder the pages */
-
-   function sortableSideList() {
-   	 $('#reorder').sortable({
-        opacity: '0.5',
-        update: function(e, ui){
-            newOrder = 'csrf_test_name=' + $.cookie('csrf_cookie_name') + '&';
-            newOrder += $( "#reorder" ).sortable('serialize');
-            console.log(newOrder);
-            $.ajax({
-                url: "/client/saveOrder",
-                type: "POST",
-                data: newOrder,
-                success: function(feedback){
-                    console.log('success');
-                }
-            });
-        }
-    });
-   }
-
-   /* The PageList Sidebar - Makes the List Items clickable */
+	/* The PageList Sidebar - Makes the List Items clickable */
 	function makeListClickable() {
 		$('.pagelist').on('click','a', function(e){
 
@@ -255,6 +278,29 @@ jQuery(document).ready(function ($) {
 		return false;
 	});
 	}
+
+	/* Sortable Lists - This let's you sort the list and reorder the pages */
+
+   function sortableSideList() {
+   	 $('#reorder').sortable({
+        opacity: '0.5',
+        update: function(e, ui){
+            newOrder = 'csrf_test_name=' + $.cookie('csrf_cookie_name') + '&';
+            newOrder += $( "#reorder" ).sortable('serialize');
+            console.log(newOrder);
+            $.ajax({
+                url: "/client/saveOrder",
+                type: "POST",
+                data: newOrder,
+                success: function(feedback){
+                    console.log('success');
+                }
+            });
+        }
+    });
+   }
+
+   
 
 
 	/* Use this js doc for all application specific JS */

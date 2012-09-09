@@ -439,22 +439,22 @@
 			<ul id="faqlist">
 				<li>
 					<div class="row">
-				<?= form_open('/client/faqUpdate', 'class="nice faqUpdate"');?>
-				<input type="hidden" name="idfaq_table" value=""/>
-				<input type="hidden" name="userid" value="<?= $user_id;?>"/>
-				<?= form_fieldset();?>
-				<div class="four columns">
-					<textarea rows="2" cols="20" name="question" placeholder="FAQ Question:"></textarea>
-				</div>
-				<div class="four columns">
-					<textarea rows="2" cols="20" name="answer" placeholder="FAQ Answer:"></textarea>
-				</div>
-				<div class="two columns">
-					<INPUT TYPE="IMAGE" SRC="/assets/images/icons/save-icon-32.png" ALT="Submit button">
-				</div>
-				<?= form_fieldset_close();?>
-				<?= form_close();?>
-			</div>
+						<?= form_open('/client/faqUpdate', 'class="nice faqUpdate"');?>
+						<input type="hidden" name="idfaq_table" value=""/>
+						<input type="hidden" name="userid" value="<?= $user_id;?>"/>
+						<?= form_fieldset();?>
+						<div class="four columns">
+							<textarea rows="2" cols="20" name="question" placeholder="FAQ Question:"></textarea>
+						</div>
+						<div class="four columns">
+							<textarea rows="2" cols="20" name="answer" placeholder="FAQ Answer:"></textarea>
+						</div>
+						<div class="two columns">
+							<INPUT class="submitfaq" TYPE="IMAGE" SRC="/assets/images/icons/save-icon-32.png" ALT="Submit button">
+						</div>
+						<?= form_fieldset_close();?>
+						<?= form_close();?>
+					</div>
 				</li>
 			</ul>
 			

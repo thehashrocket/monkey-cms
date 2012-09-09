@@ -27,6 +27,7 @@ class Faq_model extends CI_Model {
 
 	function updateFAQ($faq_id, $proj_id, $question, $answer, $uid, $redirect)
 		{
+
 			$this->db->select('*')
 				->from('faq_table')
 				->where('idfaq_table', $faq_id);
@@ -42,11 +43,13 @@ class Faq_model extends CI_Model {
 				$faq_id     = uniqid(rand());
 				$qdata = array(
 					'idfaq_questions_table'     => $questid,
-					'question'                  => $question
+					'question'                  => $question,
+					'idfaq_table'				=> $faq_id
 				);
 				$adata = array(
 					'idfaq_answers_table'       => $answerid,
-					'answers'                   => $answer
+					'answers'                   => $answer,
+					'idfaq_table'				=> $faq_id
 				);
 				$fdata = array(
 					'idfaq_table'               => $faq_id,
@@ -59,8 +62,6 @@ class Faq_model extends CI_Model {
 				$this->db->insert('faq_answers_table', $adata);
 
 				$this->db->insert('faq_table', $fdata);
-
-				redirect($redirect);
 
 			} else {
 
@@ -80,9 +81,15 @@ class Faq_model extends CI_Model {
 				$this->db->where('idfaq_questions_table', $questid);
 				$this->db->update('faq_questions_table', $qdata);
 
-				redirect($redirect);
 			}
 		}
 
 
+	function deleteFaq($faq_id)
+		{
+			$this->db->delete('faq_table', array('idfaq_table' => $faq_id));
+			$this->db->delete('faq_questions_table', array('idfaq_table' => $faq_id));
+			$this->db->delete('faq_answers_table', array('idfaq_table' => $faq_id));
+
+		}
 }
