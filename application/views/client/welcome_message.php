@@ -382,7 +382,7 @@
 							if (isset($pagelist) && count($pagelist) > 0) :
 								foreach ($pagelist->result() as $row):
 									?>
-									<option value="<?= $row->pageid ?>"><?php echo $row->page_name ?></option>
+									<option value="<?= $row->pageid ?>" selected="<?= $row->parentid ?>"><?php echo $row->page_name ?></option>
 									<?php endforeach; else: ?>
 								<tr>No Pages Added</tr>
 								<?php endif; ?>

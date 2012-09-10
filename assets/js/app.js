@@ -178,30 +178,9 @@ jQuery(document).ready(function ($) {
 
 	})
 
-	/* FAQ Delete Function */
-	$('#faqlist').on('click', 'a.faqdelete', function(e) {
-		e.preventDefault();
-		data = 'csrf_test_name=' + $.cookie('csrf_cookie_name') + '&';
-		var form = $(this).parents('form:first');
-		data += $(form).serialize();
-
-		$.ajax({
-			url:"/client/deleteFaq",
-			type: "POST",
-			data: data,
-			success: function(feedback){
-				console.log('faq delete');
-				getFAQDetails();
-			},
-			failure: function(feedback){
-				console.log('faq not deleted: ' + feedback);
-			}
-		})
-
-	})	
-
 	/* Resets the Page Editor form */
 	function resetPageForm(data) {
+		$('#parentpage').val(data.parentid);
 		$('input[name="pageid"]').val(data.pageid);
 		$('a.pagedelete').prop('href', '/client/pageDelete/' + data.userid + '/' + data.pageid);
 		$('input[name="userid"]').val(data.userid);
