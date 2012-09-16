@@ -206,89 +206,27 @@
 <!-- Site Categories -->
 <div id="tabs-2">
 	<h4>Site Categories</h4>
-	<?php echo validation_errors('<p class="error">'); ?>
-	<?php
-	if (isset($categorydata) && count($categorydata) > 0) :
-		foreach ($categorydata->result() as $row):
-
-			?>
-			<div class="row">
-				<div class="twelve columns">
-
-					<?= form_open('/client/catUpdate', 'class="nice"') ?>
-					<?= form_fieldset('');?>
-					<input type="hidden" name="userid" value="<?= $user_id;?>"/>
-					<input type="hidden" name="idcategories" value="<?= $row->idcategories;?>"/>
-
-					<div class="three columns"><input type="text" value="<?= $row->catname ?>" name="catname"
-													  class="input-text small"></div>
-
-					<div class="four columns"><input type="text" value="<?= $row->catdescription ?>" name="catdesc"
-													 class="input-text"></div>
-
-					<div class="one column"><INPUT TYPE="IMAGE" SRC="/assets/images/icons/save-icon-32.png"
-												   ALT="Submit button"></div>
-					<!--<img src="" onClick="$(this).addClone();">-->
-					<div class="one column"><a href="/client/deleteCategory/<?= $row->idcategories;?>"><img
-						src="/assets/images/icons/delete-icon-32.png"> </a></div>
-					<div class="three column"></div>
-
-
-					<?= form_fieldset_close();?>
-					<?= form_close()?>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="twelve columns">
-					<?php echo validation_errors('<p class="error">'); ?>
-					<?= form_open('/client/catUpdate', 'class="nice"') ?>
-					<?= form_fieldset('');?>
-					<input type="hidden" name="userid" value="<?= $user_id;?>"/>
-
-					<div class="three columns"><input type="text" placeholder="Category Name" name="catname" value=""
-													  class="input-text small"></div>
-
-					<div class="four columns"><input type="text" placeholder="Category Description" name="catdesc"
-													 value="" class="input-text"></div>
-
-					<div class="one column"><INPUT TYPE="IMAGE" SRC="/assets/images/icons/save-icon-32.png"
-												   ALT="Submit button"></div>
-					<!--<img src="" onClick="$(this).addClone();">-->
-					<div class="four column"></div>
-
-
-
-					<?= form_fieldset_close();?>
-					<?= form_close()?>
-				</div>
-			</div>
-
-			<?php endforeach; else: ?>
-		<div class="row">
-			<div class="twelve columns">
-				<?php echo validation_errors('<p class="error">'); ?>
+	<ul id="catlist">
+		<li><div class="row">
+            <div class="twelve columns">
 				<?= form_open('/client/catUpdate', 'class="nice"') ?>
 				<?= form_fieldset('');?>
-				<input type="hidden" name="userid" value="<?= $user_id;?>"/>
+                <input type="hidden" name="idcategories" value=""/>
 
-				<div class="two columns"><input type="text" placeholder="Category Name" name="catname" value=""
-												class="input-text small"></div>
+                <div class="two columns"><input type="text" placeholder="Category Name" name="catname" value=""
+                                                class="input-text small"></div>
 
-				<div class="four columns"><input type="text" placeholder="Category Description" name="catdesc" value=""
-												 class="input-text"></div>
+                <div class="four columns"><input type="text" placeholder="Category Description" name="catdesc" value=""
+                                                 class="input-text"></div>
 
-				<div class="one column"><INPUT TYPE="IMAGE" SRC="/assets/images/icons/save-icon-32.png"
-											   ALT="Submit button"></div>
-				<!--<img src="" onClick="$(this).addClone();">-->
-
-
-
+                <div class="one column"><INPUT TYPE="IMAGE" SRC="/assets/images/icons/save-icon-32.png"
+                                               ALT="Submit button"></div>
+                <!--<img src="" onClick="$(this).addClone();">-->
 				<?= form_fieldset_close();?>
 				<?= form_close()?>
-			</div>
-		</div>
-		<?php endif; ?>
+            </div>
+        </div></li>
+	</ul>
 
 </div>
 

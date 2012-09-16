@@ -25,7 +25,7 @@ class Faq_model extends CI_Model {
 
 		}
 
-	function updateFAQ($faq_id, $proj_id, $question, $answer, $uid, $redirect)
+	function updateFAQ($faq_id, $question, $answer, $uid, $redirect)
 		{
 
 			$this->db->select('*')

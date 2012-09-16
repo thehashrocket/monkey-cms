@@ -26,6 +26,7 @@ jQuery(document).ready(function ($) {
 	sortableSideList();
 	makeListClickable();
 	getFAQDetails();
+    getCategoryDetails();
 
 	/* Delete Page and remove item from pagelist */
     $('a.pagedelete').on('click', function(e){
@@ -146,7 +147,7 @@ jQuery(document).ready(function ($) {
 					$('ul#faqlist').empty(); 
 					$('ul#faqlist').append('<li><div class="row"><form name="faqCreate" class="formupdate"><input type="hidden" name="idfaq_table" value=""><fieldset><div class="four columns"><textarea rows="2" cols="20" name="question" placeholder="FAQ Question:"></textarea></div> <div class="four columns"> <textarea rows="2" cols="20" name="answer" placeholder="FAQ Answer:"></textarea> </div> <div class="two columns"> <a href="" class="faqsubmit"><img SRC="/assets/images/icons/save-icon-32.png" ALT="Submit button"></a> </div> </fieldset> </form>');
 					$.each(data, function(){
-						items.push('<li> <div class="row"> <form name="faqUpdate" class="formupdate"> <input type="hidden" name="idfaq_table" value="' + this.idfaq_table + '"><fieldset> <div class="four columns"> <textarea rows="2" cols="20" name="question" placeholder="">' + this.question + '</textarea> </div> <div class="four columns"> <textarea rows="2" cols="20" name="answer" placeholder="">' + this.answers + '</textarea> </div> <div class="two columns"> <a href="" class="faqdelete"><img SRC="/assets/images/icons/delete-icon-32.png" ALT="Delete button"></a> </div> <div class="two columns"> <a class="faqsubmit" href=""><img SRC="/assets/images/icons/save-icon-32.png" ALT="Submit button"></a> </div> </fieldset> </form>');
+						items.push('<li> <div class="row"> <form name="faqUpdate" class="formupdate"> <input type="hidden" id="faqid" name="idfaq_table" value="' + this.idfaq_table + '"><fieldset> <div class="four columns"> <textarea rows="2" cols="20" name="question" placeholder="">' + this.question + '</textarea> </div> <div class="four columns"> <textarea rows="2" cols="20" name="answer" placeholder="">' + this.answers + '</textarea> </div> <div class="two columns"> <a href="" class="faqdelete"><img SRC="/assets/images/icons/delete-icon-32.png" ALT="Delete button"></a> </div> <div class="two columns"> <a class="faqsubmit" href=""><img SRC="/assets/images/icons/save-icon-32.png" ALT="Submit button"></a> </div> </fieldset> </form>');
 						});
 					$('ul#faqlist').append( items.join ('') );
 				},
@@ -176,7 +177,107 @@ jQuery(document).ready(function ($) {
 			}
 		})
 
+        return false;
+
 	})
+
+    /* Category Update Function */
+    $('#catlist').on('click', 'a.catsubmit', function(e) {
+        e.preventDefault();
+        data = 'csrf_test_name=' + $.cookie('csrf_cookie_name') + '&';
+        var form = $(this).parents('form:first');
+        data += $(form).serialize();
+
+        $.ajax({
+            url:"/client/catUpdate",
+            type: "POST",
+            data: data,
+            success: function(feedback){
+                console.log('cat updated');
+                getCategoryDetails();
+            },
+            failure: function(feedback){
+                console.log('cat not updated: ' + feedback);
+            }
+        })
+
+        return false;
+
+    })
+
+	/* FAQ Delete Function */
+    $('#faqlist').on('click', 'a.faqdelete', function(e) {
+        e.preventDefault();
+
+        data = 'csrf_test_name=' + $.cookie('csrf_cookie_name') + '&';
+        var form = $(this).parents('form:first');
+        data += $(form).serialize();
+
+        $.ajax({
+            url:"/client/deleteFaq",
+            type: "POST",
+            data: data,
+            success: function(feedback){
+                console.log('faq deteled');
+                getFAQDetails();
+            },
+            failure: function(feedback){
+                console.log('faq not deleted: ' + feedback);
+            }
+        })
+
+        return false;
+
+    })
+
+    /* Category Delete Function */
+    $('#catlist').on('click', 'a.catdelete', function(e) {
+        e.preventDefault();
+
+        data = 'csrf_test_name=' + $.cookie('csrf_cookie_name') + '&';
+        var form = $(this).parents('form:first');
+        data += $(form).serialize();
+
+        $.ajax({
+            url:"/client/deleteCategory",
+            type: "POST",
+            data: data,
+            success: function(feedback){
+                console.log('cat deteled');
+                getCategoryDetails();
+            },
+            failure: function(feedback){
+                console.log('cat not deleted: ' + feedback);
+            }
+        })
+
+        return false;
+
+    })
+
+    /* Get the Category details for Control Panel */
+
+    function getCategoryDetails() {
+        $.ajax({
+            url:"/client/getCatList/",
+            type: "POST",
+            success: function(feedback) {
+                var pathname = window.location.pathname.split("/");
+                var user = {};
+                data = $.parseJSON(feedback);
+                var items = []
+                $('ul#catlist').empty();
+                $('ul#catlist').append('<li><div class="row"><form name="catCreate" class="nice formupdate"><input type="hidden" name="idcategories" value=""><fieldset><div class="two columns"><input type="text" placeholder="Category Name" name="catname" value="" class="input-text small"></div><div class="four columns"><input type="text" placeholder="Category Description" name="catdesc" value="" class="input-text"></div> <div class="one column"><a href="" class="catsubmit"><img SRC="/assets/images/icons/save-icon-32.png" ALT="Submit button"></a></div> </fieldset> </form>');
+                $.each(data, function(){
+                    items.push('<li> <div class="row"><form name="catCreate" class="nice formupdate"><input type="hidden" name="idcategories" value="' + this.idcategories + '"><fieldset><div class="two columns"><input type="text" placeholder="Category Name" name="catname" value="' + this.catname + '" class="input-text small"></div><div class="four columns"><input type="text" placeholder="Category Description" name="catdesc" value="' + this.catdescription + '" class="input-text"></div> <div class="one column"> <a href="" class="catdelete"><img SRC="/assets/images/icons/delete-icon-32.png" ALT="Delete button"></a> </div><div class="one column"><a href="" class="catsubmit"><img SRC="/assets/images/icons/save-icon-32.png" ALT="Submit button"></a></div> </fieldset> </form>')
+                });
+                $('ul#catlist').append( items.join ('') );
+            },
+            failure: function(data) {
+                console.log('getCatDetails Failed');
+            }
+        })
+    }
 
 	/* Resets the Page Editor form */
 	function resetPageForm(data) {

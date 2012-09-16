@@ -17,6 +17,7 @@
 			$this->load->library('Treeview');
 			$this->load->model('Client_model');
 			$this->load->model('Gallery_model');
+			$this->load->model('Category_model');
 			$this->load->model('Pages_model');
 			$this->load->model('Faq_model');
 			$this->load->helper('ckeditor');
@@ -101,51 +102,25 @@
 
 		function catUpdate()
 		{
-			$this->load->library('form_validation');
-			$this->form_validation->set_error_delimiters('<div class="alert-box error">', '</div>');
+			$strlen = strlen((string)$this->input->post('idcategories'));
 
-			$this->form_validation->set_rules('catname', 'Category Name', 'required|trim');
-			$this->form_validation->set_rules('catdesc', 'Category Description', 'required|trim');
-
-			if ($this->form_validation->run() == FALSE) {
-				$data['login']         = $this->login;
-				$data['user_id']       = $this->user_id;
-				$data['username']      = $this->user_name;
-				$data['navigation']     = $this->treeview->buildmenu();
-				$data['photos']        = $this->Gallery_model->profile_get_images_from_db($this->user_id);
-				$data['categorydata']  = $this->Projects_model->getCategoriesProfile($this->user_id);
-				$data['clientdata']    = $this->Client_model->getClientProfile($this->user_id);
-				$data['pagelist']      = $this->Pages_model->getClientPageList($this->user_id);
-				$data['page_title']    = $this->domain_model->getSiteTitle($this->siteid);
-				$data['page_desc']     = $this->domain_model->getPageMetaDesc($this->siteid);
-				$data['page_keywords'] = $this->domain_model->getPageMetaKeywords($this->siteid);
-				$data['sidebar']       = 'sidebars/small-home-sidebar';
-				$data['page']          = '/client/welcome_message'; // pass the actual view to use as a parameter
-				$this->load->view('container', $data);
-
+			if ($strlen == 0) {
+				$idcategories = '';
 			} else {
-				$strlen = strlen((string)$this->input->post('idcategories'));
-
-				if ($strlen == 0) {
-					$idcategories = '';
-				} else {
-					$idcategories = (string)$this->input->post('idcategories');
-				}
-
-				$catname  = (string)$this->input->post('catname', TRUE);
-				$catdesc  = (string)$this->input->post('catdesc', TRUE);
-				$uid      = $this->user_id;
-				$redirect = "/client/index";
-
-				$this->Projects_model->updateCategories($idcategories, $catname, $catdesc, $uid, $redirect);
+				$idcategories = (string)$this->input->post('idcategories');
 			}
+
+			$catname  = (string)$this->input->post('catname', TRUE);
+			$catdesc  = (string)$this->input->post('catdesc', TRUE);
+			$uid      = $this->user_id;
+
+			$this->Category_model->updateCategories($idcategories, $catname, $catdesc, $uid);
 		}
 
-		function deleteCategory($id)
+		function deleteCategory()
 		{
-			$redirect = '/client/index';
-			$this->load->model('Projects_model');
-			$this->Projects_model->deleteCategory($id, $redirect);
+			$cat_id = (string)$this->input->post('idcategories');
+			$this->Category_model->deleteCategory($cat_id);
 		}
 
 		function deleteFaq()
@@ -184,7 +159,7 @@
 			$uid      = $this->user_id;
 			$redirect = "/client/index";
 
-			$this->Faq_model->updateFAQ($faq_id, $proj_id, $question, $answer, $uid, $redirect);
+			$this->Faq_model->updateFAQ($faq_id, $question, $answer, $uid, $redirect);
 		}
 
 		// Updates Gallery Table
@@ -226,6 +201,12 @@
 
 			$url = (string)$this->input->post('redirect', TRUE);
 			redirect($url);
+		}
+
+		function getCatList()
+		{
+
+			$this->Category_model->getAjaxCategoryList($this->user_id);
 		}
 
 		function getFAQList()
