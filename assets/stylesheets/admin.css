@@ -1,6 +1,6 @@
 /* Artfully masterminded by ZURB  */
 
-/* -------------------------------------------------- 
+/* --------------------------------------------------
    Table of Contents
 -----------------------------------------------------
 :: Shared Styles
@@ -22,7 +22,7 @@ body { font-size: 14px; font-size: 1.4rem; } /* =14px */
 body {
     margin: 0;
     padding: 0;
-     background: url("../images/site-images/back_top.jpg") no-repeat scroll 50% 0 #45BCE8;
+    background: url("../images/site-images/back_top.jpg") no-repeat scroll 50% 0 #45BCE8;
 }
 
 #wrapper {
@@ -211,7 +211,7 @@ h1, h2, h3, h4, p {
 }
 #topmenu ul li ul li {
     background: #003B54;
-} 
+}
 #topmenu li.last {
     background: none repeat scroll 0 0 transparent;
 }
@@ -229,7 +229,50 @@ h1, h2, h3, h4, p {
     background: none repeat scroll 0 0 #004863;
     text-decoration: none;
 }
-
+#placemainmenu #topmenu ul a {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    text-align: left;
+}
+#placemainmenu ul ul {
+    background: url("../images/site-images/back_popup.png") repeat-x scroll 0 0 #003B54;
+    display: none;
+    left: 0;
+    margin: 31px 0 0;
+    padding: 10px 0;
+    position: absolute;
+    width: 167px;
+    z-index: 500;
+}
+#placemainmenu ul li ul li {
+    background: url("../images/site-images/borderpopup.png") no-repeat scroll 50% 100% #003B54;
+    display: block;
+    float: none;
+    height: 24px;
+    padding: 2px 0 0;
+}
+#placemainmenu ul li ul li.last {
+    background: none repeat scroll 0 0 transparent;
+}
+#placemainmenu #topmenu li:hover ul li a, #placemainmenu #topmenu li:hover ul li a:link, #placemainmenu #topmenu li:hover ul li a:visited {
+    background: none repeat scroll 0 0 transparent;
+    color: #ADADAD;
+    display: block;
+    font-size: 1.1em;
+    height: 14px;
+    padding: 2px 20px 0;
+    text-transform: none;
+}
+#placemainmenu #topmenu li:hover ul li a:hover, #placemainmenu #topmenu li ul li a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+div#placemainmenu li:hover ul ul, div#placemainmenu li li:hover ul ul {
+    display: none;
+}
+div#placemainmenu li:hover ul, div#placemainmenu li li:hover ul {
+    display: block;
+}
 
 
 /* -----------------------------------------
@@ -273,5 +316,98 @@ img {
    Home Page
 ----------------------------------------- */
 
+/* -----------------------------------------
+   Project Page
+----------------------------------------- */
 
+#project h3 {
+    font-size: 1.6rem;
+}
+
+#project h4 {
+    font-size: 1.2rem;
+}
+
+#commitment {
+    border: #514030 solid thin;
+    -khtml-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #c9b6a5;
+}
+
+#commitment h3 {
+    font-weight: normal;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+#commitment h4 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#RewardBox {
+    background-color: #e9e1da;
+    border: #ad9076 solid thin;
+    -khtml-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+#commitment .pledge {
+    background-color: #e9e1da;
+    border: #ad9076 solid thin;
+    -khtml-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    height: 17px;
+    text-align: center;
+}
+
+#commitment .reward {
+    background-color: #e9e1da;
+    border: #ad9076 solid thin;
+    -khtml-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+#commitment .reward p {
+    margin-left: 5px;
+}
+
+/* -----------------------------------------
+   Projects Page
+----------------------------------------- */
+
+.projectGalleryItem {
+    border: #596c55 thin solid;
+    -khtml-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    margin-left: 10px;
+}
+
+.projectGalleryItem img {
+    margin: 3px 3px 3px 3px;
+}
+
+.projectGalleryItem h3 {
+    font-size: 1.5rem;
+}
+
+.projectGalleryItem  h4 {
+    font-size: 1.25rem;
+}
+
+.projectGalleryItem p {
+    font-size: 1rem;
+}
 

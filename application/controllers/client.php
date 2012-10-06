@@ -94,9 +94,8 @@
 				$data['page_title']    = $this->domain_model->getSiteTitle($this->siteid);
 				$data['page_desc']     = $this->domain_model->getPageMetaDesc($this->siteid);
 				$data['page_keywords'] = $this->domain_model->getPageMetaKeywords($this->siteid);
-				$data['sidebar']       = 'sidebars/small-home-sidebar';
 				$data['page']          = '/client/welcome_message'; // pass the actual view to use as a parameter
-				$this->load->view('container', $data);
+				$this->load->view('/client/container', $data);
 			}
 		}
 
@@ -282,9 +281,8 @@
 				$data['page_title']    = $this->domain_model->getSiteTitle($this->siteid);
 				$data['page_desc']     = $this->domain_model->getPageMetaDesc($this->siteid);
 				$data['page_keywords'] = $this->domain_model->getPageMetaKeywords($this->siteid);
-				$data['sidebar']       = 'sidebars/home-sidebar';
 				$data['page']          = '/client/welcome_message'; // pass the actual view to use as a parameter
-				$this->load->view('container', $data);
+				$this->load->view('/client/container', $data);
 			} else {
 				// validation has passed. Now send to model
 				$uid       = $this->user_id;
