@@ -29,6 +29,15 @@
 
 		public function index($sectionid = 1, $pageid = 1)
 		{
+            $filename = strtolower($this->Pages_model->getPageName($pageid));
+
+            if (@file_exists(APPPATH."views/pages/{$filename}.php"))
+            {
+                $data['page']          = 'pages/' . $filename;
+            } else {
+                $data['page']          = 'pages/home';
+            }
+
 			$data['login']         = $this->login;
 			$data['user_id']       = $this->user_id;
 			$data['username']      = $this->user_name;
@@ -39,7 +48,6 @@
 			$data['page_keywords'] = $this->domain_model->getPageMetaKeywords($this->siteid);
 			$data['page_content']  = $this->Pages_model->getPageContent($this->siteid, $sectionid, $pageid);
 			$data['sidebar']       = 'sidebars/home-sidebar';
-			$data['page']          = 'pages/home';
 			$this->load->view('container', $data);
 		}
 

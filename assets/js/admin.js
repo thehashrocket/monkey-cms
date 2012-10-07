@@ -152,12 +152,14 @@ jQuery(document).ready(function ($) {
 				var pathname = window.location.pathname.split("/");
 				var user = {};
 				data = $.parseJSON(feedback);
-				var items = []
-				$('ul#faqlist').empty();
-				$('ul#faqlist').append('<li><div class="row"><form name="faqCreate" class="formupdate"><input type="hidden" name="idfaq_table" value=""><fieldset><div class="four columns"><textarea rows="2" cols="20" name="question" placeholder="FAQ Question:"></textarea></div> <div class="four columns"> <textarea rows="2" cols="20" name="answer" placeholder="FAQ Answer:"></textarea> </div> <div class="two columns"> <a href="" class="faqsubmit"><img SRC="/assets/images/icons/save-icon-32.png" ALT="Submit button"></a> </div> </fieldset> </form>');
-				$.each(data, function () {
-					items.push('<li> <div class="row"> <form name="faqUpdate" class="formupdate"> <input type="hidden" id="faqid" name="idfaq_table" value="' + this.idfaq_table + '"><fieldset> <div class="four columns"> <textarea rows="2" cols="20" name="question" placeholder="">' + this.question + '</textarea> </div> <div class="four columns"> <textarea rows="2" cols="20" name="answer" placeholder="">' + this.answers + '</textarea> </div> <div class="two columns"> <a href="" class="faqdelete"><img SRC="/assets/images/icons/delete-icon-32.png" ALT="Delete button"></a> </div> <div class="two columns"> <a class="faqsubmit" href=""><img SRC="/assets/images/icons/save-icon-32.png" ALT="Submit button"></a> </div> </fieldset> </form>');
-				});
+				var items = [];
+                if (feedback.length > 0) {
+                    $('ul#faqlist').empty();
+                    $('ul#faqlist').append('<li><div class="row"><form name="faqCreate" class="formupdate"><input type="hidden" name="idfaq_table" value=""><fieldset><div class="four columns"><textarea rows="2" cols="20" name="question" placeholder="FAQ Question:"></textarea></div> <div class="four columns"> <textarea rows="2" cols="20" name="answer" placeholder="FAQ Answer:"></textarea> </div> <div class="two columns"> <a href="" class="faqsubmit"><img SRC="/assets/images/icons/save-icon-32.png" ALT="Submit button"></a> </div> </fieldset> </form>');
+                    $.each(data, function () {
+                        items.push('<li> <div class="row"> <form name="faqUpdate" class="formupdate"> <input type="hidden" id="faqid" name="idfaq_table" value="' + this.idfaq_table + '"><fieldset> <div class="four columns"> <textarea rows="2" cols="20" name="question" placeholder="">' + this.question + '</textarea> </div> <div class="four columns"> <textarea rows="2" cols="20" name="answer" placeholder="">' + this.answers + '</textarea> </div> <div class="two columns"> <a href="" class="faqdelete"><img SRC="/assets/images/icons/delete-icon-32.png" ALT="Delete button"></a> </div> <div class="two columns"> <a class="faqsubmit" href=""><img SRC="/assets/images/icons/save-icon-32.png" ALT="Submit button"></a> </div> </fieldset> </form>');
+                    });
+                }
 				$('ul#faqlist').append(items.join(''));
 			},
 			failure:function (data) {
