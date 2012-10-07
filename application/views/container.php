@@ -17,7 +17,7 @@
 </head>
 
 
-<body>
+<body class="<?php echo $filename ?>" accesskey="">
 <?php
 		  $this->load->view('header');
 		  $this->load->view($page);

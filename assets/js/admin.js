@@ -342,7 +342,7 @@ jQuery(document).ready(function ($) {
 			data = 'csrf_test_name=' + $.cookie('csrf_cookie_name') + '&';
 			data += 'pageid=' + pageid;
 
-			if (pageid == 0) {
+			if (pageid === '0') {
 
 				var data = {};
 

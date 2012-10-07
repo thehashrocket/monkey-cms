@@ -164,6 +164,20 @@
 
 		}
 
+        function getPageName($pageid)
+        {
+            $this->db->select('page_name');
+            $this->db->from('pages');
+            $this->db->where('pageid', $pageid);
+
+            $query = $this->db->get();
+
+            $row = $query->row_array();
+
+            return $row['page_name'];
+
+        }
+
 		function getPageList($siteid)
 		{
 			$this->db->select('pageid, page_name, page_headline, page_intro, page_content, parentid, sectionid, userid, siteid, rank')
