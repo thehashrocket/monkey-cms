@@ -29,13 +29,8 @@
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
 <script src="<?php echo base_url();?>assets/js/libs/modernizr.foundation.js"></script>
-<script src="<?php echo base_url();?>assets/js/libs/foundation.js"></script>
-<script src="<?php echo base_url();?>assets/js/jquery_cycle.js" type="text/javascript"></script>
-<script src="<?php echo base_url();?>assets/js/jquery.cookie.js"></script>
-<script src="<?php echo base_url();?>assets/js/superfish-min.js"></script>
-<script src="<?php echo base_url();?>assets/js/admin.js"></script>
+<script src="<?php echo base_url();?>assets/js/libs/foundation.min.js"></script>
+
 
 

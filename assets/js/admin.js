@@ -276,9 +276,9 @@ jQuery(document).ready(function ($) {
 				data = $.parseJSON(feedback);
 				var items = []
 				$('ul#catlist').empty();
-				$('ul#catlist').append('<li><div class="row"><form name="catCreate" class="nice formupdate"><input type="hidden" name="idcategories" value=""><fieldset><div class="two columns"><input type="text" placeholder="Category Name" name="catname" value="" class="input-text small"></div><div class="four columns"><input type="text" placeholder="Category Description" name="catdesc" value="" class="input-text"></div> <div class="one column"><a href="" class="catsubmit"><img SRC="/assets/images/icons/save-icon-32.png" ALT="Submit button"></a></div> </fieldset> </form>');
+				$('ul#catlist').append('<li><div class="row"><form name="catCreate" class="nice formupdate"><input type="hidden" name="idcategories" value=""><fieldset><div class="four columns"><input type="text" placeholder="Category Name" name="catname" value="" class="input-text small"></div><div class="five columns"><input type="text" placeholder="Category Description" name="catdesc" value="" class="input-text"></div> <div class="one column"><a href="" class="catsubmit"><img SRC="/assets/images/icons/save-icon-32.png" ALT="Submit button"></a></div> </fieldset> </form>');
 				$.each(data, function () {
-					items.push('<li> <div class="row"><form name="catCreate" class="nice formupdate"><input type="hidden" name="idcategories" value="' + this.idcategories + '"><fieldset><div class="two columns"><input type="text" placeholder="Category Name" name="catname" value="' + this.catname + '" class="input-text small"></div><div class="four columns"><input type="text" placeholder="Category Description" name="catdesc" value="' + this.catdescription + '" class="input-text"></div> <div class="one column"> <a href="" class="catdelete"><img SRC="/assets/images/icons/delete-icon-32.png" ALT="Delete button"></a> </div><div class="one column"><a href="" class="catsubmit"><img SRC="/assets/images/icons/save-icon-32.png" ALT="Submit button"></a></div> </fieldset> </form>')
+					items.push('<li> <div class="row"><form name="catCreate" class="nice formupdate"><input type="hidden" name="idcategories" value="' + this.idcategories + '"><fieldset><div class="four columns"><input type="text" placeholder="Category Name" name="catname" value="' + this.catname + '" class="input-text small"></div><div class="five columns"><input type="text" placeholder="Category Description" name="catdesc" value="' + this.catdescription + '" class="input-text"></div> <div class="one column"> <a href="" class="catdelete"><img SRC="/assets/images/icons/delete-icon-32.png" ALT="Delete button"></a> </div><div class="one column"><a href="" class="catsubmit"><img SRC="/assets/images/icons/save-icon-32.png" ALT="Submit button"></a></div> </fieldset> </form>')
 				});
 				$('ul#catlist').append(items.join(''));
 			},
@@ -438,8 +438,7 @@ jQuery(document).ready(function ($) {
 
 	$('input, textarea').placeholder();
 
-	/* TOOLTIPS ------------ */
-	$(this).tooltips();
+
 
 
 	/* UNCOMMENT THE LINE YOU WANT BELOW IF YOU WANT IE6/7/8 SUPPORT AND ARE USING .block-grids */

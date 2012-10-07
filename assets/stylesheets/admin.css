@@ -139,6 +139,7 @@ h1, h2, h3, h4, p {
 
 #tabs-4.pageeditor ul.pagelist {
     background-color: #6495ed;
+    list-style-type: none;
 }
 
 #tabs-4.pageeditor ul.pagelist li {

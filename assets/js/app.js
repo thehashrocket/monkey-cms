@@ -431,9 +431,6 @@ jQuery(document).ready(function ($) {
 
 	$('input, textarea').placeholder();
 
-	/* TOOLTIPS ------------ */
-	$(this).tooltips();
-
 
 
 	/* UNCOMMENT THE LINE YOU WANT BELOW IF YOU WANT IE6/7/8 SUPPORT AND ARE USING .block-grids */

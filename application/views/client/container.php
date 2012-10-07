@@ -23,6 +23,16 @@
 		  $this->load->view($page);
 		  $this->load->view('/client/footer');
 ?>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
+<script src="<?php echo base_url();?>assets/js/jquery_cycle.js"></script>
+<script src="<?php echo base_url();?>assets/js/jquery.cookie.js"></script>
+<script src="<?php echo base_url();?>assets/js/superfish-min.js"></script>
+<script src="<?php echo base_url();?>assets/js/admin.js"></script>
+
+
+
 <script type="text/javascript">
 	$(function() {
 		$('#s1').cycle({ 
