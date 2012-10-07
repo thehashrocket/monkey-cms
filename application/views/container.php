@@ -23,6 +23,13 @@
 		  $this->load->view($page);
 		  $this->load->view('footer');
 ?>
+
+<script src="<?php echo base_url();?>assets/js/jquery_cycle.js" type="text/javascript"></script>
+<script src="<?php echo base_url();?>assets/js/jquery.cookie.js"></script>
+<script src="<?php echo base_url();?>assets/js/superfish-min.js"></script>
+<script src="<?php echo base_url();?>assets/js/app.js"></script>
+
+
 <script type="text/javascript">
 	$(function() {
 		$('#s1').cycle({ 

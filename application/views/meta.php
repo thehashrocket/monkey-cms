@@ -12,7 +12,7 @@
 
 
 <!-- Included CSS Files -->
-<link rel="stylesheet" href="<?php echo base_url();?>assets/stylesheets/foundation.css">
+<link rel="stylesheet" href="<?php echo base_url();?>assets/stylesheets/foundation.min.css">
 <link rel="stylesheet" href="<?php echo base_url();?>assets/stylesheets/app.css">
 <link rel="stylesheet" href="<?php echo base_url();?>assets/stylesheets/superfish-min.css">
 <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/themes/base/jquery-ui.css">
@@ -34,9 +34,6 @@
 
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
 
-<script src="<?php echo base_url();?>assets/js/jquery_cycle.js" type="text/javascript"></script>
-<script src="<?php echo base_url();?>assets/js/jquery.cookie.js"></script>
-<script src="<?php echo base_url();?>assets/js/superfish-min.js"></script>
-<script src="<?php echo base_url();?>assets/js/app.js"></script>
+
 
 
