@@ -29,7 +29,7 @@
 
 		public function index($sectionid = 1, $pageid = 1)
 		{
-            $filename = strtolower($this->Pages_model->getPageName($pageid));
+            $filename = underscore(strtolower($this->Pages_model->getPageName($pageid)));
             $data['filename'] = $filename;
 
             if (@file_exists(APPPATH."views/pages/{$filename}.php"))

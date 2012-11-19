@@ -296,10 +296,18 @@ jQuery(document).ready(function ($) {
 		$('input[name="pageid"]').val(data.pageid);
 		$('a.pagedelete').prop('href', '/client/pageDelete/' + data.userid + '/' + data.pageid);
 		$('input[name="userid"]').val(data.userid);
-		$('input[name="pagename"]').val(data.page_name);
-		$('input[name="pageheadline"]').val(data.page_headline);
-		$('textarea[name="pagecontent"]').val(data.page_content);
-		CKEDITOR.instances['pagededitor'].setData(data.page_content);
+
+		if (data.pageid !== 0) {
+			$('input[name="pagename"]').val(data.page_name);
+			$('input[name="pageheadline"]').val(data.page_headline);
+			$('textarea[name="pagecontent"]').val(data.page_content);
+			CKEDITOR.instances['pagededitor'].setData(data.page_content);
+		} else {
+			$('input[name="pagename"]').val('').attr('placeholder','Insert Page Name');
+			$('input[name="pageheadline"]').val('').attr('placeholder', 'Insert Page Headline');
+			$('textarea[name="pagecontent"]').val('').attr('placeholder','Add Page Content');
+			CKEDITOR.instances['pagededitor'].setData(data.page_content);
+		}
 	}
 
 	/* Rebuilds the PageList sidebar */

@@ -36,7 +36,7 @@
 				foreach ($this->data['users'] as $k => $user) {
 					$this->data['users'][$k]->groups = $this->ion_auth->get_users_groups($user->id)->result();
 				}
-
+				$this->data['filename']     = 'auth';
 				$this->data['page_title']    = $this->domain_model->getSiteTitle($this->siteid);
 				$this->data['page_desc']     = $this->domain_model->getPageMetaDesc($this->siteid);
 				$this->data['page_keywords'] = $this->domain_model->getPageMetaKeywords($this->siteid);
@@ -82,7 +82,7 @@
 				                                'id'   => 'password',
 				                                'type' => 'password',
 				);
-
+				$this->data['filename']     = 'auth';
 				$this->data['page_title']    = $this->domain_model->getSiteTitle($this->siteid);
 				$this->data['page_desc']     = $this->domain_model->getPageMetaDesc($this->siteid);
 				$this->data['page_keywords'] = $this->domain_model->getPageMetaKeywords($this->siteid);
@@ -177,7 +177,7 @@
 				);
 				//set any errors and display the form
 				$this->data['message'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('message');
-
+				$this->data['filename']     = 'auth';
 				$this->data['page_title']    = $this->domain_model->getSiteTitle($this->siteid);
 				$this->data['page_desc']     = $this->domain_model->getPageMetaDesc($this->siteid);
 				$this->data['page_keywords'] = $this->domain_model->getPageMetaKeywords($this->siteid);
@@ -238,6 +238,7 @@
 					$this->data['code']                 = $code;
 
 					//render
+					$this->data['filename']     = 'auth';
 					$this->data['page_title']    = $this->domain_model->getSiteTitle($this->siteid);
 					$this->data['page_desc']     = $this->domain_model->getPageMetaDesc($this->siteid);
 					$this->data['page_keywords'] = $this->domain_model->getPageMetaKeywords($this->siteid);
@@ -415,7 +416,7 @@
 				                                        'type'  => 'password',
 				                                        'value' => $this->form_validation->set_value('password_confirm'),
 				);
-
+				$this->data['filename']     = 'auth';
 				$this->data['page']    = 'auth/create_user';
 				$this->data['page_desc']     = $this->domain_model->getPageMetaDesc($this->siteid);
 				$this->data['page_keywords'] = $this->domain_model->getPageMetaKeywords($this->siteid);
