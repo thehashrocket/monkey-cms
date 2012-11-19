@@ -48,10 +48,10 @@
 $active_group = 'live';
 $active_record = TRUE;
 
-$db['live']['hostname'] = '';
-$db['live']['username'] = '';
-$db['live']['password'] = '';
-$db['live']['database'] = '';
+$db['live']['hostname'] = 'mysql-shared-02.phpfog.com';
+$db['live']['username'] = 'jason-96-55499';
+$db['live']['password'] = 'Fj35J03j94iq';
+$db['live']['database'] = 'testosm_phpfogapp_com';
 $db['live']['dbdriver'] = 'mysql';
 $db['live']['dbprefix'] = '';
 $db['live']['pconnect'] = TRUE;
