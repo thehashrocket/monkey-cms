@@ -105,6 +105,7 @@ jQuery(document).ready(function ($) {
 				data.pageid = 0;
 				data.userid = pathname[pathname.length - 2];
 				data.page_name = 'Insert Page Name Here';
+                data.menu_name = 'Insert Page Menu Name Here';
 				data.page_headline = "New Page Headline Goes Here";
 				data.page_content = "Insert Page Content Here";
 
@@ -299,11 +300,13 @@ jQuery(document).ready(function ($) {
 
 		if (data.pageid !== 0) {
 			$('input[name="pagename"]').val(data.page_name);
+            $('input[name="menuname"]').val(data.menu_name);
 			$('input[name="pageheadline"]').val(data.page_headline);
 			$('textarea[name="pagecontent"]').val(data.page_content);
 			CKEDITOR.instances['pagededitor'].setData(data.page_content);
 		} else {
 			$('input[name="pagename"]').val('').attr('placeholder','Insert Page Name');
+            $('input[name="menuname"]').val('').attr('placeholder','Insert Page Menu Name');
 			$('input[name="pageheadline"]').val('').attr('placeholder', 'Insert Page Headline');
 			$('textarea[name="pagecontent"]').val('').attr('placeholder','Add Page Content');
 			CKEDITOR.instances['pagededitor'].setData(data.page_content);

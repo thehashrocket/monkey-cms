@@ -199,7 +199,7 @@
 			}
 		}
 
-		function updatePage($pageid, $pagename, $pageheadline, $pagecontent, $parentpage, $sectionid, $uid, $siteid)
+		function updatePage($pageid, $pagename, $menuname, $pageheadline, $pagecontent, $parentpage, $sectionid, $uid, $siteid)
 		{
 			$user = $this->user_id;
 
@@ -211,6 +211,7 @@
 			if ($query->num_rows() > 0) {
 				$data = array(
 					'page_name'        => $pagename,
+                    'menu_name'         => $menuname,
 					'page_headline'    => $pageheadline,
 					'page_content'     => $pagecontent,
 					'parentid'         => $parentpage,
@@ -226,6 +227,7 @@
 			} else {
 				$data = array(
 					'page_name'        => $pagename,
+                    'menu_name'         => $menuname,
 					'page_headline'    => $pageheadline,
 					'page_content'     => $pagecontent,
 					'parentid'         => $parentpage,

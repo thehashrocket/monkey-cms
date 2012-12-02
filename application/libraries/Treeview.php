@@ -29,22 +29,22 @@
 			foreach ($menu_array as $menu)
 			{
 
-				if ($this->hasChildren($menu['pageid']))
-				{
-					$html.="<li class=\"closed\"><a href=\"".$this->anchor . $this->sectionid . "/". $menu['pageid'] . "/\">
-                      " . $menu['node'] . "</a>\n<ul>\n";
-					$childarray = $menu['children'];
-					foreach ( $childarray as $child)
-					{
-						$html.="<li><a href=\"".$this->anchor . $this->sectionid ."/" . $child['pageid'] . "/\">
+                if ($this->hasChildren($menu['pageid']))
+                {
+                    $html.="<li class=\"closed has-flyout\"><a class=\"flyout-toggle\" href=\"".$this->anchor . $menu['node'] . "/\">
+                      " . $menu['node'] . "</a>\n<ul class=\"flyout\">\n";
+                    $childarray = $menu['children'];
+                    foreach ( $childarray as $child)
+                    {
+                        $html.="<li class='page_item'><a href=\"".$this->anchor . $this->sectionid ."/" . $child['pageid'] . "/\">
                       " . $child['node'] . "</a></li>\n";
-					}
-					$html.= "</li>\n</ul>\n";
+                    }
+                    $html.= "</li>\n</ul>\n";
 
-				} else {
-					$html.="<li><a href=\"".$this->anchor . $this->sectionid ."/".  $menu['pageid'] . "/\">
+                } else {
+                    $html.="<li class='page_item'><a href=\"".$this->anchor . $menu['node'] . "/\">
                       " . $menu['node'] . "</a></li>\n";
-				}
+                }
 
 			}
 

@@ -239,7 +239,8 @@
 				} else {
 					$pageid = (string)$this->input->post('pageid');
 				}
-				$pagename     = (string)$this->input->post('pagename', TRUE);
+                $pagename     = underscore(strtolower($this->input->post('pagename', TRUE)));
+            $menuname     = (string)$this->input->post('menuname', TRUE);
 				$pageheadline = (string)$this->input->post('pageheadline', TRUE);
 				$pagecontent  = html_purify($this->input->post('pagecontent', FALSE));
 				$parentpage   = (string)$this->input->post('parentpage', TRUE);
@@ -247,7 +248,7 @@
 				$uid          = $this->user_id;
 				$siteid       = $this->siteid;
 
-				$this->Pages_model->updatePage($pageid, $pagename, $pageheadline, $pagecontent, $parentpage, $sectionid, $uid, $siteid);
+				$this->Pages_model->updatePage($pageid, $pagename, $menuname, $pageheadline, $pagecontent, $parentpage, $sectionid, $uid, $siteid);
 
 //				$this->save_routes();
 		}
