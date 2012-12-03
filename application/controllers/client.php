@@ -229,29 +229,29 @@
 			echo 'here i am';
 		}
 
-		function pageUpdate()
-		{
-				$this->load->helper('htmlpurifier');
-				$strlen = strlen((string)$this->input->post('pageid'));
+        function pageUpdate()
+        {
+            $this->load->helper('htmlpurifier');
+            $strlen = strlen((string)$this->input->post('pageid'));
 
-				if ($strlen == 0) {
-					$pageid = '';
-				} else {
-					$pageid = (string)$this->input->post('pageid');
-				}
-                $pagename     = underscore(strtolower($this->input->post('pagename', TRUE)));
-                $menuname     = (string)$this->input->post('menuname', TRUE);
-				$pageheadline = (string)$this->input->post('pageheadline', TRUE);
-				$pagecontent  = html_purify($this->input->post('pagecontent', FALSE));
-				$parentpage   = (string)$this->input->post('parentpage', TRUE);
-				$sectionid		= '1'; // TODO: I need to create support for sections/categories.
-				$uid          = $this->user_id;
-				$siteid       = $this->siteid;
+            if ($strlen == 0) {
+                $pageid = '';
+            } else {
+                $pageid = (string)$this->input->post('pageid');
+            }
+            $pagename     = underscore(strtolower($this->input->post('pagename', TRUE)));
+            $menuname     = (string)$this->input->post('menuname', TRUE);
+            $pageheadline = (string)$this->input->post('pageheadline', TRUE);
+            $pagecontent  = html_purify($this->input->post('pagecontent', FALSE));
+            $parentpage   = (string)$this->input->post('parentpage', TRUE);
+            $sectionid		= '1'; // TODO: I need to create support for sections/categories.
+            $uid          = $this->user_id;
+            $siteid       = $this->siteid;
 
-				$this->Pages_model->updatePage($pageid, $pagename, $menuname, $pageheadline, $pagecontent, $parentpage, $sectionid, $uid, $siteid);
+            $this->Pages_model->updatePage($pageid, $pagename, $menuname, $pageheadline, $pagecontent, $parentpage, $sectionid, $uid, $siteid);
 
 //				$this->save_routes();
-		}
+        }
 
 		function profileUpdate()
 		{
