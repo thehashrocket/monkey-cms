@@ -11,7 +11,7 @@
 
 		public $sectionid = 1;
 		private $nodesql = "SELECT pageid, parentid, page_name, rank, sectionid FROM pages ";
-		private $anchor = "/pages/index/";
+		private $anchor = "/";
 		private $orderby = " order by parentid, rank, pageid, sectionid";
 
 		function __construct()

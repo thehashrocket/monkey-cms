@@ -333,6 +333,11 @@
 						<input type="text" placeholder="Page Name" name="pagename" value="<?= $row->page_name;?>" class="input-text">
 					</div>
 				</div>
+                <div class="row">
+                    <div class="twelve columns">
+                        <input type="text" placeholder="Menu Name" name="menuname" value="<?= $row->menu_name;?>" class="input-text">
+                    </div>
+                </div>
 				<div class="row">
 					<div class="twelve columns">
 						<input type="text" placeholder="Page Headline" name="pageheadline" value="<?= $row->page_headline;?>"

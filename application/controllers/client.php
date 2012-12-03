@@ -240,7 +240,7 @@
 					$pageid = (string)$this->input->post('pageid');
 				}
                 $pagename     = underscore(strtolower($this->input->post('pagename', TRUE)));
-            $menuname     = (string)$this->input->post('menuname', TRUE);
+                $menuname     = (string)$this->input->post('menuname', TRUE);
 				$pageheadline = (string)$this->input->post('pageheadline', TRUE);
 				$pagecontent  = html_purify($this->input->post('pagecontent', FALSE));
 				$parentpage   = (string)$this->input->post('parentpage', TRUE);
@@ -304,66 +304,66 @@
 
 		// This function gets run whenever the order of the pages is changed within the client area. It's fired from
 		// the reorder function in app.js.
-		function saveOrder()
-		{
+        function saveOrder()
+        {
 
-			$items = $this->input->post('item');
-			$total_items = count($this->input->post('item'));
+            $items = $this->input->post('item');
+            $total_items = count($this->input->post('item'));
 
-			for ($item = 0; $item < $total_items; $item++) {
+            for ($item = 0; $item < $total_items; $item++) {
 
-				$data = array(
-					'pageid' => $items[$item],
-					'rank'   => $item
-				);
+                $data = array(
+                    'pageid' => $items[$item],
+                    'rank'   => $item
+                );
 
-				$this->db->where('pageid', $data['pageid']);
+                $this->db->where('pageid', $data['pageid']);
 
-				$this->db->update('pages', $data);
+                $this->db->update('pages', $data);
 
-			}
+            }
 
-			$this->save_routes();
-		}
+            $this->save_routes();
+        }
 
-		public function save_routes()
-		{
+        public function save_routes()
+        {
 
-			// this simply returns all the pages from my database
-			$routes = $this->Pages_model->getPageList($this->siteid);
+            // this simply returns all the pages from my database
+            $routes = $this->Pages_model->getPageList($this->siteid);
 
-			// write out the PHP array to the file with help from the file helper
-			if (!empty($routes)) {
-				// for every page in the database, get the route using the recursive function - _get_route()
-				foreach ($routes->result_array() as $route) {
+            // write out the PHP array to the file with help from the file helper
+            if (!empty($routes)) {
+                // for every page in the database, get the route using the recursive function - _get_route()
+                foreach ($routes->result_array() as $route) {
 
-					$data[] = '$route["' . $this->_get_route($route['pageid']) . '"] = "' . "pages/index/{$route['sectionid']}/{$route['pageid']}" . '";';
-				}
+                    $data[] = '$route["' . $this->_get_route($route['pageid']) . '"] = "' . "pages/index/{$route['sectionid']}/{$route['pageid']}" . '";';
+                }
 
-				$output = "<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');\n";
+                $output = "<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');\n";
 
-				$output .= implode("\n", $data);
+                $output .= implode("\n", $data);
 
-				$this->load->helper('file');
-				write_file(APPPATH . "cache/routes.php", $output);
-			}
-		}
+                $this->load->helper('file');
+                write_file(APPPATH . "cache/routes.php", $output);
+            }
+        }
 
-		// Credit to http://acairns.co.uk for this simple function he shared with me
-		// this will return our route based on the 'url' field of the database
-		// it will also check for parent pages for hierarchical urls
-		private function _get_route($id)
-		{
+        // Credit to http://acairns.co.uk for this simple function he shared with me
+        // this will return our route based on the 'url' field of the database
+        // it will also check for parent pages for hierarchical urls
+        private function _get_route($id)
+        {
 
-			// get the page from the db using it's id
-			$page = $this->Pages_model->get_page($id);
+            // get the page from the db using it's id
+            $page = $this->Pages_model->get_page($id);
 
-			// if this page has a parent, prefix it with the URL of the parent -- RECURSIVE
-			if ($page["parentid"] != 0)
-				$prefix = $this->_get_route($page["parentid"]) . "/" . $page['page_name'];
-			else
-				$prefix = $page['page_name'];
+            // if this page has a parent, prefix it with the URL of the parent -- RECURSIVE
+            if ($page["parentid"] != 0)
+                $prefix = $this->_get_route($page["parentid"]) . "/" . $page['page_name'];
+            else
+                $prefix = $page['page_name'];
 
-			return $prefix;
-		}
+            return $prefix;
+        }
 	}

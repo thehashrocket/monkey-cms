@@ -180,7 +180,7 @@
 
 		function getPageList($siteid)
 		{
-			$this->db->select('pageid, page_name, page_headline, page_intro, page_content, parentid, sectionid, userid, siteid, rank')
+			$this->db->select('*')
 				->from('pages')
 				->where('siteid', $siteid)
 				->order_by('rank');
