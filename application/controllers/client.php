@@ -18,9 +18,11 @@
 			$this->load->model('Client_model');
 			$this->load->model('Gallery_model');
 			$this->load->model('Category_model');
+			$this->load->model('Location_model');
 			$this->load->model('Pages_model');
 			$this->load->model('Faq_model');
 			$this->load->helper('ckeditor');
+            $this->db->save_queries = FALSE;
 			$this->siteid = $this->domain_model->getUID();
 
 			if (!$this->ion_auth->logged_in()) {
@@ -34,9 +36,9 @@
 				$this->login             = 'true';
 				$this->thumb_size_width  = '500';
 				$this->thumb_size_height = '300';
-				$this->max_image_size    = '1000';
-				$this->gallery_path      = realpath(APPPATH . '../assets/images/gallery');
-				$this->gallery_path_url  = base_url() . 'assets/images/gallery/';
+				$this->max_image_size    = '2000';
+				$this->gallery_path      = realpath(APPPATH . '../assets/upload/images');
+				$this->gallery_path_url  = base_url() . 'assets/upload/images/';
 			}
 		}
 
@@ -81,6 +83,40 @@
 					)
 				);
 
+				$data['ckeditor2'] = array(
+
+					//ID of the textarea that will be replaced
+					'id'      => 'locationeditor',
+					'path'    => 'assets/js/ckeditor',
+
+					//Optionnal values
+					'config'  => array(
+						// 'toolbar'     => "Basic", //Using the Full toolbar
+						'toolbar'		=> array(
+							array('Source','-','Save','NewPage','DocProps','Preview','Print','-','Templates'),
+							array('Bold', 'Italic', '-', 'NumberedList', 'BulletedList', '-', 'Link', 'Unlink','-','About'),
+							array('Image','Flash','Table','HorizontalRule','Smiley','SpecialChar','PageBreak','Iframe')
+						),
+						'width'       => "550px", //Setting a custom width
+						'height'      => '500px', //Setting a custom height
+
+					),
+
+					//Replacing styles from the "Styles tool"
+					'styles'  => array(
+
+						//Creating a new style named "style 1"
+						'style 1' => array(
+							'name'         => 'Blue Title',
+							'element'      => 'h2',
+							'styles'       => array(
+								'color'               => 'Blue',
+								'font-weight'         => 'bold'
+							)
+						)
+					)
+				);
+
 
 				$data['login']         = $this->login;
 				$data['user_id']       = $this->user_id;
@@ -89,6 +125,7 @@
 				$data['photos']        = $this->Gallery_model->profile_get_images_from_db($this->user_id);
 				$data['clientdata']    = $this->Client_model->getClientProfile($this->user_id);
 				$data['pagelist']      = $this->Pages_model->getClientPageList($this->user_id);
+				$data['photolist']      = $this->Gallery_model->get_images_from_db($this->user_id);
 				$data['faqs']			= $this->Projects_model->getFAQProfile($this->user_id);
 				$data['pagedata']      = $this->Pages_model->getPagedata($this->user_id, $pageid);
 				$data['page_title']    = $this->domain_model->getSiteTitle($this->siteid);
@@ -156,9 +193,8 @@
 			$question = (string)$this->input->post('question', TRUE);
 			$answer   = (string)$this->input->post('answer', TRUE);
 			$uid      = $this->user_id;
-			$redirect = "/client/index";
 
-			$this->Faq_model->updateFAQ($faq_id, $question, $answer, $uid, $redirect);
+			$this->Faq_model->updateFAQ($faq_id, $question, $answer, $uid);
 		}
 
 		// Updates Gallery Table
@@ -214,10 +250,69 @@
 			$this->Faq_model->getAjaxFAQList($this->user_id);
 		}
 
+		function getLocation()
+		{
+			$idlocation = (string)$this->input->post('address');
+			$this->Location_model->getAjaxLocation($idlocation);
+		}
+
+		function getLocationById()
+		{
+			$idlocation = (string)$this->input->post('location');
+			$this->Location_model->getAjaxLocation($idlocation);
+		}
+
+		function getLocationList()
+		{
+			$this->Location_model->getAjaxLocationList();
+		}
+
 		function getPageDetails()
 		{
 			$page_id = $this->input->get_post('pageid', TRUE);
 			$this->Pages_model->getAjaxPagedata($this->user_id, $page_id);
+		}
+
+		function deleteLocation()
+		{
+			$locationid = (string)$this->input->post('locationid');
+			$this->Location_model->deleteLocation($locationid);
+		}
+
+		function locationUpdate()
+		{
+			
+
+			$this->load->helper('htmlpurifier');
+			$strlen = strlen((string)$this->input->post('locationid'));
+
+			if ($strlen == 0) {
+				$idlocation = '';
+			} else {
+				$idlocation = (string)$this->input->post('locationid');
+			}
+			$locationname = (string)$this->input->post('location_name', TRUE);
+			$locationstreet = (string)$this->input->post('location_street', TRUE);
+			$locationcity = (string)$this->input->post('location_city', TRUE);
+			$locationstate = (string)$this->input->post('location_state', TRUE);
+			$locationzip = (string)$this->input->post('location_zip', TRUE);
+			$saleprice = (string)$this->input->post('sale_price', TRUE);
+			$rentprice = (string)$this->input->post('rent_price', TRUE);
+			$bedrooms = (string)$this->input->post('bedrooms', TRUE);
+			$bathrooms = (string)$this->input->post('bathrooms', TRUE);
+			$squarefeet = (string)$this->input->post('square_feet', TRUE);
+			$locationdescription = html_purify($this->input->post('location_description', FALSE));
+			$photo_id = (string)$this->input->post('location_photo', TRUE);
+			$lat = (string)$this->input->post('tbxlat', TRUE);
+			$lng = (string)$this->input->post('tbxlng', TRUE);
+			$tags = (string)$this->input->post('tags', TRUE);
+			$uid = $this->user_id;
+			$featured = (string)$this->input->post('featured');
+			$reduced = (string)$this->input->post('reduced');
+			$rented = (string)$this->input->post('rented');
+			$sold = (string)$this->input->post('sold');
+			$this->Location_model->updateLocation($idlocation, $locationname, $locationstreet, $locationcity, $locationstate, $locationzip, $saleprice, $rentprice, $bedrooms, $bathrooms, $squarefeet, $locationdescription, $photo_id, $lat, $lng, $tags, $featured, $reduced, $rented, $sold, $uid);
+
 		}
 
 		function pageDelete()
@@ -229,29 +324,29 @@
 			echo 'here i am';
 		}
 
-        function pageUpdate()
-        {
-            $this->load->helper('htmlpurifier');
-            $strlen = strlen((string)$this->input->post('pageid'));
+		function pageUpdate()
+		{
+				$this->load->helper('htmlpurifier');
+				$strlen = strlen((string)$this->input->post('pageid'));
 
-            if ($strlen == 0) {
-                $pageid = '';
-            } else {
-                $pageid = (string)$this->input->post('pageid');
-            }
-            $pagename     = underscore(strtolower($this->input->post('pagename', TRUE)));
-            $menuname     = (string)$this->input->post('menuname', TRUE);
-            $pageheadline = (string)$this->input->post('pageheadline', TRUE);
-            $pagecontent  = html_purify($this->input->post('pagecontent', FALSE));
-            $parentpage   = (string)$this->input->post('parentpage', TRUE);
-            $sectionid		= '1'; // TODO: I need to create support for sections/categories.
-            $uid          = $this->user_id;
-            $siteid       = $this->siteid;
+				if ($strlen == 0) {
+					$pageid = '';
+				} else {
+					$pageid = (string)$this->input->post('pageid');
+				}
+                $pagename     = underscore(strtolower($this->input->post('pagename', TRUE)));
+				$menuname     = (string)$this->input->post('menuname', TRUE);
+				$pageheadline = (string)$this->input->post('pageheadline', TRUE);
+				$pagecontent  = html_purify($this->input->post('pagecontent', FALSE));
+				$parentpage   = (string)$this->input->post('parentpage', TRUE);
+				$sectionid		= '1'; // TODO: I need to create support for sections/categories.
+				$uid          = $this->user_id;
+				$siteid       = $this->siteid;
 
-            $this->Pages_model->updatePage($pageid, $pagename, $menuname, $pageheadline, $pagecontent, $parentpage, $sectionid, $uid, $siteid);
+				$this->Pages_model->updatePage($pageid, $pagename, $menuname, $pageheadline, $pagecontent, $parentpage, $sectionid, $uid, $siteid);
 
 //				$this->save_routes();
-        }
+		}
 
 		function profileUpdate()
 		{
@@ -304,66 +399,66 @@
 
 		// This function gets run whenever the order of the pages is changed within the client area. It's fired from
 		// the reorder function in app.js.
-        function saveOrder()
-        {
+		function saveOrder()
+		{
 
-            $items = $this->input->post('item');
-            $total_items = count($this->input->post('item'));
+			$items = $this->input->post('item');
+			$total_items = count($this->input->post('item'));
 
-            for ($item = 0; $item < $total_items; $item++) {
+			for ($item = 0; $item < $total_items; $item++) {
 
-                $data = array(
-                    'pageid' => $items[$item],
-                    'rank'   => $item
-                );
+				$data = array(
+					'pageid' => $items[$item],
+					'rank'   => $item
+				);
 
-                $this->db->where('pageid', $data['pageid']);
+				$this->db->where('pageid', $data['pageid']);
 
-                $this->db->update('pages', $data);
+				$this->db->update('pages', $data);
 
-            }
+			}
 
-            $this->save_routes();
-        }
+			$this->save_routes();
+		}
 
-        public function save_routes()
-        {
+		public function save_routes()
+		{
 
-            // this simply returns all the pages from my database
-            $routes = $this->Pages_model->getPageList($this->siteid);
+			// this simply returns all the pages from my database
+			$routes = $this->Pages_model->getPageList($this->siteid);
 
-            // write out the PHP array to the file with help from the file helper
-            if (!empty($routes)) {
-                // for every page in the database, get the route using the recursive function - _get_route()
-                foreach ($routes->result_array() as $route) {
+			// write out the PHP array to the file with help from the file helper
+			if (!empty($routes)) {
+				// for every page in the database, get the route using the recursive function - _get_route()
+				foreach ($routes->result_array() as $route) {
 
-                    $data[] = '$route["' . $this->_get_route($route['pageid']) . '"] = "' . "pages/index/{$route['sectionid']}/{$route['pageid']}" . '";';
-                }
+					$data[] = '$route["' . $this->_get_route($route['pageid']) . '"] = "' . "pages/index/{$route['sectionid']}/{$route['pageid']}" . '";';
+				}
 
-                $output = "<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');\n";
+				$output = "<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');\n";
 
-                $output .= implode("\n", $data);
+				$output .= implode("\n", $data);
 
-                $this->load->helper('file');
-                write_file(APPPATH . "cache/routes.php", $output);
-            }
-        }
+				$this->load->helper('file');
+				write_file(APPPATH . "cache/routes.php", $output);
+			}
+		}
 
-        // Credit to http://acairns.co.uk for this simple function he shared with me
-        // this will return our route based on the 'url' field of the database
-        // it will also check for parent pages for hierarchical urls
-        private function _get_route($id)
-        {
+		// Credit to http://acairns.co.uk for this simple function he shared with me
+		// this will return our route based on the 'url' field of the database
+		// it will also check for parent pages for hierarchical urls
+		private function _get_route($id)
+		{
 
-            // get the page from the db using it's id
-            $page = $this->Pages_model->get_page($id);
+			// get the page from the db using it's id
+			$page = $this->Pages_model->get_page($id);
 
-            // if this page has a parent, prefix it with the URL of the parent -- RECURSIVE
-            if ($page["parentid"] != 0)
-                $prefix = $this->_get_route($page["parentid"]) . "/" . $page['page_name'];
-            else
-                $prefix = $page['page_name'];
+			// if this page has a parent, prefix it with the URL of the parent -- RECURSIVE
+			if ($page["parentid"] != 0)
+				$prefix = $this->_get_route($page["parentid"]) . "/" . $page['page_name'];
+			else
+				$prefix = $page['page_name'];
 
-            return $prefix;
-        }
+			return $prefix;
+		}
 	}

@@ -160,38 +160,26 @@ class Site extends CI_Controller
         $this->form_validation->set_rules('telephone', 'Telephone', 'required|trim');
         $this->form_validation->set_rules('message', 'Your Message', 'required|trim');
 
-        if($this->form_validation->run() == FALSE)
-        {
-            $data['page_title'] = 'AVI Transportation - Community Livery Service';
-            $data['page'] = 'contact_view'; // pass the actual view to use as a parameter
-            $this->load->view('container',$data);
-        }
-        else
-        {
-            // validation has passed. Now send to model
-            $uid        = uniqid(rand());
-            $firstname = (string)$this->input->post('firstname', TRUE);
-            $lastname = (string)$this->input->post('lastname', TRUE);
-            $email = (string)$this->input->post('email', TRUE);
-            $street = (string)$this->input->post('street', TRUE);
-            $city = (string)$this->input->post('city', TRUE);
-            $state = (string)$this->input->post('state', TRUE);
-            $zip = (string)$this->input->post('zip', TRUE);
-            $telephone = (string)$this->input->post('telephone', TRUE);
-            $message = (string)$this->input->post('message', TRUE);
-            $redirect = "/welcome/thankyou";
+        // validation has passed. Now send to model
+        $uid        = mt_rand(5, 15);
+        $firstname = (string)$this->input->post('firstname', TRUE);
+        $lastname = (string)$this->input->post('lastname', TRUE);
+        $email = (string)$this->input->post('email', TRUE);
+        $street = (string)$this->input->post('street', TRUE);
+        $city = (string)$this->input->post('city', TRUE);
+        $state = (string)$this->input->post('state', TRUE);
+        $zip = (string)$this->input->post('zip', TRUE);
+        $telephone = (string)$this->input->post('telephone', TRUE);
+        $message = (string)$this->input->post('message', TRUE);
 
-            $subject = 'New Contact';
+        $subject = 'New Contact';
 
-            $this->Site_model->createContact($uid, $firstname, $lastname, $email, $street, $city, $state, $zip, $telephone, $message);
+        $this->Site_model->createContact($uid, $firstname, $lastname, $email, $street, $city, $state, $zip, $telephone, $message);
 
-            $this->Site_model->emailContact($uid, $firstname, $lastname, $subject, $email, $street, $city, $state, $zip, $telephone, $message);
+        $this->Site_model->emailContact($uid, $firstname, $lastname, $subject, $email, $street, $city, $state, $zip, $telephone, $message);
 
-            $data['page_title'] = 'AVI Transportation - Thank You';
-            $data['message']    = $message;
-            $data['page']       = 'thankyou_view'; // pass the actual view to use as a parameter
-            $this->load->view('container',$data);
-        }
+        redirect('/pages/index/1/21');
+
     }
 
 }

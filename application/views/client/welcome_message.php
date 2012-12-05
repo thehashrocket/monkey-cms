@@ -116,6 +116,7 @@
 	<li><a href="#tabs-3">My Images</a></li>
 	<li><a href="#tabs-4">Pages</a></li>
 	<li><a href="#tabs-5">FAQ</a></li>
+    <li><a href="#tabs-6">Locations</a> </li>
 </ul>
 
 <!-- Your Profile -->
@@ -403,6 +404,176 @@
 			
 		</div>
 	</div>
+</div>
+
+<!-- Haunted Locations -->
+<div id="tabs-6" class="haunted-location">
+    <h4>Locations</h4>
+
+	<div class="row">
+		<div class="twelve columns">
+			<table id="locations" class="tablesorter">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>City</th>
+						<th>State</th>
+						<th>Zip</th>
+						<th>Update</th>
+						<th>Delete</th>
+					</tr>
+				</thead>
+				<tbody>
+
+				</tbody>
+			</table>
+		</div>
+		<div id="map-canvas"></div>
+	</div>
+
+    <?php $attributes = array('class' => 'nice', 'id' => 'locationForm');
+    echo form_open('', $attributes);
+    ?>
+
+	<input type="hidden" name="locationid" value=""/>
+	<input type="hidden" name="userid" value="<?= $user_id;?>"/>
+	<input type="hidden" name="tbxlat" id="tbxlat" >
+	<input type="hidden" name="tbxlng" id="tbxlng">
+
+
+    <?=form_fieldset('');?>
+    <div class="row">
+        <div class="twelve columns">
+            <div class="six columns">
+                <?=form_label('Location Name', 'location_name');?>
+                <input type="text" name="location_name" id="location_name" class="input-text" placeholder="Location Name"
+                       value="">
+
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="row">
+    	<div class="three columns">
+            	<?=form_label('Featured Property', 'featured');?>
+            	<input type="checkbox" name="featured" id="featured" value="1">
+            </div>
+
+        <div class="three columns">
+            <?=form_label('Reduced', 'reduced');?>
+            <input type="checkbox" name="reduced" id="reduced" value="1">
+
+        </div>
+        <div class="three columns">
+            <?=form_label('Rented', 'rented');?>
+            <input type="checkbox" name="rented" id="rented" value="1">
+
+        </div>
+        <div class="three columns">
+            <?=form_label('Sold', 'sold');?>
+            <input type="checkbox" name="sold" id="sold" value="1">
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="twelve columns">
+            <?=form_label('Street Address', 'location_street');?>
+            <input type="text" name="location_street" id="location_street" class="input-text" placeholder="Street Address"
+                   value="">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="twelve columns">
+            <div class="six columns">
+                <?=form_label('City', 'location_city');?>
+                <input type="text" name="location_city" id="location_city" class="input-text" placeholder="City"
+                       value="">
+
+            </div>
+            <div class="three columns">
+                <?=form_label('State', 'location_state');?>
+                <input type="text" name="location_state" id="location_state" class="small input-text" placeholder="State"
+                       value="">
+
+            </div>
+            <div class="three columns">
+                <?=form_label('Zip', 'location_zip');?>
+                <input type="text" name="location_zip" id="location_zip" class="small input-text" placeholder="Zip" value="">
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+    	<div class="twelve columns">
+    		<div class="six columns">
+                <?=form_label('Price', 'sale_price');?>
+                <input type="text" name="sale_price" id="sale_price" class="input-text" placeholder="Sale Price"
+                       value="">
+
+            </div>
+            <div class="six columns">
+                <?=form_label('Rent', 'rent_price');?>
+                <input type="text" name="rent_price" id="rent_price" class="input-text" placeholder="Rental Price"
+                       value="">
+
+            </div>
+    	</div>
+    </div>
+    <div class="row">
+    	<div class="twelve columns">
+            <div class="four columns">
+                <?=form_label('Bedrooms', 'bedrooms');?>
+                <input type="text" name="bedrooms" id="bedrooms" class="input-text" placeholder="Bedrooms"
+                       value="">
+
+            </div>
+            <div class="four columns">
+                <?=form_label('Bathrooms', 'bathrooms');?>
+                <input type="text" name="bathrooms" id="bathrooms" class="input-text" placeholder="Bathrooms"
+                       value="">
+
+            </div>
+            <div class="four columns">
+                <?=form_label('Square Feet', 'square_feet');?>
+                <input type="text" name="square_feet" id="square_feet" class="input-text" placeholder="Square Feet"
+                       value="">
+
+            </div>
+    	</div>
+    </div>
+    <div class="row">
+    	<div class="twelve columns">
+    		<?=form_label('Property Photo', 'location_photo');?>
+    		<select id="location_photo" name="location_photo">
+				<option value="">None</option>
+				<?php
+				if (isset($photolist) && count($photolist) > 0) :
+					foreach ($photolist->result() as $row):
+						?>
+						<option value="<?= $row->photo_id ?>"><?php echo $row->photoname ?></option>
+						<?php endforeach; else: ?>
+					<tr>No Photos Added</tr>
+					<?php endif; ?>
+    		</select>
+		</div>
+	</div>
+	<div class="row">
+		<div class="twelve columns">
+			<textarea name="location_description" id="locationeditor"></textarea>
+			<?php echo display_ckeditor($ckeditor2); ?>
+			<input type="hidden" name="userid" value="<?= $user_id;?>"/>
+		</div>
+	</div>
+	<div class="row">
+        <div class="twelve columns">
+            <?= form_submit('mysubmit', 'Submit Updates!'); ?>
+        </div>
+    </div>
+    <?= form_fieldset_close();?>
+    <?= form_close()?>
 </div>
 
 

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="IdProvider" IDEtalkID="096A5C59D8419756435A472DCAA21B8F" />
+  <component name="ProjectResources">
+    <default-html-doctype>$APPLICATION_HOME_DIR$/lib/webide.jar!/resources/html5-schema/html5.rnc</default-html-doctype>
+  </component>
+  <component name="ProjectRootManager" version="2" />
+  <component name="WebServicesPlugin" addRequiredLibraries="true" />
+</project>
+

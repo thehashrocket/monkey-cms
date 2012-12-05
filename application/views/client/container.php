@@ -24,12 +24,18 @@
 		  $this->load->view('/client/footer');
 ?>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
 
-<script src="<?php echo base_url();?>assets/js/jquery_cycle.js"></script>
+<script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+
+
+<script src="<?php echo base_url();?>assets/js/jquery.cycle.js"></script>
 <script src="<?php echo base_url();?>assets/js/jquery.cookie.js"></script>
 <script src="<?php echo base_url();?>assets/js/superfish-min.js"></script>
+<script src="<?php echo base_url();?>assets/js/jquery.tablesorter.min.js"></script>
+<script src="<?php echo base_url();?>assets/js/jquery.tablesorter.pager.js"></script>
 <script src="<?php echo base_url();?>assets/js/admin.js"></script>
+<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script src="/assets/js/gmap3.js"></script>
 
 
 
@@ -40,6 +46,7 @@
 			delay: 2000,
 			timeout: 4000
 		});
+		$("table#locations").tablesorter();
 	});
 	</script>
 </body>

@@ -14,6 +14,7 @@
 <!-- Included CSS Files -->
 <link rel="stylesheet" href="<?php echo base_url();?>assets/stylesheets/foundation.min.css">
 <link rel="stylesheet" href="<?php echo base_url();?>assets/stylesheets/admin.css">
+<link rel="stylesheet" href="<?php echo base_url();?>assets/stylesheets/tablesorter/style.css">
 <link rel="stylesheet" href="<?php echo base_url();?>assets/stylesheets/superfish-min.css">
 <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css">
 
@@ -32,5 +33,13 @@
 <script src="<?php echo base_url();?>assets/js/libs/modernizr.foundation.js"></script>
 <script src="<?php echo base_url();?>assets/js/libs/foundation.min.js"></script>
 
-
+<script>
+  (function() {
+    var cx = '007537890616340261172:hkx7ulsb-4y';
+    var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
 

@@ -81,5 +81,21 @@ $db['develop']['swap_pre'] = '';
 $db['develop']['autoinit'] = TRUE;
 $db['develop']['stricton'] = FALSE;
 
+$db['axis41']['hostname'] = 'localhost';
+$db['axis41']['username'] = 'axis41';
+$db['axis41']['password'] = '';
+$db['axis41']['database'] = 'haunted_phpfogapp_com';
+$db['axis41']['dbdriver'] = 'mysql';
+$db['axis41']['dbprefix'] = '';
+$db['axis41']['pconnect'] = TRUE;
+$db['axis41']['db_debug'] = TRUE;
+$db['axis41']['cache_on'] = FALSE;
+$db['axis41']['cachedir'] = '';
+$db['axis41']['char_set'] = 'utf8';
+$db['axis41']['dbcollat'] = 'utf8_general_ci';
+$db['axis41']['swap_pre'] = '';
+$db['axis41']['autoinit'] = TRUE;
+$db['axis41']['stricton'] = FALSE;
+
 /* End of file database.php */
 /* Location: ./application/config/database.php */

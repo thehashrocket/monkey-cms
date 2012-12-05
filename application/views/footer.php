@@ -1,19 +1,27 @@
 
 
-<div id="copyright" class="row">
-    <div class="eight columns">
-        <p>&copy; 2003 - <?php echo date("Y");?> Capital Team Partners | <a href="">Refund Policy and FAQ</a> </p>
+<div id="footerWrapper"> <!-- begin: footerWrapper -->
 
-    </div>
-    <div id="metamenu" class="four columns">
+	<div id="footerBg"> <!-- begin: footerBg -->
 
-            <ul>
-                <li><a href="/pages/about">About</a> </li>
-                <li><a href="/pages/careers">Careers</a> </li>
-                <li><a href="/pages/terms">Terms</a> </li>
-                <li><a href="/pages/help">help</a> </li>
-            </ul>
+		<div id="footerContent"> <!-- begin: footerContent -->
 
-    </div>
-</div>
+			<p id="copyRight"><a href="http://www.hud.gov/offices/fheo/"><img src="/assets/images/theme/equal_housing_logo.gif"></a> Permian real Estate | All Rights Reserved</p>
 
+			<h2 id="footerLogo"><a href="#"><span>Permian Homes</span></a></h2>
+
+			<ul id="footerNav">
+
+				<?php
+				echo $navigation;
+				?>
+
+			</ul>
+
+
+		</div>  <!-- end: footerContent -->
+
+	</div>
+	<!-- end: footerBg -->
+
+</div> <!-- end: footerWrapper -->

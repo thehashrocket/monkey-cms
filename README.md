@@ -1,4 +1,4 @@
-Killer Ninja Coding Monkey CMS
+Haunted Location Finder
 ==========
 
 
@@ -10,12 +10,12 @@ Killer Ninja Coding Monkey CMS
 - Role-based access control
 - Built-in users/auth system
 - Simple email system
+- Google Maps API and Geolocation
 
 ## Road Map
 
-1. Move Admin to a completely seperate Library.
-2. Consolidate Content Editing Functions to 1 tab.
-3. Much More!
+1. Clean up site appearence.
+2. Add documentation.
 
 ## Stay Up To Date
 
@@ -29,13 +29,13 @@ Let's make this the best kick-start to any CodeIgniter project.
 
 ## License and Contact Information
 -------------------------------
-This application is licensed under the GPL v2. You can find the full license text 
+This application is licensed under the GPL v2. You can find the full license text
 here: http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
-If you need another license, write me an email and tell me what the library 
+If you need another license, write me an email and tell me what the library
 will be used for. I usually grant other open source licenses on an individual
 basis.
 
-Source code: https://github.com/jshultz/monkey-cms/
+Source code: https://github.com/jshultz/Haunted-Location-Finder
 
 You can reach me at:
 

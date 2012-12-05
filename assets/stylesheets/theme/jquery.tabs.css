@@ -1,0 +1,50 @@
+/* Caution! Ensure accessibility in print and other media types... */
+@media projection, screen { /* Use class for showing/hiding tab content, so that visibility can be better controlled in different media types... */
+    .tabs-hide {
+        display: none !important;
+    }
+}
+
+/* Hide useless elements in print layouts... */
+@media print {
+    .tabs-nav {
+        display: none;
+    }
+}
+
+/* Skin */
+.tabs-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 4px;
+}
+.tabs-nav:after { /* clearing without presentational markup, IE gets extra treatment */
+    display: block;
+    clear: both;
+    content: " ";
+}
+.tabs-nav li {
+    float: left;
+    margin: 0 0 0 1px;
+    min-width: 84px; /* be nice to Opera */
+}
+.tabs-nav a {
+    white-space: nowrap; /* required in IE 6 */    
+}
+.tabs-nav .tabs-selected a, .tabs-nav a:hover, .tabs-nav a:focus, .tabs-nav a:active {
+    outline: 0; /* prevent dotted border in Firefox */
+}
+*>.tabs-nav a span { /* hide from IE 6 */
+    width: auto;
+    height: auto;
+}
+.tabs-nav .tabs-selected a:link, .tabs-nav .tabs-selected a:visited, .tabs-nav .tabs-disabled a:link, .tabs-nav .tabs-disabled a:visited { /* @ Opera, use pseudo classes otherwise it confuses cursor... */
+    cursor: text;
+}
+.tabs-nav a:hover, .tabs-nav a:focus, .tabs-nav a:active { /* @ Opera, we need to be explicit again here now... */
+    cursor: pointer;
+}
+.tabs-container {
+    padding: 1em 8px;
+    /*background: #fff; /* declare background color for container to avoid distorted fonts in IE while fading*/
+}

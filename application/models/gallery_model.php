@@ -85,9 +85,8 @@ class Gallery_model extends CI_Model {
 
     function get_images_from_db($id) {
         $user = $this->user_id;
-        $this->db->select('p.fullsize, p.thumb, p.userid, p.projectid');
+        $this->db->select('*');
         $this->db->from('photos as p');
-        $this->db->where('p.busid', $id);
         return $this->db->get();
     }
 

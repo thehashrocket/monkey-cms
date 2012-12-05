@@ -1,0 +1,33 @@
+#homeContentLeft {
+	width: 470px;
+}
+h2.archiveTitle {
+	margin-top: 46px;
+}
+h2.pageTitle, .entryWrapper h2.postTitle {
+	margin-top: -20px;
+}
+.archivePostMeta {
+	min-height: 50px;
+}
+.vcard img {
+	-ms-interpolation-mode: bicubic;
+}
+#commentTabs .tabs-nav li
+{
+	margin-top: 9px;
+	margin-left: 8px;
+}
+#respond ul {
+	margin-top: -15px;
+}
+#postTools li ul {
+	padding-bottom: 10px;
+}
+.adsHolder li {
+	float: left;
+	display: inline;
+	margin-left: 4px;
+	overflow: hidden;
+	width: 120px;
+}

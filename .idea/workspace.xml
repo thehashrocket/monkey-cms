@@ -1,0 +1,1114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="04c0d240-df00-44d0-8ce4-05855b54e5e5" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php.ini" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.directory" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/controllers/blog.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/controllers/project.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/controllers/projects.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/controllers/providers.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/views/pages/careers.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/orbit/left-arrow-small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/orbit/right-arrow-small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/jquery-ui-1.8.16.custom.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/jquery-ui-1.8.19.custom.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/jquery_cycle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/libs/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/kcfinder/doc/BEFORE_RELEASE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/kcfinder/lang/af.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/kcfinder/lang/fi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/kcfinder/lang/ro.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/kcfinder/lang/sv.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/kcfinder/lang/uk.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/kcfinder/lib/class_image.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/kcfinder/lib/class_image_gd.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/kcfinder/lib/class_image_gmagick.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/kcfinder/lib/class_image_imagick.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/kcfinder/upload/.thumbs/images/Screenshot from 2012-09-06 20:32:48(1).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/kcfinder/upload/.thumbs/images/Screenshot from 2012-09-06 20:32:48.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/kcfinder/upload/.thumbs/images/Screenshot from 2012-09-06 21:47:35.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/kcfinder/upload/images/Screenshot from 2012-09-06 20:32:48(1).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/kcfinder/upload/images/Screenshot from 2012-09-06 20:32:48.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/kcfinder/upload/images/Screenshot from 2012-09-06 21:47:35.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/monkeydb.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/upload/.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/upload/.thumbs/images/2fghq.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/upload/images/2fghq.jpeg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/bg_transparent.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/bg_transparent.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/cross.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/cross.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/..png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/..png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/.image.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/.image.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/avi.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/avi.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/bat.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/bat.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/bmp.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/bmp.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/bz2.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/bz2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/ccd.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/ccd.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/cgi.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/cgi.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/com.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/com.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/csh.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/csh.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/cue.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/cue.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/deb.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/deb.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/dll.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/dll.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/doc.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/doc.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/docx.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/docx.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/exe.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/exe.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/fla.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/fla.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/flv.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/flv.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/fon.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/fon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/gif.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/gif.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/gz.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/gz.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/htm.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/htm.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/html.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/html.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/ini.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/ini.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/iso.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/iso.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/jar.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/jar.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/java.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/java.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/jpeg.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/jpeg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/jpg.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/jpg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/js.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/js.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/mds.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/mds.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/mdx.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/mdx.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/mid.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/mid.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/midi.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/midi.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/mkv.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/mkv.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/mov.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/mov.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/mp3.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/mp3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/mpeg.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/mpeg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/mpg.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/mpg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/nfo.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/nfo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/nrg.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/nrg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/ogg.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/ogg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/pdf.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/pdf.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/php.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/php.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/phps.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/phps.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/pl.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/pl.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/pm.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/pm.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/png.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/png.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/ppt.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/ppt.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/pptx.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/pptx.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/qt.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/qt.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/rpm.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/rpm.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/rtf.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/rtf.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/sh.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/sh.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/srt.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/srt.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/sub.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/sub.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/swf.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/swf.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/tgz.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/tgz.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/tif.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/tif.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/tiff.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/tiff.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/torrent.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/torrent.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/ttf.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/ttf.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/txt.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/txt.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/wav.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/wav.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/wma.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/wma.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/xls.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/xls.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/xlsx.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/xlsx.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/zip.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/big/zip.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/..png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/..png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/.image.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/.image.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/avi.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/avi.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/bat.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/bat.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/bmp.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/bmp.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/bz2.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/bz2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/ccd.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/ccd.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/cgi.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/cgi.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/com.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/com.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/csh.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/csh.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/cue.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/cue.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/deb.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/deb.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/dll.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/dll.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/doc.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/doc.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/docx.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/docx.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/exe.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/exe.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/fla.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/fla.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/flv.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/flv.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/fon.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/fon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/gif.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/gif.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/gz.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/gz.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/htm.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/htm.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/html.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/html.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/ini.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/ini.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/iso.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/iso.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/jar.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/jar.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/java.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/java.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/jpeg.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/jpeg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/jpg.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/jpg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/js.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/js.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/mds.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/mds.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/mdx.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/mdx.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/mid.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/mid.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/midi.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/midi.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/mkv.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/mkv.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/mov.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/mov.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/mp3.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/mp3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/mpeg.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/mpeg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/mpg.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/mpg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/nfo.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/nfo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/nrg.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/nrg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/ogg.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/ogg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/pdf.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/pdf.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/php.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/php.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/phps.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/phps.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/pl.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/pl.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/pm.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/pm.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/png.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/png.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/ppt.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/ppt.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/pptx.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/pptx.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/qt.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/qt.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/rpm.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/rpm.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/rtf.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/rtf.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/sh.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/sh.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/srt.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/srt.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/sub.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/sub.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/swf.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/swf.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/tgz.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/tgz.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/tif.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/tif.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/tiff.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/tiff.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/torrent.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/torrent.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/ttf.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/ttf.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/txt.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/txt.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/wav.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/wav.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/wma.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/wma.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/xls.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/xls.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/xlsx.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/xlsx.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/zip.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/files/small/zip.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/icons/about.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/icons/about.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/icons/clipboard-add.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/icons/clipboard-add.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/icons/clipboard-clear.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/icons/clipboard-clear.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/icons/clipboard.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/icons/clipboard.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/icons/close-clicked.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/icons/close-clicked.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/icons/close-hover.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/icons/close-hover.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/icons/close.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/icons/close.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/icons/copy.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/icons/copy.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/icons/delete.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/icons/delete.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/icons/download.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/icons/download.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/icons/folder-new.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/icons/folder-new.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/icons/maximize.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/icons/maximize.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/icons/move.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/icons/move.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/icons/refresh.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/icons/refresh.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/icons/rename.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/icons/rename.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/icons/select.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/icons/select.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/icons/settings.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/icons/settings.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/icons/upload.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/icons/upload.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/icons/view.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/icons/view.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/kcf_logo.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/kcf_logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/loading.gif" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/loading.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/question.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/question.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/tree/denied.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/tree/denied.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/tree/folder.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/tree/folder.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/tree/folder_current.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/tree/folder_current.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/tree/minus.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/tree/minus.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/tree/plus.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/img/tree/plus.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/alert.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/alert.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/bg_transparent.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/bg_transparent.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/confirm.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/confirm.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/..png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/..png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/.image.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/.image.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/avi.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/avi.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/bat.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/bat.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/bmp.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/bmp.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/bz2.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/bz2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/ccd.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/ccd.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/cgi.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/cgi.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/com.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/com.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/csh.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/csh.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/cue.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/cue.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/deb.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/deb.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/dll.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/dll.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/doc.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/doc.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/docx.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/docx.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/exe.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/exe.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/fla.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/fla.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/flv.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/flv.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/fon.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/fon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/gif.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/gif.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/gz.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/gz.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/htm.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/htm.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/html.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/html.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/ini.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/ini.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/iso.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/iso.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/jar.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/jar.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/java.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/java.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/jpeg.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/jpeg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/jpg.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/jpg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/js.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/js.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/mds.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/mds.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/mdx.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/mdx.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/mid.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/mid.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/midi.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/midi.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/mkv.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/mkv.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/mov.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/mov.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/mp3.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/mp3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/mpeg.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/mpeg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/mpg.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/mpg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/nfo.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/nfo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/nrg.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/nrg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/ogg.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/ogg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/pdf.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/pdf.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/php.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/php.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/phps.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/phps.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/pl.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/pl.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/pm.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/pm.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/png.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/png.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/ppt.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/ppt.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/pptx.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/pptx.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/psd.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/psd.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/qt.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/qt.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/rar.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/rar.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/rpm.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/rpm.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/rtf.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/rtf.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/sh.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/sh.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/srt.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/srt.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/sub.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/sub.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/swf.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/swf.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/tgz.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/tgz.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/tif.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/tif.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/tiff.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/tiff.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/torrent.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/torrent.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/ttf.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/ttf.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/txt.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/txt.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/wav.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/wav.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/wma.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/wma.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/xls.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/xls.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/xlsx.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/xlsx.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/zip.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/big/zip.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/..png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/..png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/.image.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/.image.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/avi.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/avi.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/bat.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/bat.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/bmp.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/bmp.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/bz2.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/bz2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/ccd.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/ccd.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/cgi.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/cgi.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/com.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/com.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/csh.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/csh.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/cue.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/cue.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/deb.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/deb.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/dll.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/dll.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/doc.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/doc.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/docx.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/docx.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/exe.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/exe.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/fla.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/fla.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/flv.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/flv.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/fon.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/fon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/gif.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/gif.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/gz.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/gz.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/htm.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/htm.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/html.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/html.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/ini.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/ini.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/iso.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/iso.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/jar.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/jar.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/java.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/java.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/jpeg.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/jpeg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/jpg.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/jpg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/js.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/js.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/mds.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/mds.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/mdx.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/mdx.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/mid.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/mid.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/midi.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/midi.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/mkv.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/mkv.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/mov.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/mov.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/mp3.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/mp3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/mpeg.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/mpeg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/mpg.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/mpg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/nfo.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/nfo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/nrg.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/nrg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/ogg.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/ogg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/pdf.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/pdf.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/php.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/php.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/phps.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/phps.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/pl.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/pl.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/pm.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/pm.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/png.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/png.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/ppt.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/ppt.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/pptx.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/pptx.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/psd.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/psd.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/qt.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/qt.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/rar.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/rar.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/rpm.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/rpm.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/rtf.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/rtf.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/sh.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/sh.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/srt.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/srt.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/sub.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/sub.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/swf.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/swf.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/tgz.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/tgz.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/tif.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/tif.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/tiff.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/tiff.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/torrent.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/torrent.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/ttf.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/ttf.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/txt.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/txt.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/wav.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/wav.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/wma.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/wma.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/xls.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/xls.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/xlsx.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/xlsx.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/zip.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/files/small/zip.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/icons/about.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/icons/about.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/icons/clipboard-add.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/icons/clipboard-add.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/icons/clipboard-clear.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/icons/clipboard-clear.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/icons/clipboard.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/icons/clipboard.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/icons/close-clicked.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/icons/close-clicked.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/icons/close-hover.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/icons/close-hover.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/icons/close.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/icons/close.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/icons/copy.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/icons/copy.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/icons/delete.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/icons/delete.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/icons/download.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/icons/download.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/icons/folder-new.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/icons/folder-new.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/icons/maximize.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/icons/maximize.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/icons/move.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/icons/move.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/icons/refresh.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/icons/refresh.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/icons/rename.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/icons/rename.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/icons/select.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/icons/select.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/icons/settings.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/icons/settings.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/icons/upload.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/icons/upload.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/icons/view.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/icons/view.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/kcf_logo.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/kcf_logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/loading.gif" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/loading.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/tree/denied.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/tree/denied.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/tree/folder.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/tree/folder.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/tree/folder_current.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/tree/folder_current.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/tree/minus.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/tree/minus.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/tree/plus.png" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/img/tree/plus.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/cache/routes.php" afterPath="$PROJECT_DIR$/application/cache/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/config.php" afterPath="$PROJECT_DIR$/application/config/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/constants.php" afterPath="$PROJECT_DIR$/application/config/constants.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/database.php" afterPath="$PROJECT_DIR$/application/config/database.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/client.php" afterPath="$PROJECT_DIR$/application/controllers/client.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/pages.php" afterPath="$PROJECT_DIR$/application/controllers/pages.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/site.php" afterPath="$PROJECT_DIR$/application/controllers/site.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/libraries/Treeview.php" afterPath="$PROJECT_DIR$/application/libraries/Treeview.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/faq_model.php" afterPath="$PROJECT_DIR$/application/models/faq_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/gallery_model.php" afterPath="$PROJECT_DIR$/application/models/gallery_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/pages_model.php" afterPath="$PROJECT_DIR$/application/models/pages_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/site_model.php" afterPath="$PROJECT_DIR$/application/models/site_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/client/container.php" afterPath="$PROJECT_DIR$/application/views/client/container.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/client/footer.php" afterPath="$PROJECT_DIR$/application/views/client/footer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/client/header.php" afterPath="$PROJECT_DIR$/application/views/client/header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/client/meta.php" afterPath="$PROJECT_DIR$/application/views/client/meta.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/client/welcome_message.php" afterPath="$PROJECT_DIR$/application/views/client/welcome_message.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/container.php" afterPath="$PROJECT_DIR$/application/views/container.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/footer.php" afterPath="$PROJECT_DIR$/application/views/footer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/header.php" afterPath="$PROJECT_DIR$/application/views/header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/meta.php" afterPath="$PROJECT_DIR$/application/views/meta.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/pages/about.php" afterPath="$PROJECT_DIR$/application/views/pages/about.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/pages/home.php" afterPath="$PROJECT_DIR$/application/views/pages/home.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/sidebars/home-sidebar.php" afterPath="$PROJECT_DIR$/application/views/sidebars/home-sidebar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/admin.js" afterPath="$PROJECT_DIR$/assets/js/admin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/app.js" afterPath="$PROJECT_DIR$/assets/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/browse.php" afterPath="$PROJECT_DIR$/assets/kcfinder/browse.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/config.php" afterPath="$PROJECT_DIR$/assets/kcfinder/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/core/.htaccess" afterPath="$PROJECT_DIR$/assets/kcfinder/core/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/core/autoload.php" afterPath="$PROJECT_DIR$/assets/kcfinder/core/autoload.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/core/browser.php" afterPath="$PROJECT_DIR$/assets/kcfinder/core/browser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/core/types/type_img.php" afterPath="$PROJECT_DIR$/assets/kcfinder/core/types/type_img.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/core/types/type_mime.php" afterPath="$PROJECT_DIR$/assets/kcfinder/core/types/type_mime.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/core/uploader.php" afterPath="$PROJECT_DIR$/assets/kcfinder/core/uploader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/css.php" afterPath="$PROJECT_DIR$/assets/kcfinder/css.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/doc/.htaccess" afterPath="$PROJECT_DIR$/assets/kcfinder/doc/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/doc/Changelog" afterPath="$PROJECT_DIR$/assets/kcfinder/doc/Changelog" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/doc/LICENSE.GPL" afterPath="$PROJECT_DIR$/assets/kcfinder/doc/LICENSE.GPL" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/doc/LICENSE.LGPL" afterPath="$PROJECT_DIR$/assets/kcfinder/doc/LICENSE.LGPL" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/doc/README" afterPath="$PROJECT_DIR$/assets/kcfinder/doc/README" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/integration/.htaccess" afterPath="$PROJECT_DIR$/assets/kcfinder/integration/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/integration/drupal.php" afterPath="$PROJECT_DIR$/assets/kcfinder/integration/drupal.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/js/browser/0bject.js" afterPath="$PROJECT_DIR$/assets/kcfinder/js/browser/0bject.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/js/browser/clipboard.js" afterPath="$PROJECT_DIR$/assets/kcfinder/js/browser/clipboard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/js/browser/dropUpload.js" afterPath="$PROJECT_DIR$/assets/kcfinder/js/browser/dropUpload.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/js/browser/files.js" afterPath="$PROJECT_DIR$/assets/kcfinder/js/browser/files.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/js/browser/folders.js" afterPath="$PROJECT_DIR$/assets/kcfinder/js/browser/folders.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/js/browser/init.js" afterPath="$PROJECT_DIR$/assets/kcfinder/js/browser/init.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/js/browser/joiner.php" afterPath="$PROJECT_DIR$/assets/kcfinder/js/browser/joiner.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/js/browser/misc.js" afterPath="$PROJECT_DIR$/assets/kcfinder/js/browser/misc.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/js/browser/settings.js" afterPath="$PROJECT_DIR$/assets/kcfinder/js/browser/settings.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/js/browser/toolbar.js" afterPath="$PROJECT_DIR$/assets/kcfinder/js/browser/toolbar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/js/helper.js" afterPath="$PROJECT_DIR$/assets/kcfinder/js/helper.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/js/jquery.drag.js" afterPath="$PROJECT_DIR$/assets/kcfinder/js/jquery.drag.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/js/jquery.js" afterPath="$PROJECT_DIR$/assets/kcfinder/js/jquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/js/jquery.rightClick.js" afterPath="$PROJECT_DIR$/assets/kcfinder/js/jquery.rightClick.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/js_localize.php" afterPath="$PROJECT_DIR$/assets/kcfinder/js_localize.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/lang/.htaccess" afterPath="$PROJECT_DIR$/assets/kcfinder/lang/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/lang/bg.php" afterPath="$PROJECT_DIR$/assets/kcfinder/lang/bg.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/lang/ca.php" afterPath="$PROJECT_DIR$/assets/kcfinder/lang/ca.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/lang/cs.php" afterPath="$PROJECT_DIR$/assets/kcfinder/lang/cs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/lang/da.php" afterPath="$PROJECT_DIR$/assets/kcfinder/lang/da.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/lang/de.php" afterPath="$PROJECT_DIR$/assets/kcfinder/lang/de.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/lang/el.php" afterPath="$PROJECT_DIR$/assets/kcfinder/lang/el.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/lang/en.php" afterPath="$PROJECT_DIR$/assets/kcfinder/lang/en.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/lang/es.php" afterPath="$PROJECT_DIR$/assets/kcfinder/lang/es.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/lang/fa.php" afterPath="$PROJECT_DIR$/assets/kcfinder/lang/fa.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/lang/fr.php" afterPath="$PROJECT_DIR$/assets/kcfinder/lang/fr.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/lang/hu.php" afterPath="$PROJECT_DIR$/assets/kcfinder/lang/hu.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/lang/it.php" afterPath="$PROJECT_DIR$/assets/kcfinder/lang/it.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/lang/ja.php" afterPath="$PROJECT_DIR$/assets/kcfinder/lang/ja.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/lang/lt.php" afterPath="$PROJECT_DIR$/assets/kcfinder/lang/lt.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/lang/nl.php" afterPath="$PROJECT_DIR$/assets/kcfinder/lang/nl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/lang/no.php" afterPath="$PROJECT_DIR$/assets/kcfinder/lang/no.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/lang/pl.php" afterPath="$PROJECT_DIR$/assets/kcfinder/lang/pl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/lang/pt-br.php" afterPath="$PROJECT_DIR$/assets/kcfinder/lang/pt-br.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/lang/pt.php" afterPath="$PROJECT_DIR$/assets/kcfinder/lang/pt.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/lang/ru.php" afterPath="$PROJECT_DIR$/assets/kcfinder/lang/ru.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/lang/sk.php" afterPath="$PROJECT_DIR$/assets/kcfinder/lang/sk.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/lang/tr.php" afterPath="$PROJECT_DIR$/assets/kcfinder/lang/tr.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/lang/vi.php" afterPath="$PROJECT_DIR$/assets/kcfinder/lang/vi.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/lang/zh-cn.php" afterPath="$PROJECT_DIR$/assets/kcfinder/lang/zh-cn.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/lib/.htaccess" afterPath="$PROJECT_DIR$/assets/kcfinder/lib/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/lib/class_input.php" afterPath="$PROJECT_DIR$/assets/kcfinder/lib/class_input.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/lib/class_zipFolder.php" afterPath="$PROJECT_DIR$/assets/kcfinder/lib/class_zipFolder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/lib/helper_dir.php" afterPath="$PROJECT_DIR$/assets/kcfinder/lib/helper_dir.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/lib/helper_file.php" afterPath="$PROJECT_DIR$/assets/kcfinder/lib/helper_file.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/lib/helper_httpCache.php" afterPath="$PROJECT_DIR$/assets/kcfinder/lib/helper_httpCache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/lib/helper_path.php" afterPath="$PROJECT_DIR$/assets/kcfinder/lib/helper_path.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/lib/helper_text.php" afterPath="$PROJECT_DIR$/assets/kcfinder/lib/helper_text.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/about.txt" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/about.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/init.js" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/init.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/dark/style.css" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/dark/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/about.txt" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/about.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/init.js" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/init.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/style.css" afterPath="$PROJECT_DIR$/assets/kcfinder/themes/oxygen/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/tpl/.htaccess" afterPath="$PROJECT_DIR$/assets/kcfinder/tpl/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/tpl/tpl_browser.php" afterPath="$PROJECT_DIR$/assets/kcfinder/tpl/tpl_browser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/tpl/tpl_css.php" afterPath="$PROJECT_DIR$/assets/kcfinder/tpl/tpl_css.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/tpl/tpl_javascript.php" afterPath="$PROJECT_DIR$/assets/kcfinder/tpl/tpl_javascript.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/upload.php" afterPath="$PROJECT_DIR$/assets/kcfinder/upload.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/kcfinder/upload/.htaccess" afterPath="$PROJECT_DIR$/assets/kcfinder/upload/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/stylesheets/admin.css" afterPath="$PROJECT_DIR$/assets/stylesheets/admin.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/stylesheets/app.css" afterPath="$PROJECT_DIR$/assets/stylesheets/app.css" />
+    </list>
+    <ignored path="testosm.phpfogapp.com.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="Commander">
+    <leftPanel />
+    <rightPanel />
+    <splitter proportion="0.5" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DebuggerManager">
+    <breakpoint_any>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <breakpoint_rules />
+    <ui_properties />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="testosm.phpfogapp.com" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/cache/routes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="52" selection-start="420" selection-end="420" vertical-scroll-proportion="-5.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/admin.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="105" column="0" selection-start="2591" selection-end="2591" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#153#0" expanded="true" />
+                <element signature="e#1045#2154#0" expanded="true" />
+                <element signature="e#3441#3537#0" expanded="true" />
+                <element signature="e#3565#3614#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/config/database.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="21" selection-start="2559" selection-end="2559" vertical-scroll-proportion="0.32596686">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="client.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/client.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="403" column="0" selection-start="14337" selection-end="14337" vertical-scroll-proportion="-9.375">
+              <folding>
+                <element signature="n#__construct#0;n#Client#0;n#!!top" expanded="true" />
+                <element signature="e#733#1326#0" expanded="false" />
+                <element signature="e#861#1326#0" expanded="false" />
+                <element signature="e#1388#4770#0" expanded="false" />
+                <element signature="e#1460#4770#0" expanded="false" />
+                <element signature="e#1523#2573#0" expanded="false" />
+                <element signature="e#1695#2214#1" expanded="false" />
+                <element signature="e#2282#2567#1" expanded="false" />
+                <element signature="e#2601#3653#0" expanded="false" />
+                <element signature="e#2776#3294#1" expanded="false" />
+                <element signature="e#3362#3647#1" expanded="false" />
+                <element signature="e#4872#4996#0" expanded="false" />
+                <element signature="e#4921#4996#0" expanded="false" />
+                <element signature="e#5940#6051#0" expanded="false" />
+                <element signature="e#5983#6051#0" expanded="false" />
+                <element signature="e#6384#6528#0" expanded="false" />
+                <element signature="e#6660#6906#0" expanded="false" />
+                <element signature="e#7036#7340#0" expanded="false" />
+                <element signature="e#8487#8605#0" expanded="false" />
+                <element signature="e#8534#8605#0" expanded="false" />
+                <element signature="e#9831#10113#0" expanded="false" />
+                <element signature="n#pageUpdate#0;n#Client#0;n#!!top" expanded="true" />
+                <element signature="e#10495#10605#0" expanded="false" />
+                <element signature="e#10540#10605#0" expanded="false" />
+                <element signature="e#12160#14155#0" expanded="false" />
+                <element signature="e#13373#14155#0" expanded="false" />
+                <element signature="e#14497#14564#0" expanded="false" />
+                <element signature="e#14925#15469#0" expanded="false" />
+                <element signature="e#15049#15241#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="18" selection-start="662" selection-end="662" vertical-scroll-proportion="-5.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="php.ini" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php.ini">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/application/controllers/auth.php" />
+        <option value="$PROJECT_DIR$/application/views/client/welcome_message.php" />
+        <option value="$PROJECT_DIR$/application/config/autoload.php" />
+        <option value="$PROJECT_DIR$/application/models/gallery_model.php" />
+        <option value="$PROJECT_DIR$/system/core/CodeIgniter.php" />
+        <option value="$PROJECT_DIR$/application/controllers/pages.php" />
+        <option value="$PROJECT_DIR$/application/views/container.php" />
+        <option value="$PROJECT_DIR$/application/libraries/Treeview.php" />
+        <option value="$PROJECT_DIR$/application/models/pages_model.php" />
+        <option value="$PROJECT_DIR$/assets/js/app.js" />
+        <option value="$PROJECT_DIR$/application/cache/routes.php" />
+        <option value="$PROJECT_DIR$/php.ini" />
+        <option value="$PROJECT_DIR$/application/controllers/client.php" />
+        <option value="$PROJECT_DIR$/application/config/config.php" />
+        <option value="$PROJECT_DIR$/assets/js/admin.js" />
+        <option value="$PROJECT_DIR$/application/config/database.php" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="435" />
+    <option name="y" value="72" />
+    <option name="width" value="1118" />
+    <option name="height" value="757" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>CSS</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <OptionsSetting value="true" id="Undo Check Out" />
+    <OptionsSetting value="true" id="Get Latest Version" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents ProjectPane="true" />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testosm.phpfogapp.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testosm.phpfogapp.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testosm.phpfogapp.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testosm.phpfogapp.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testosm.phpfogapp.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testosm.phpfogapp.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testosm.phpfogapp.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testosm.phpfogapp.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testosm.phpfogapp.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="PublishConfig">
+    <servers>
+      <server id="0cf2610a-3e6f-4ccd-9912-49578ce5fe61">
+        <serverdata />
+      </server>
+      <server id="315dd6a3-da54-4a72-aea2-6ff9039c8e15">
+        <serverdata />
+      </server>
+      <server id="38ddf30f-b64a-40a0-985d-5e4f574ff130">
+        <serverdata />
+      </server>
+      <server id="a425f790-9700-487e-8943-6f97a93004cf">
+        <serverdata />
+      </server>
+      <server id="ab080cf8-dcb7-41dd-be0a-eb35cc477dd9">
+        <serverdata />
+      </server>
+      <server id="d44e4dd8-fe9f-4fd6-97ad-8a2bbf60a3df">
+        <serverdata />
+      </server>
+      <server id="db2cb716-14bf-4cbe-82f7-ada2785962d1">
+        <serverdata />
+      </server>
+    </servers>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/stylesheets" />
+      <recent name="$PROJECT_DIR$/assets/js/libs" />
+      <recent name="$PROJECT_DIR$/assets/js/libs/foundation" />
+      <recent name="$PROJECT_DIR$/application/views/client" />
+      <recent name="$PROJECT_DIR$/application/models" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="DETECT_NESTED_COPIES" value="true" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="04c0d240-df00-44d0-8ce4-05855b54e5e5" name="Default" comment="" />
+      <created>1347506426572</created>
+      <updated>1347506426572</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Cleaned up code. Moved admin code to separate admin folder. First step in making admin a separate library.">
+      <created>1349563203843</created>
+      <updated>1349563203843</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="435" y="72" width="1118" height="757" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Framework" active="false" anchor="bottom" auto_hide="true" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.3295063" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20018797" sideWeight="0.6703601" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32867134" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32872927" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963988" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39932886" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORISONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up code. Moved admin code to separate admin folder. First step in making admin a separate library." />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <MESSAGE value="Cleaned up code. Moved admin code to separate admin folder. First step in making admin a separate library." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/system/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/gallery_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="56" selection-start="2340" selection-end="2340" vertical-scroll-proportion="0.40647483" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/container.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="65" selection-start="319" selection-end="319" vertical-scroll-proportion="-3.125" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/libraries/Treeview.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="0" selection-start="1593" selection-end="1593" vertical-scroll-proportion="0.13996316" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/pages_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="248" column="5" selection-start="5934" selection-end="5934" vertical-scroll-proportion="0.9060773" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/pages/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/pages.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/locations.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/cache/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="52" selection-start="420" selection-end="420" vertical-scroll-proportion="-5.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/client.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="403" column="0" selection-start="14337" selection-end="14337" vertical-scroll-proportion="-9.375">
+          <folding>
+            <element signature="n#__construct#0;n#Client#0;n#!!top" expanded="true" />
+            <element signature="e#733#1326#0" expanded="false" />
+            <element signature="e#861#1326#0" expanded="false" />
+            <element signature="e#1388#4770#0" expanded="false" />
+            <element signature="e#1460#4770#0" expanded="false" />
+            <element signature="e#1523#2573#0" expanded="false" />
+            <element signature="e#1695#2214#1" expanded="false" />
+            <element signature="e#2282#2567#1" expanded="false" />
+            <element signature="e#2601#3653#0" expanded="false" />
+            <element signature="e#2776#3294#1" expanded="false" />
+            <element signature="e#3362#3647#1" expanded="false" />
+            <element signature="e#4872#4996#0" expanded="false" />
+            <element signature="e#4921#4996#0" expanded="false" />
+            <element signature="e#5940#6051#0" expanded="false" />
+            <element signature="e#5983#6051#0" expanded="false" />
+            <element signature="e#6384#6528#0" expanded="false" />
+            <element signature="e#6660#6906#0" expanded="false" />
+            <element signature="e#7036#7340#0" expanded="false" />
+            <element signature="e#8487#8605#0" expanded="false" />
+            <element signature="e#8534#8605#0" expanded="false" />
+            <element signature="e#9831#10113#0" expanded="false" />
+            <element signature="n#pageUpdate#0;n#Client#0;n#!!top" expanded="true" />
+            <element signature="e#10495#10605#0" expanded="false" />
+            <element signature="e#10540#10605#0" expanded="false" />
+            <element signature="e#12160#14155#0" expanded="false" />
+            <element signature="e#13373#14155#0" expanded="false" />
+            <element signature="e#14497#14564#0" expanded="false" />
+            <element signature="e#14925#15469#0" expanded="false" />
+            <element signature="e#15049#15241#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="183" column="27" selection-start="6306" selection-end="6307" vertical-scroll-proportion="-1.2316602">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="18" selection-start="662" selection-end="662" vertical-scroll-proportion="-5.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="182" selection-end="182" vertical-scroll-proportion="0.15517241">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="105" column="0" selection-start="2591" selection-end="2591" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#153#0" expanded="true" />
+            <element signature="e#1045#2154#0" expanded="true" />
+            <element signature="e#3441#3537#0" expanded="true" />
+            <element signature="e#3565#3614#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="21" selection-start="2559" selection-end="2559" vertical-scroll-proportion="0.32596686">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

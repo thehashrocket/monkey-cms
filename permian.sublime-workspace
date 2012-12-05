@@ -1,0 +1,713 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"id",
+				"idlocation"
+			],
+			[
+				"cut",
+				"cutString"
+			],
+			[
+				"loc",
+				"locations"
+			],
+			[
+				"va",
+				"var_dump"
+			],
+			[
+				"is",
+				"isset"
+			],
+			[
+				"photo",
+				"photo_id"
+			],
+			[
+				"locat",
+				"location_photo"
+			],
+			[
+				"Gallery",
+				"Gallery_model"
+			],
+			[
+				"lo",
+				"location_name"
+			],
+			[
+				"page_",
+				"page_name"
+			],
+			[
+				"js",
+				"json"
+			],
+			[
+				"data",
+				"dataType"
+			],
+			[
+				"loca",
+				"location_city"
+			],
+			[
+				"updat",
+				"updateForm"
+			],
+			[
+				"cli",
+				"click"
+			],
+			[
+				"cl",
+				"class"
+			],
+			[
+				"con",
+				"control-group"
+			],
+			[
+				"form",
+				"form-horizontal"
+			],
+			[
+				"IDEA",
+				"IDEA_JDK"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"idf",
+				"idfaq_table"
+			],
+			[
+				"arr",
+				"array"
+			],
+			[
+				"faq",
+				"faq_id"
+			],
+			[
+				"ida",
+				"idfaq_answers_table"
+			],
+			[
+				"idfaq",
+				"idfaq_questions_table"
+			],
+			[
+				"que",
+				"questionid"
+			],
+			[
+				"par",
+				"parseJSON"
+			],
+			[
+				"getF",
+				"getFAQDetails"
+			],
+			[
+				"user",
+				"userid"
+			],
+			[
+				"pag",
+				"pagelist"
+			],
+			[
+				"so",
+				"sortableSideList"
+			],
+			[
+				"side",
+				"sidebarList"
+			],
+			[
+				"page",
+				"pageid"
+			],
+			[
+				"paged",
+				"pagedelete"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"Page",
+				"Pages_model"
+			],
+			[
+				"upda",
+				"updatePage"
+			],
+			[
+				"marg",
+				"margin-left"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"top",
+				"topmenu"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "application/views/pages/property.php",
+			"settings":
+			{
+				"buffer_size": 2419,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/config/database.php",
+			"settings":
+			{
+				"buffer_size": 4336,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/views/meta.php",
+			"settings":
+			{
+				"buffer_size": 1884,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/views/pages/home.php",
+			"settings":
+			{
+				"buffer_size": 9760,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/stylesheets/theme/style.css",
+			"settings":
+			{
+				"buffer_size": 35821,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/views/pages/content.php",
+			"settings":
+			{
+				"buffer_size": 1323,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 117.0,
+		"selected_items":
+		[
+			[
+				"Snippet: for",
+				"Snippet: foreach …"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 359.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/jason/Sites/permian.phpfogapp.com/assets/stylesheets/admin.css",
+		"/home/jason/Sites/permian.phpfogapp.com/application/views/pages/real estate.php",
+		"/home/jason/Sites/permian.phpfogapp.com/application/views/pages/content.php",
+		"/home/jason/Sites/permian.phpfogapp.com/application/views/pages/search.php",
+		"/home/jason/Sites/permian.phpfogapp.com/application/views/meta.php",
+		"/home/jason/Sites/permian.phpfogapp.com/application/views/pages/home.php",
+		"/home/jason/Sites/permian.phpfogapp.com/assets/stylesheets/theme/style.css",
+		"/home/jason/Sites/permian.phpfogapp.com/application/controllers/pages.php",
+		"/home/jason/Sites/permian.phpfogapp.com/application/models/location_model.php",
+		"/home/jason/Sites/permian.phpfogapp.com/application/views/client/meta.php",
+		"/home/jason/Sites/permian.phpfogapp.com/application/views/header.php",
+		"/home/jason/Downloads/h5bp-html5-boilerplate-3bc5ed9/js/main.js",
+		"/home/jason/Downloads/h5bp-html5-boilerplate-3bc5ed9/css/main.css",
+		"/home/jason/Sites/permian.phpfogapp.com/application/cache/routes.php",
+		"/home/jason/Sites/permian.phpfogapp.com/application/views/pages/locations.php",
+		"/home/jason/Sites/permian.phpfogapp.com/application/views/pages/realestate.php",
+		"/home/jason/Sites/haunted.phpfogapp.com/application/controllers/pages.php",
+		"/home/jason/Sites/permian.phpfogapp.com/application/models/pages_model.php",
+		"/tmp/fz3temp-1/sidebar.php",
+		"/tmp/fz3temp-1/page.php",
+		"/home/jason/Sites/permian.phpfogapp.com/application/config/database.php",
+		"/tmp/fz3temp-1/footer.php",
+		"/home/jason/Sites/permian.phpfogapp.com/application/views/client/welcome_message.php",
+		"/home/jason/Sites/permian.phpfogapp.com/assets/js/app.js",
+		"/home/jason/Sites/permian.phpfogapp.com/application/controllers/client.php",
+		"/home/jason/Sites/permian.phpfogapp.com/assets/js/admin.js",
+		"/home/jason/Sites/permian.phpfogapp.com/application/models/projects_model.php",
+		"/home/jason/Sites/permian.phpfogapp.com/application/models/houses_model.php",
+		"/home/jason/Sites/permian.phpfogapp.com/application/models/gallery_model.php",
+		"/home/jason/Sites/permian.phpfogapp.com/application/config/constants.php",
+		"/home/jason/Sites/permian.phpfogapp.com/assets/kcfinder/config.php",
+		"/home/jason/Downloads/kcfinder-2.51/config.php",
+		"/home/jason/Downloads/real-estate-html-package/Main Theme/real-estate-html/content.html",
+		"/home/jason/Sites/haunted.phpfogapp.com/application/views/pages/home.php",
+		"/home/jason/Downloads/real-estate-html-package/Main Theme/real-estate-html/contact-us-php.php",
+		"/home/jason/Downloads/brokendns.sh",
+		"/home/jason/Downloads/real-estate-html-package/Main Theme/real-estate-html/index.html",
+		"/home/jason/Downloads/real-estate-html-package/Main Theme/real-estate-html/css/style.css",
+		"/home/jason/Sites/bonfire2/bonfire/application/core_modules/users/views/settings/user_form.php",
+		"/home/jason/Sites/bonfire2/bonfire/application/core_modules/users/views/users/profile.php",
+		"/home/jason/Sites/bonfire2/bonfire/application/core_modules/users/views/users/register.php",
+		"/home/jason/Sites/bonfire2/bonfire/themes/admin/screen.css",
+		"/home/jason/Sites/bonfire2/bonfire/application/core_modules/emailer/views/settings/create.php",
+		"/home/jason/Sites/bonfire2/index.php",
+		"/home/jason/Downloads/index.inc",
+		"/home/jason/Sites/Bonfire/index.php",
+		"/home/jason/Sites/Bonfire/install/.htaccess",
+		"/home/jason/Downloads/MobileDropdown/Mobile Dropdown Conversion/index.html",
+		"/home/jason/Downloads/viljamis-TinyNav.js-c88c105/demo.html",
+		"/home/jason/Sites/haunted.phpfogapp.com/assets/js/jquery_cycle.js",
+		"/home/jason/Downloads/jquery.sliderkit.1.9.2/lib/css/sliderkit-site.css",
+		"/etc/profile",
+		"/home/jason/intellij/bin/idea.sh",
+		"/home/jason/intellij/.directory",
+		"/home/jason/intellij/bin/idea.properties",
+		"/home/jason/Downloads/tagclouds/index2.html",
+		"/home/jason/Downloads/xoxco-jQuery-Tags-Input-e27248a/jquery.tagsinput.js",
+		"/home/jason/Downloads/locations.sql",
+		"/home/jason/Downloads/haunted (1).sql",
+		"/home/jason/Downloads/haunted.sql",
+		"/home/jason/Downloads/foundation/index.html",
+		"/home/jason/Downloads/jquery-ui-map-3.0-rc/demos/jquery-google-maps-geolocation.html",
+		"/home/jason/Downloads/foundation/javascripts/app.js",
+		"/home/jason/Sites/testosm.phpfogapp.com/assets/js/app.js",
+		"/home/jason/Sites/haunted.phpfogapp.com/assets/js/admin.js",
+		"/home/jason/Downloads/foundation/stylesheets/foundation.css",
+		"/home/jason/Downloads/foundation/stylesheets/app.css",
+		"/home/jason/Sites/SustainableArizona.com - OLD/configuration.php",
+		"/home/jason/Downloads/gist1750361-366c7199799256a4cf8d01a901d65a470e360215/StripeTutorialPage.html",
+		"/home/jason/Downloads/opensky/opensky/public_html/client/system/pancake/config/database.php",
+		"/tmp/fz3temp-1/configuration.php",
+		"/home/jason/Sites/SustainableArizona.com/configuration.php",
+		"/home/jason/Downloads/configuration.php",
+		"/home/jason/Downloads/sustainuser_20120928_214121.sql",
+		"/tmp/fz3temp-1/header.php",
+		"/tmp/fz3temp-1/functions.php",
+		"/home/jason/Sites/AustinHouseAssistedLiving.com/application/views/meta.php",
+		"/home/jason/Downloads/index.html",
+		"/home/jason/Sites/AustinHouseAssistedLiving.com/application/views/welcome_message.php",
+		"/home/jason/Sites/AustinHouseAssistedLiving.com/assets/javascripts/app.js",
+		"/home/jason/Sites/AustinHouseAssistedLiving.com/application/views/container.php",
+		"/home/jason/Sites/AustinHouseAssistedLiving.com/assets/stylesheets/app.css",
+		"/home/jason/Downloads/javascripts/app.js",
+		"/home/jason/Sites/AustinHouseAssistedLiving.com/application/views/header.php",
+		"/home/jason/Sites/AustinHouseAssistedLiving.com/assets/stylesheets/foundation.css",
+		"/home/jason/Sites/testosm.phpfogapp.com/application/models/pages_model.php",
+		"/home/jason/Sites/testosm.phpfogapp.com/application/models/projects_model.php",
+		"/home/jason/Sites/testosm.phpfogapp.com/application/controllers/project.php",
+		"/home/jason/Sites/testosm.phpfogapp.com/application/controllers/pages.php",
+		"/home/jason/Sites/testosm.phpfogapp.com/application/models/domain_model.php",
+		"/home/jason/Sites/testosm.phpfogapp.com/application/models/client_model.php",
+		"/home/jason/Sites/testosm.phpfogapp.com/assets/stylesheets/app.css",
+		"/home/jason/Sites/testosm.phpfogapp.com/assets/stylesheets/superfish-min.css",
+		"/home/jason/Sites/testosm.phpfogapp.com/application/controllers/site.php",
+		"/home/jason/Sites/testosm.phpfogapp.com/application/controllers/projects.php",
+		"/home/jason/Sites/testosm.phpfogapp.com/application/cache/routes.php",
+		"/home/jason/Sites/testosm.phpfogapp.com/application/config/database.php",
+		"/home/jason/Sites/testosm.phpfogapp.com/application/helpers/htmlpurifier_helper.php",
+		"/home/jason/Sites/testosm.phpfogapp.com/application/controllers/client.php",
+		"/home/jason/Sites/testosm.phpfogapp.com/.gitignore",
+		"/home/jason/Sites/testosm.phpfogapp.com/application/config/config.php",
+		"/home/jason/Sites/testosm.phpfogapp.com/application/libraries/htmlpurifier-4.4.0/library/HTMLPurifier.php",
+		"/home/jason/Sites/testosm.phpfogapp.com/application/libraries/htmlpurifier-4.4.0/library/HTMLPurifier.includes.php",
+		"/home/jason/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/jason/Sites/testosm.phpfogapp.com/application/config/routes.php",
+		"/home/jason/Sites/testosm.phpfogapp.com/assets/kcfinder/config.php",
+		"/home/jason/Sites/testosm.phpfogapp.com/assets/js/ckeditor/config.js",
+		"/home/jason/Sites/testosm.phpfogapp.com/assets/js/ckeditor/ckeditor.js",
+		"/home/jason/Sites/testosm.phpfogapp.com/assets/kcfinder/upload.php",
+		"/home/jason/Sites/testosm.phpfogapp.com/assets/kcfinder/core/autoload.php",
+		"/home/jason/Sites/testosm.phpfogapp.com/application/views/client/welcome_message.php",
+		"/home/jason/Sites/testosm.phpfogapp.com/assets/js/libs/app.js",
+		"/home/jason/Sites/testosm.phpfogapp.com/application/views/container.php",
+		"/home/jason/Sites/testosm.phpfogapp.com/application/views/header.php",
+		"/home/jason/Sites/testosm.phpfogapp.com/application/views/meta.php",
+		"/etc/phpmyadmin/config.inc.php",
+		"/home/jason/Documents/testosm.phpfogapp.com/.htaccess",
+		"/home/jason/Documents/testosm.phpfogapp.com/application/models/domain_model.php",
+		"/home/jason/Documents/testosm.phpfogapp.com/application/config/ion_auth.php",
+		"/home/jason/Documents/testosm.phpfogapp.com/application/config/config.php",
+		"/home/jason/Documents/testosm.phpfogapp.com/application/config/database.php",
+		"/home/jason/Documents/monkey-cms/application/config/database.php",
+		"/home/jason/Documents/monkey-cms/application/config/routes.php",
+		"/home/jason/Documents/testosm.phpfogapp.com/application/config/routes.php",
+		"/home/jason/Documents/monkey-cms/application/config/autoload.php",
+		"/home/jason/Documents/testosm.phpfogapp.com/application/config/autoload.php",
+		"/home/jason/Documents/monkey-cms/.htaccess",
+		"/home/jason/Documents/monkey-cms/application/config/config.php"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"<project>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Sample Tab 1",
+			"Sample Tab",
+			"sample tab\nsample tab",
+			"sample tab",
+			"thumb",
+			"fullsize",
+			"parentpage",
+			"upload.php",
+			"getLocation",
+			"resetLocationForm",
+			"resetPageForm",
+			"certifiedbutton",
+			"<td>Subject:</td>",
+			"Email Configure",
+			"Required fields are in bold",
+			"account details",
+			"country",
+			"register",
+			"cycle.all.js",
+			"delete",
+			"updateFAQ",
+			"'",
+			"ajax",
+			"getAjaxSidebarPageList",
+			"parseJSON",
+			"json",
+			"shadow.png",
+			"faqUpdate",
+			"updatePage",
+			"updatePageList",
+			"fold",
+			"30px",
+			"#mainmenu"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\"",
+			"#topmenu"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "application/views/pages/property.php",
+					"settings":
+					{
+						"buffer_size": 2419,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								89,
+								89
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "application/config/database.php",
+					"settings":
+					{
+						"buffer_size": 4336,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2562,
+								2562
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 702.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "application/views/meta.php",
+					"settings":
+					{
+						"buffer_size": 1884,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 15.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "application/views/pages/home.php",
+					"settings":
+					{
+						"buffer_size": 9760,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2541.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "assets/stylesheets/theme/style.css",
+					"settings":
+					{
+						"buffer_size": 35821,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 28347.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "application/views/pages/content.php",
+					"settings":
+					{
+						"buffer_size": 1323,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 501.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.sftp":
+	{
+		"height": 163.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 209.0,
+	"status_bar_visible": true
+}

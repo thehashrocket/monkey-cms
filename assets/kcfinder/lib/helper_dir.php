@@ -4,7 +4,7 @@
   *
   *      @desc Directory helper class
   *   @package KCFinder
-  *   @version 2.52-dev
+  *   @version 2.51
   *    @author Pavel Tzonkov <pavelc@users.sourceforge.net>
   * @copyright 2010, 2011 KCFinder Project
   *   @license http://www.opensource.org/licenses/gpl-2.0.php GPLv2
@@ -141,7 +141,7 @@ class dir {
                 $files[] = $options['addPath'] ? "$dir/$file" : $file;
         }
         closedir($dh);
-        usort($files, array("dir", "fileSort"));
+        usort($files, "dir::fileSort");
         return $files;
     }
 

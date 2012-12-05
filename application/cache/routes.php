@@ -1,5 +1,9 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 $route["home"] = "pages/index/1/1";
-$route["a_new_name"] = "pages/index/1/60";
-$route["test_page"] = "pages/index/1/59";
-$route["about_us"] = "pages/index/1/3";
+$route["about"] = "pages/index/1/7";
+$route["about/thank_you"] = "pages/index/1/21";
+$route["finally_home"] = "pages/index/1/20";
+$route["advantages"] = "pages/index/1/14";
+$route["search"] = "pages/index/1/19";
+$route["real_estate"] = "pages/index/1/17";
+$route["real_estate/property"] = "pages/index/1/18";

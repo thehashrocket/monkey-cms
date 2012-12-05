@@ -1,0 +1,67 @@
+#featureHolder .jFlowSlideContainer { overflow: hidden !important; }
+.imageExcerpt {
+azimuth: expression(
+this.pngSet?this.pngSet=true:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1?(this.runtimeStyle.backgroundImage = "none",
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",
+this.src = "blank.gif"):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace('url("','').replace('")',''),
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='scale')",
+this.runtimeStyle.backgroundImage = "none")),this.pngSet=true);
+}
+#homeContentLeft {
+	width: 470px;
+}
+.homePostContainer {
+	height: expression( this.scrollHeight < 341 ? "340px" : "auto" ); /* sets min-height for IE */
+}
+#leftSidebar {
+	display: inline;
+}
+#insideRightContent {
+	overflow: hidden;
+}
+h2.archiveTitle {
+	margin-top: 46px;
+}
+h2.pageTitle, .entryWrapper h2.postTitle {
+	margin-top: -20px;
+}
+#commentTabs .tabs-nav li
+{
+	margin-top: 9px;
+	margin-left: 8px;
+}
+#commentTabs .tabs-container.tabs-hide {
+	display: block !important;
+	position: absolute;
+	left: -99999px;
+	top: -99999px;
+	overflow: hidden;
+	width: 0px;
+	height: 0px;
+}
+.commentFrame {
+	azimuth: expression(
+	this.pngSet?this.pngSet=true:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1?(this.runtimeStyle.backgroundImage = "none",
+	this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",
+	this.src = "blank.gif"):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace('url("','').replace('")',''),
+	this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='scale')",
+	this.runtimeStyle.backgroundImage = "none")),this.pngSet=true);
+	cursor: pointer;
+}
+#home-widget-about {
+	width: 275px;
+	margin-left: 15px;
+	display: inline;
+}
+#home-widget-twitter {
+	width: 300px;
+	margin-left: 30px;
+}
+#home-widget-flickr {
+	width: 300px;
+	margin-left: 30px;
+}
+#postTools li ul {
+	padding-bottom: 10px;
+}
+

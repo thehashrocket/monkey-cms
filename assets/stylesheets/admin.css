@@ -162,7 +162,7 @@ h1, h2, h3, h4, p {
    Featured Content
 ----------------------------------------- */
 
-#featured {
+/*#featured {
     height: 190px;
     background: #ffffff;
 }
@@ -173,7 +173,7 @@ h1, h2, h3, h4, p {
 
 #featured #s1 img {
     width: 980px;
-}
+}*/
 
 /* -----------------------------------------
    Main Navigation
@@ -208,7 +208,7 @@ h1, h2, h3, h4, p {
     float: left;
     padding: 1px 2px 0 0;
     position: relative;
-    height: 30px;
+
 }
 #topmenu ul li ul li {
     background: #003B54;
@@ -222,7 +222,7 @@ h1, h2, h3, h4, p {
     float: left;
     font-size: 1em;
     font-weight: bold;
-    height: 20px;
+    height: 30px;
     padding: 8px 20px 0;
     text-transform: uppercase;
 }
@@ -275,6 +275,27 @@ div#placemainmenu li:hover ul, div#placemainmenu li li:hover ul {
     display: block;
 }
 
+#topmenu ul.flyout li a:hover {
+    background-color: #2BA6CB;
+}
+
+#topmenu ul.flyout li a,
+#topmenu .nav-bar li ul li a {
+    border: none;
+    border-width: 0;
+    background: #003B54;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+#topmenu ul.flyout {
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
 
 /* -----------------------------------------
    Gallery
@@ -317,7 +338,9 @@ img {
    Home Page
 ----------------------------------------- */
 
+
 #catlist,
 #faqlist{
     list-style-type: none;
 }
+

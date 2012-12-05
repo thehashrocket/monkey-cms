@@ -2,7 +2,7 @@
 
 
 
-    <?php
+<?php
         if ($login == 'false')
         {   echo '<h4>Login or Create an Account</h4>';
             echo '<p class="login"><a href="/auth/login">If you have an account log in</a>.</p>

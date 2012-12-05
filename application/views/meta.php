@@ -10,30 +10,35 @@
       content="<?php echo $page_keywords; ?>"/>
 <link rel="shortcut icon" href="/favicon.ico"/>
 
+<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/stylesheets/theme/normalize.css" />
 
-<!-- Included CSS Files -->
-<link rel="stylesheet" href="<?php echo base_url();?>assets/stylesheets/foundation.min.css">
-<link rel="stylesheet" href="<?php echo base_url();?>assets/stylesheets/app.css">
-<link rel="stylesheet" href="<?php echo base_url();?>assets/stylesheets/superfish-min.css">
-<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/humanity/jquery-ui.css">
+<link rel="stylesheet" href="<?php echo base_url();?>assets/stylesheets/theme/style.css" type="text/css" media="screen" />
 
 
+<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/stylesheets/theme/jquery.tabs.css" />
 
-<!--[if lt IE 9]>
-<link rel="stylesheet" href="<?php echo base_url();?>/assets/stylesheets/ie.css">
+
+
+<!--[if lte IE 6]>
+<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/stylesheets/theme/ie6Fix.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/stylesheets/theme/jquery.tabs-ie.css" />
 <![endif]-->
 
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/stylesheets/theme/ie7Fix.css" />
+<![endif]-->
 
-<!-- IE Fix for HTML5 Tags -->
-<!--[if lt IE 9]>
-        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-<script src="<?php echo base_url();?>assets/js/libs/foundation.min.js"></script>
-<script src="<?php echo base_url();?>assets/js/libs/modernizr.foundation.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Eagle+Lake|Droid+Serif|Droid+Sans' rel='stylesheet' type='text/css'>
 
+<script type="text/javascript" src="<?php echo base_url();?>assets/js/libs/modernizr.custom.30736.js"></script>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
-
-
-
-
+<script>
+  (function() {
+    var cx = '007537890616340261172:hkx7ulsb-4y';
+    var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+  })();
+</script>

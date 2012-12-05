@@ -4,7 +4,7 @@
   *
   *      @desc Browser actions class
   *   @package KCFinder
-  *   @version 2.52-dev
+  *   @version 2.51
   *    @author Pavel Tzonkov <pavelc@users.sourceforge.net>
   * @copyright 2010, 2011 KCFinder Project
   *   @license http://www.opensource.org/licenses/gpl-2.0.php GPLv2
@@ -151,19 +151,19 @@ class browser extends uploader {
             $file = "{$this->config['uploadDir']}/{$this->type}/{$this->get['dir']}/" . basename($file);
             if (!is_file($file) || !is_readable($file))
                 $this->sendDefaultThumb($file);
-            $image = image::factory($this->imageDriver, $file);
-            if ($image->initError)
+            $image = new gd($file);
+            if ($image->init_error)
                 $this->sendDefaultThumb($file);
-            list($tmp, $tmp, $type) = getimagesize($file);
-            if (in_array($type, array(IMAGETYPE_GIF, IMAGETYPE_JPEG, IMAGETYPE_PNG)) &&
-                ($image->width <= $this->config['thumbWidth']) &&
-                ($image->height <= $this->config['thumbHeight'])
+            $browsable = array(IMAGETYPE_GIF, IMAGETYPE_JPEG, IMAGETYPE_PNG);
+            if (in_array($image->type, $browsable) &&
+                ($image->get_width() <= $this->config['thumbWidth']) &&
+                ($image->get_height() <= $this->config['thumbHeight'])
             ) {
-                $mime =
-                    ($type == IMAGETYPE_GIF) ? "gif" : (
-                    ($type == IMAGETYPE_PNG) ? "png" : "jpeg");
-                $mime = "image/$mime";
-                httpCache::file($file, $mime);
+                $type =
+                    ($image->type == IMAGETYPE_GIF) ? "gif" : (
+                    ($image->type == IMAGETYPE_PNG) ? "png" : "jpeg");
+                $type = "image/$type";
+                httpCache::file($file, $type);
             } else
                 $this->sendDefaultThumb($file);
         }
