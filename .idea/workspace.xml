@@ -35,7 +35,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/upload/.htaccess" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/upload/.thumbs/images/2fghq.jpeg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/upload/images/2fghq.jpeg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/config.php" afterPath="$PROJECT_DIR$/application/config/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/database.php" afterPath="$PROJECT_DIR$/application/config/database.php" />
     </list>
     <ignored path="testosm.phpfogapp.com.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -122,19 +122,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="database.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/config/database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="1" selection-start="2434" selection-end="2434" vertical-scroll-proportion="-4.25">
+            <state line="47" column="24" selection-start="2562" selection-end="2562" vertical-scroll-proportion="0.32596686">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="config.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/config/config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="183" column="28" selection-start="6307" selection-end="6307" vertical-scroll-proportion="0.53038675">
+            <state line="196" column="2" selection-start="6685" selection-end="6685" vertical-scroll-proportion="-20.125">
               <folding />
             </state>
           </provider>
@@ -224,8 +224,8 @@
         <option value="$PROJECT_DIR$/php.ini" />
         <option value="$PROJECT_DIR$/application/controllers/client.php" />
         <option value="$PROJECT_DIR$/assets/js/admin.js" />
-        <option value="$PROJECT_DIR$/application/config/database.php" />
         <option value="$PROJECT_DIR$/application/config/config.php" />
+        <option value="$PROJECT_DIR$/application/config/database.php" />
       </list>
     </option>
   </component>
@@ -665,16 +665,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/database.php">
+    <entry file="file://$PROJECT_DIR$/application/config/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="1" selection-start="2434" selection-end="2434" vertical-scroll-proportion="-4.25">
+        <state line="196" column="2" selection-start="6685" selection-end="6685" vertical-scroll-proportion="-20.125">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/config.php">
+    <entry file="file://$PROJECT_DIR$/application/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="183" column="28" selection-start="6307" selection-end="6307" vertical-scroll-proportion="0.53038675">
+        <state line="47" column="24" selection-start="2562" selection-end="2562" vertical-scroll-proportion="0.32596686">
           <folding />
         </state>
       </provider>
