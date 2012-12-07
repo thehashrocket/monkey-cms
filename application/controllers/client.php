@@ -401,7 +401,6 @@
 		// the reorder function in app.js.
 		function saveOrder()
 		{
-
 			$items = $this->input->post('item');
 			$total_items = count($this->input->post('item'));
 
@@ -411,6 +410,8 @@
 					'pageid' => $items[$item],
 					'rank'   => $item
 				);
+                error_log($items[$item], 0);
+                error_log($item, 0);
 
 				$this->db->where('pageid', $data['pageid']);
 

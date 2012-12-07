@@ -2,40 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04c0d240-df00-44d0-8ce4-05855b54e5e5" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.directory" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/controllers/blog.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/controllers/project.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/controllers/projects.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/controllers/providers.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/views/pages/careers.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/orbit/left-arrow-small.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/orbit/right-arrow-small.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/jquery-ui-1.8.16.custom.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/jquery-ui-1.8.19.custom.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/jquery_cycle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/libs/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/kcfinder/doc/BEFORE_RELEASE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/kcfinder/lang/af.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/kcfinder/lang/fi.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/kcfinder/lang/ro.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/kcfinder/lang/sv.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/kcfinder/lang/uk.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/kcfinder/lib/class_image.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/kcfinder/lib/class_image_gd.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/kcfinder/lib/class_image_gmagick.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/kcfinder/lib/class_image_imagick.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/kcfinder/upload/.thumbs/images/Screenshot from 2012-09-06 20:32:48(1).png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/kcfinder/upload/.thumbs/images/Screenshot from 2012-09-06 20:32:48.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/kcfinder/upload/.thumbs/images/Screenshot from 2012-09-06 21:47:35.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/kcfinder/upload/images/Screenshot from 2012-09-06 20:32:48(1).png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/kcfinder/upload/images/Screenshot from 2012-09-06 20:32:48.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/kcfinder/upload/images/Screenshot from 2012-09-06 21:47:35.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/monkeydb.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/upload/.htaccess" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/upload/.thumbs/images/2fghq.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/upload/images/2fghq.jpeg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/cache/routes.php" afterPath="$PROJECT_DIR$/application/cache/routes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/database.php" afterPath="$PROJECT_DIR$/application/config/database.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/client.php" afterPath="$PROJECT_DIR$/application/controllers/client.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/admin.js" afterPath="$PROJECT_DIR$/assets/js/admin.js" />
     </list>
     <ignored path="testosm.phpfogapp.com.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -99,99 +70,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="routes.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/cache/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="52" selection-start="420" selection-end="420" vertical-scroll-proportion="-5.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/admin.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="0" selection-start="2591" selection-end="2591" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#153#0" expanded="true" />
-                <element signature="e#1045#2154#0" expanded="true" />
-                <element signature="e#3441#3537#0" expanded="true" />
-                <element signature="e#3565#3614#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="database.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/config/database.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="24" selection-start="2562" selection-end="2562" vertical-scroll-proportion="0.32596686">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/config/config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="196" column="2" selection-start="6685" selection-end="6685" vertical-scroll-proportion="-20.125">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="client.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/client.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="403" column="0" selection-start="14337" selection-end="14337" vertical-scroll-proportion="-9.375">
-              <folding>
-                <element signature="n#__construct#0;n#Client#0;n#!!top" expanded="true" />
-                <element signature="e#733#1326#0" expanded="false" />
-                <element signature="e#861#1326#0" expanded="false" />
-                <element signature="e#1388#4770#0" expanded="false" />
-                <element signature="e#1460#4770#0" expanded="false" />
-                <element signature="e#1523#2573#0" expanded="false" />
-                <element signature="e#1695#2214#1" expanded="false" />
-                <element signature="e#2282#2567#1" expanded="false" />
-                <element signature="e#2601#3653#0" expanded="false" />
-                <element signature="e#2776#3294#1" expanded="false" />
-                <element signature="e#3362#3647#1" expanded="false" />
-                <element signature="e#4872#4996#0" expanded="false" />
-                <element signature="e#4921#4996#0" expanded="false" />
-                <element signature="e#5940#6051#0" expanded="false" />
-                <element signature="e#5983#6051#0" expanded="false" />
-                <element signature="e#6384#6528#0" expanded="false" />
-                <element signature="e#6660#6906#0" expanded="false" />
-                <element signature="e#7036#7340#0" expanded="false" />
-                <element signature="e#8487#8605#0" expanded="false" />
-                <element signature="e#8534#8605#0" expanded="false" />
-                <element signature="e#9831#10113#0" expanded="false" />
-                <element signature="n#pageUpdate#0;n#Client#0;n#!!top" expanded="true" />
-                <element signature="e#10495#10605#0" expanded="false" />
-                <element signature="e#10540#10605#0" expanded="false" />
-                <element signature="e#12160#14155#0" expanded="false" />
-                <element signature="e#13373#14155#0" expanded="false" />
-                <element signature="e#14497#14564#0" expanded="false" />
-                <element signature="e#14925#15469#0" expanded="false" />
-                <element signature="e#15049#15241#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="18" selection-start="662" selection-end="662" vertical-scroll-proportion="-5.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="php.ini" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php.ini">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="8" column="28" selection-start="396" selection-end="396" vertical-scroll-proportion="0.5">
               <folding />
             </state>
           </provider>
@@ -220,21 +102,21 @@
         <option value="$PROJECT_DIR$/application/libraries/Treeview.php" />
         <option value="$PROJECT_DIR$/application/models/pages_model.php" />
         <option value="$PROJECT_DIR$/assets/js/app.js" />
-        <option value="$PROJECT_DIR$/application/cache/routes.php" />
         <option value="$PROJECT_DIR$/php.ini" />
-        <option value="$PROJECT_DIR$/application/controllers/client.php" />
-        <option value="$PROJECT_DIR$/assets/js/admin.js" />
         <option value="$PROJECT_DIR$/application/config/config.php" />
+        <option value="$PROJECT_DIR$/application/cache/routes.php" />
+        <option value="$PROJECT_DIR$/assets/js/admin.js" />
+        <option value="$PROJECT_DIR$/application/controllers/client.php" />
         <option value="$PROJECT_DIR$/application/config/database.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="435" />
-    <option name="y" value="72" />
-    <option name="width" value="1118" />
-    <option name="height" value="757" />
+    <option name="x" value="629" />
+    <option name="y" value="382" />
+    <option name="width" value="955" />
+    <option name="height" value="454" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -322,42 +204,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testosm.phpfogapp.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testosm.phpfogapp.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="logs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testosm.phpfogapp.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testosm.phpfogapp.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane">
@@ -369,6 +215,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../haunted.phpfogapp.com" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
@@ -452,15 +299,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="435" y="72" width="1118" height="757" extended-state="0" />
-    <editor active="true" />
+    <frame x="629" y="382" width="955" height="454" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="bottom" auto_hide="true" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.3295063" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20018797" sideWeight="0.6703601" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24528302" sideWeight="0.9787234" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32867134" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -542,11 +389,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/system/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/models/gallery_model.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="87" column="56" selection-start="2340" selection-end="2340" vertical-scroll-proportion="0.40647483" />
@@ -562,26 +404,83 @@
         <state line="55" column="0" selection-start="1593" selection-end="1593" vertical-scroll-proportion="0.13996316" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/pages_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="248" column="5" selection-start="5934" selection-end="5934" vertical-scroll-proportion="0.9060773" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/pages/home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/pages.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0">
+        <state line="19" column="0" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="182" selection-end="182" vertical-scroll-proportion="0.15517241" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/cache/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="196" column="2" selection-start="6685" selection-end="6685" vertical-scroll-proportion="0.027624309" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/logs/log-2012-12-04.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="32" selection-start="3302" selection-end="3302" vertical-scroll-proportion="0.253886">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/locations.php">
+    <entry file="file://$PROJECT_DIR$/assets/js/admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="126" column="17" selection-start="3350" selection-end="3350" vertical-scroll-proportion="0.6612529">
+          <folding>
+            <element signature="e#0#153#0" expanded="true" />
+            <element signature="e#12138#12879#0" expanded="true" />
+            <element signature="e#13066#13920#0" expanded="true" />
+            <element signature="e#14032#14439#0" expanded="true" />
+            <element signature="e#14108#14430#0" expanded="true" />
+            <element signature="e#14379#14417#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/client.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="402" column="9" selection-start="14336" selection-end="14336" vertical-scroll-proportion="-3.5416667">
+          <folding>
+            <element signature="n#saveOrder#0;n#Client#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="18" selection-start="662" selection-end="662" vertical-scroll-proportion="0.03685504">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/pages_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="250" column="9" selection-start="4965" selection-end="4965" vertical-scroll-proportion="0.5945946">
+          <folding>
+            <element signature="n#updatePageOrderList#0;n#Pages_model#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/logs/log-2012-12-06.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
@@ -590,91 +489,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/cache/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="52" selection-start="420" selection-end="420" vertical-scroll-proportion="-5.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/client.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="403" column="0" selection-start="14337" selection-end="14337" vertical-scroll-proportion="-9.375">
-          <folding>
-            <element signature="n#__construct#0;n#Client#0;n#!!top" expanded="true" />
-            <element signature="e#733#1326#0" expanded="false" />
-            <element signature="e#861#1326#0" expanded="false" />
-            <element signature="e#1388#4770#0" expanded="false" />
-            <element signature="e#1460#4770#0" expanded="false" />
-            <element signature="e#1523#2573#0" expanded="false" />
-            <element signature="e#1695#2214#1" expanded="false" />
-            <element signature="e#2282#2567#1" expanded="false" />
-            <element signature="e#2601#3653#0" expanded="false" />
-            <element signature="e#2776#3294#1" expanded="false" />
-            <element signature="e#3362#3647#1" expanded="false" />
-            <element signature="e#4872#4996#0" expanded="false" />
-            <element signature="e#4921#4996#0" expanded="false" />
-            <element signature="e#5940#6051#0" expanded="false" />
-            <element signature="e#5983#6051#0" expanded="false" />
-            <element signature="e#6384#6528#0" expanded="false" />
-            <element signature="e#6660#6906#0" expanded="false" />
-            <element signature="e#7036#7340#0" expanded="false" />
-            <element signature="e#8487#8605#0" expanded="false" />
-            <element signature="e#8534#8605#0" expanded="false" />
-            <element signature="e#9831#10113#0" expanded="false" />
-            <element signature="n#pageUpdate#0;n#Client#0;n#!!top" expanded="true" />
-            <element signature="e#10495#10605#0" expanded="false" />
-            <element signature="e#10540#10605#0" expanded="false" />
-            <element signature="e#12160#14155#0" expanded="false" />
-            <element signature="e#13373#14155#0" expanded="false" />
-            <element signature="e#14497#14564#0" expanded="false" />
-            <element signature="e#14925#15469#0" expanded="false" />
-            <element signature="e#15049#15241#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="18" selection-start="662" selection-end="662" vertical-scroll-proportion="-5.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="182" selection-end="182" vertical-scroll-proportion="0.15517241">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/admin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="0" selection-start="2591" selection-end="2591" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#153#0" expanded="true" />
-            <element signature="e#1045#2154#0" expanded="true" />
-            <element signature="e#3441#3537#0" expanded="true" />
-            <element signature="e#3565#3614#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="196" column="2" selection-start="6685" selection-end="6685" vertical-scroll-proportion="-20.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="24" selection-start="2562" selection-end="2562" vertical-scroll-proportion="0.32596686">
+        <state line="8" column="28" selection-start="396" selection-end="396" vertical-scroll-proportion="0.5">
           <folding />
         </state>
       </provider>

@@ -126,21 +126,6 @@ jQuery(document).ready(function ($) {
 					sortableSideList();
 				}
 
-				$.ajax({
-					url: "/client/saveOrder",
-					type: "POST",
-					success: function () {
-						console.log('routes updated');
-						rebuildPageList();
-						sortableSideList();
-					},
-					failure: function () {
-						console.log('routes not updated');
-					}
-
-				});
-
-
 			}
 		});
 

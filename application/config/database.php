@@ -48,6 +48,8 @@
 $active_group = 'develop';
 $active_record = TRUE;
 
+$db['develop']['save_queries'] = FALSE;
+
 $db['live']['hostname'] = 'mysql-shared-02.phpfog.com';
 $db['live']['username'] = 'jason-96-55499';
 $db['live']['password'] = 'Fj35J03j94iq';
@@ -68,7 +70,7 @@ $db['live']['stricton'] = FALSE;
 $db['develop']['hostname'] = 'localhost';
 $db['develop']['username'] = 'root';
 $db['develop']['password'] = '';
-$db['develop']['database'] = 'monkeydb';
+$db['develop']['database'] = 'newmonkies';
 $db['develop']['dbdriver'] = 'mysql';
 $db['develop']['dbprefix'] = '';
 $db['develop']['pconnect'] = TRUE;
