@@ -40,14 +40,17 @@
 					$childarray = $menu['children'];
 					foreach ( $childarray as $child)
 					{
-						$html.="<li class='page_item'><a href=\"".$this->anchor . $this->sectionid ."/" . $child['pageid'] . "/\">
+						$html.="<li class='page_item'><a href=\"".$this->anchor . $menu['node'] ."/" . $child['node'] . "/\">
                       " . $child['node_name'] . "</a></li>\n";
 					}
 					$html.= "</li>\n</ul>\n";
 
 				} else {
-					$html.="<li class='page_item'><a href=\"".$this->anchor . $menu['node'] . "/\">
+					if (strlen($menu['node']) !== 0) {
+						$html.="<li class='page_item'><a href=\"".$this->anchor . $menu['node'] . "/\">
                       " . $menu['node_name'] . "</a></li>\n";
+					}
+
 				}
 
 
@@ -63,7 +66,7 @@
 			$sql = "$this->nodesql ";
 
 			// First get top level nodes i.e. parent id = 0
-			$sql .= " WHERE sectionid =  $this->sectionid and parentid = 0";
+			$sql .= " WHERE sectionid =  $this->sectionid and parentid = 0 and hide = 0";
 
 			$sql .= $this->orderby;
 
