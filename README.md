@@ -1,4 +1,4 @@
-Haunted Location Finder
+Monkey CMS
 ==========
 
 
